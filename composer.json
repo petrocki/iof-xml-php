@@ -1,0 +1,16 @@
+{
+    "name": "petrocki/iof-xml-php",
+    "description": "PHP model classes and parser for IOF XML 3.0 data standard",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Petrocki\\IofXmlPhp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Adam Petrocki"
+        }
+    ],
+    "require": {}
+}
