@@ -1,0 +1,7 @@
+xsd2php:
+    namespaces:
+        'http://www.orienteering.org/datastandard/3.0': 'Petrocki\IofXmlPhp'
+    destinations_php:
+        'Petrocki\IofXmlPhp': './src/Generated'
+    destinations_jms:
+        'Petrocki\IofXmlPhp': './src/Metadata'

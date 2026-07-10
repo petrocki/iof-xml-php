@@ -1,0 +1,31 @@
+Petrocki\IofXmlPhp\InformationItemType:
+    properties:
+        modifyTime:
+            expose: true
+            access_type: public_method
+            serialized_name: modifyTime
+            accessor:
+                getter: getModifyTime
+                setter: setModifyTime
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        title:
+            expose: true
+            access_type: public_method
+            serialized_name: Title
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getTitle
+                setter: setTitle
+            type: string
+        content:
+            expose: true
+            access_type: public_method
+            serialized_name: Content
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getContent
+                setter: setContent
+            type: string

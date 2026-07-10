@@ -1,0 +1,102 @@
+Petrocki\IofXmlPhp\ServiceType:
+    properties:
+        type:
+            expose: true
+            access_type: public_method
+            serialized_name: type
+            accessor:
+                getter: getType
+                setter: setType
+            xml_attribute: true
+            type: string
+        modifyTime:
+            expose: true
+            access_type: public_method
+            serialized_name: modifyTime
+            accessor:
+                getter: getModifyTime
+                setter: setModifyTime
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getId
+                setter: setId
+            type: Petrocki\IofXmlPhp\IdType
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: Name
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getName
+                setter: setName
+            xml_list:
+                inline: true
+                entry_name: Name
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            type: array<Petrocki\IofXmlPhp\LanguageStringType>
+        fee:
+            expose: true
+            access_type: public_method
+            serialized_name: Fee
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getFee
+                setter: setFee
+            xml_list:
+                inline: true
+                entry_name: Fee
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            type: array<Petrocki\IofXmlPhp\FeeType>
+        description:
+            expose: true
+            access_type: public_method
+            serialized_name: Description
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getDescription
+                setter: setDescription
+            xml_list:
+                inline: true
+                entry_name: Description
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            type: array<Petrocki\IofXmlPhp\LanguageStringType>
+        maxNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: MaxNumber
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getMaxNumber
+                setter: setMaxNumber
+            type: float
+        requestedNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: RequestedNumber
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getRequestedNumber
+                setter: setRequestedNumber
+            type: float
+        extensions:
+            expose: true
+            access_type: public_method
+            serialized_name: Extensions
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getExtensions
+                setter: setExtensions
+            type: Petrocki\IofXmlPhp\ExtensionsType

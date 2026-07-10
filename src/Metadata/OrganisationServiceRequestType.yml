@@ -1,0 +1,40 @@
+Petrocki\IofXmlPhp\OrganisationServiceRequestType:
+    properties:
+        organisation:
+            expose: true
+            access_type: public_method
+            serialized_name: Organisation
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getOrganisation
+                setter: setOrganisation
+            type: Petrocki\IofXmlPhp\OrganisationType
+        serviceRequest:
+            expose: true
+            access_type: public_method
+            serialized_name: ServiceRequest
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getServiceRequest
+                setter: setServiceRequest
+            xml_list:
+                inline: true
+                entry_name: ServiceRequest
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            type: array<Petrocki\IofXmlPhp\ServiceRequestType>
+        personServiceRequest:
+            expose: true
+            access_type: public_method
+            serialized_name: PersonServiceRequest
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getPersonServiceRequest
+                setter: setPersonServiceRequest
+            xml_list:
+                inline: true
+                entry_name: PersonServiceRequest
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            type: array<Petrocki\IofXmlPhp\PersonServiceRequestType>

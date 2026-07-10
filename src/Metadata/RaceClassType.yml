@@ -1,0 +1,129 @@
+Petrocki\IofXmlPhp\RaceClassType:
+    properties:
+        raceNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: raceNumber
+            accessor:
+                getter: getRaceNumber
+                setter: setRaceNumber
+            xml_attribute: true
+            type: int
+        maxNumberOfCompetitors:
+            expose: true
+            access_type: public_method
+            serialized_name: maxNumberOfCompetitors
+            accessor:
+                getter: getMaxNumberOfCompetitors
+                setter: setMaxNumberOfCompetitors
+            xml_attribute: true
+            type: int
+        modifyTime:
+            expose: true
+            access_type: public_method
+            serialized_name: modifyTime
+            accessor:
+                getter: getModifyTime
+                setter: setModifyTime
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        punchingSystem:
+            expose: true
+            access_type: public_method
+            serialized_name: PunchingSystem
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getPunchingSystem
+                setter: setPunchingSystem
+            xml_list:
+                inline: true
+                entry_name: PunchingSystem
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            type: array<string>
+        teamFee:
+            expose: true
+            access_type: public_method
+            serialized_name: TeamFee
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getTeamFee
+                setter: setTeamFee
+            xml_list:
+                inline: true
+                entry_name: TeamFee
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            type: array<Petrocki\IofXmlPhp\FeeType>
+        fee:
+            expose: true
+            access_type: public_method
+            serialized_name: Fee
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getFee
+                setter: setFee
+            xml_list:
+                inline: true
+                entry_name: Fee
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            type: array<Petrocki\IofXmlPhp\FeeType>
+        firstStart:
+            expose: true
+            access_type: public_method
+            serialized_name: FirstStart
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getFirstStart
+                setter: setFirstStart
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        status:
+            expose: true
+            access_type: public_method
+            serialized_name: Status
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getStatus
+                setter: setStatus
+            type: string
+        course:
+            expose: true
+            access_type: public_method
+            serialized_name: Course
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getCourse
+                setter: setCourse
+            xml_list:
+                inline: true
+                entry_name: Course
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            type: array<Petrocki\IofXmlPhp\SimpleCourseType>
+        onlineControl:
+            expose: true
+            access_type: public_method
+            serialized_name: OnlineControl
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getOnlineControl
+                setter: setOnlineControl
+            xml_list:
+                inline: true
+                entry_name: OnlineControl
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            type: array<Petrocki\IofXmlPhp\ControlType>
+        extensions:
+            expose: true
+            access_type: public_method
+            serialized_name: Extensions
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getExtensions
+                setter: setExtensions
+            type: Petrocki\IofXmlPhp\ExtensionsType

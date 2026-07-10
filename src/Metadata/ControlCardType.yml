@@ -1,0 +1,28 @@
+Petrocki\IofXmlPhp\ControlCardType:
+    properties:
+        __value:
+            expose: true
+            xml_value: true
+            access_type: public_method
+            accessor:
+                getter: value
+                setter: value
+            type: string
+        punchingSystem:
+            expose: true
+            access_type: public_method
+            serialized_name: punchingSystem
+            accessor:
+                getter: getPunchingSystem
+                setter: setPunchingSystem
+            xml_attribute: true
+            type: string
+        modifyTime:
+            expose: true
+            access_type: public_method
+            serialized_name: modifyTime
+            accessor:
+                getter: getModifyTime
+                setter: setModifyTime
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime

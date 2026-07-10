@@ -1,0 +1,22 @@
+Petrocki\IofXmlPhp\PersonNameType:
+    properties:
+        family:
+            expose: true
+            access_type: public_method
+            serialized_name: Family
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getFamily
+                setter: setFamily
+            type: string
+        given:
+            expose: true
+            access_type: public_method
+            serialized_name: Given
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getGiven
+                setter: setGiven
+            type: string

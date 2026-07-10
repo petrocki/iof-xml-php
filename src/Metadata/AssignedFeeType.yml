@@ -1,0 +1,41 @@
+Petrocki\IofXmlPhp\AssignedFeeType:
+    properties:
+        modifyTime:
+            expose: true
+            access_type: public_method
+            serialized_name: modifyTime
+            accessor:
+                getter: getModifyTime
+                setter: setModifyTime
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        fee:
+            expose: true
+            access_type: public_method
+            serialized_name: Fee
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getFee
+                setter: setFee
+            type: Petrocki\IofXmlPhp\FeeType
+        paidAmount:
+            expose: true
+            access_type: public_method
+            serialized_name: PaidAmount
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getPaidAmount
+                setter: setPaidAmount
+            type: Petrocki\IofXmlPhp\AmountType
+        extensions:
+            expose: true
+            access_type: public_method
+            serialized_name: Extensions
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getExtensions
+                setter: setExtensions
+            type: Petrocki\IofXmlPhp\ExtensionsType

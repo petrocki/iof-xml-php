@@ -1,0 +1,42 @@
+Petrocki\IofXmlPhp\ControlAnswerType:
+    properties:
+        answer:
+            expose: true
+            access_type: public_method
+            serialized_name: Answer
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getAnswer
+                setter: setAnswer
+            type: string
+        correctAnswer:
+            expose: true
+            access_type: public_method
+            serialized_name: CorrectAnswer
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getCorrectAnswer
+                setter: setCorrectAnswer
+            type: string
+        time:
+            expose: true
+            access_type: public_method
+            serialized_name: Time
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getTime
+                setter: setTime
+            type: float
+        extensions:
+            expose: true
+            access_type: public_method
+            serialized_name: Extensions
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getExtensions
+                setter: setExtensions
+            type: Petrocki\IofXmlPhp\ExtensionsType

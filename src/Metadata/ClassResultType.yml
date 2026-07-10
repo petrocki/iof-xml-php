@@ -1,0 +1,82 @@
+Petrocki\IofXmlPhp\ClassResultType:
+    properties:
+        timeResolution:
+            expose: true
+            access_type: public_method
+            serialized_name: timeResolution
+            accessor:
+                getter: getTimeResolution
+                setter: setTimeResolution
+            xml_attribute: true
+            type: float
+        modifyTime:
+            expose: true
+            access_type: public_method
+            serialized_name: modifyTime
+            accessor:
+                getter: getModifyTime
+                setter: setModifyTime
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        class:
+            expose: true
+            access_type: public_method
+            serialized_name: Class
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getClass
+                setter: setClass
+            type: Petrocki\IofXmlPhp\ClassType
+        course:
+            expose: true
+            access_type: public_method
+            serialized_name: Course
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getCourse
+                setter: setCourse
+            xml_list:
+                inline: true
+                entry_name: Course
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            type: array<Petrocki\IofXmlPhp\SimpleRaceCourseType>
+        personResult:
+            expose: true
+            access_type: public_method
+            serialized_name: PersonResult
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getPersonResult
+                setter: setPersonResult
+            xml_list:
+                inline: true
+                entry_name: PersonResult
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            type: array<Petrocki\IofXmlPhp\PersonResultType>
+        teamResult:
+            expose: true
+            access_type: public_method
+            serialized_name: TeamResult
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getTeamResult
+                setter: setTeamResult
+            xml_list:
+                inline: true
+                entry_name: TeamResult
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            type: array<Petrocki\IofXmlPhp\TeamResultType>
+        extensions:
+            expose: true
+            access_type: public_method
+            serialized_name: Extensions
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getExtensions
+                setter: setExtensions
+            type: Petrocki\IofXmlPhp\ExtensionsType

@@ -1,0 +1,94 @@
+Petrocki\IofXmlPhp\TeamEntryPersonType:
+    properties:
+        person:
+            expose: true
+            access_type: public_method
+            serialized_name: Person
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getPerson
+                setter: setPerson
+            type: Petrocki\IofXmlPhp\PersonType
+        organisation:
+            expose: true
+            access_type: public_method
+            serialized_name: Organisation
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getOrganisation
+                setter: setOrganisation
+            type: Petrocki\IofXmlPhp\OrganisationType
+        leg:
+            expose: true
+            access_type: public_method
+            serialized_name: Leg
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getLeg
+                setter: setLeg
+            type: int
+        legOrder:
+            expose: true
+            access_type: public_method
+            serialized_name: LegOrder
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getLegOrder
+                setter: setLegOrder
+            type: int
+        controlCard:
+            expose: true
+            access_type: public_method
+            serialized_name: ControlCard
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getControlCard
+                setter: setControlCard
+            xml_list:
+                inline: true
+                entry_name: ControlCard
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            type: array<Petrocki\IofXmlPhp\ControlCardType>
+        score:
+            expose: true
+            access_type: public_method
+            serialized_name: Score
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getScore
+                setter: setScore
+            xml_list:
+                inline: true
+                entry_name: Score
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            type: array<Petrocki\IofXmlPhp\ScoreType>
+        assignedFee:
+            expose: true
+            access_type: public_method
+            serialized_name: AssignedFee
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getAssignedFee
+                setter: setAssignedFee
+            xml_list:
+                inline: true
+                entry_name: AssignedFee
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            type: array<Petrocki\IofXmlPhp\AssignedFeeType>
+        extensions:
+            expose: true
+            access_type: public_method
+            serialized_name: Extensions
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getExtensions
+                setter: setExtensions
+            type: Petrocki\IofXmlPhp\ExtensionsType

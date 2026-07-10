@@ -1,0 +1,22 @@
+Petrocki\IofXmlPhp\DateAndOptionalTimeType:
+    properties:
+        date:
+            expose: true
+            access_type: public_method
+            serialized_name: Date
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getDate
+                setter: setDate
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        time:
+            expose: true
+            access_type: public_method
+            serialized_name: Time
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getTime
+                setter: setTime
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Time

@@ -1,0 +1,36 @@
+Petrocki\IofXmlPhp\CourseData\CourseDataAType:
+    properties:
+        event:
+            expose: true
+            access_type: public_method
+            serialized_name: Event
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getEvent
+                setter: setEvent
+            type: Petrocki\IofXmlPhp\EventType
+        raceCourseData:
+            expose: true
+            access_type: public_method
+            serialized_name: RaceCourseData
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getRaceCourseData
+                setter: setRaceCourseData
+            xml_list:
+                inline: true
+                entry_name: RaceCourseData
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            type: array<Petrocki\IofXmlPhp\RaceCourseDataType>
+        extensions:
+            expose: true
+            access_type: public_method
+            serialized_name: Extensions
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getExtensions
+                setter: setExtensions
+            type: Petrocki\IofXmlPhp\ExtensionsType

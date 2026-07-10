@@ -1,0 +1,55 @@
+Petrocki\IofXmlPhp\ImageType:
+    properties:
+        __value:
+            expose: true
+            xml_value: true
+            access_type: public_method
+            accessor:
+                getter: value
+                setter: value
+            type: GoetasWebservices\Xsd\XsdToPhp\Jms\Base64Encoded
+        url:
+            expose: true
+            access_type: public_method
+            serialized_name: url
+            accessor:
+                getter: getUrl
+                setter: setUrl
+            xml_attribute: true
+            type: string
+        mediaType:
+            expose: true
+            access_type: public_method
+            serialized_name: mediaType
+            accessor:
+                getter: getMediaType
+                setter: setMediaType
+            xml_attribute: true
+            type: string
+        width:
+            expose: true
+            access_type: public_method
+            serialized_name: width
+            accessor:
+                getter: getWidth
+                setter: setWidth
+            xml_attribute: true
+            type: int
+        height:
+            expose: true
+            access_type: public_method
+            serialized_name: height
+            accessor:
+                getter: getHeight
+                setter: setHeight
+            xml_attribute: true
+            type: int
+        resolution:
+            expose: true
+            access_type: public_method
+            serialized_name: resolution
+            accessor:
+                getter: getResolution
+                setter: setResolution
+            xml_attribute: true
+            type: float

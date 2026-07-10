@@ -1,0 +1,21 @@
+Petrocki\IofXmlPhp\RoleType:
+    properties:
+        type:
+            expose: true
+            access_type: public_method
+            serialized_name: type
+            accessor:
+                getter: getType
+                setter: setType
+            xml_attribute: true
+            type: string
+        person:
+            expose: true
+            access_type: public_method
+            serialized_name: Person
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getPerson
+                setter: setPerson
+            type: Petrocki\IofXmlPhp\PersonType

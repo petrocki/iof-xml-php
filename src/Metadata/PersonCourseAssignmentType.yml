@@ -1,0 +1,72 @@
+Petrocki\IofXmlPhp\PersonCourseAssignmentType:
+    properties:
+        entryId:
+            expose: true
+            access_type: public_method
+            serialized_name: EntryId
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getEntryId
+                setter: setEntryId
+            type: Petrocki\IofXmlPhp\IdType
+        bibNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: BibNumber
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getBibNumber
+                setter: setBibNumber
+            type: string
+        personName:
+            expose: true
+            access_type: public_method
+            serialized_name: PersonName
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getPersonName
+                setter: setPersonName
+            type: string
+        className:
+            expose: true
+            access_type: public_method
+            serialized_name: ClassName
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getClassName
+                setter: setClassName
+            type: string
+        courseName:
+            expose: true
+            access_type: public_method
+            serialized_name: CourseName
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getCourseName
+                setter: setCourseName
+            type: string
+        courseFamily:
+            expose: true
+            access_type: public_method
+            serialized_name: CourseFamily
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getCourseFamily
+                setter: setCourseFamily
+            type: string
+        extensions:
+            expose: true
+            access_type: public_method
+            serialized_name: Extensions
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getExtensions
+                setter: setExtensions
+            type: Petrocki\IofXmlPhp\ExtensionsType

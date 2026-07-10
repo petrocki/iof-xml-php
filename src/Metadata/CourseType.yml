@@ -1,0 +1,104 @@
+Petrocki\IofXmlPhp\CourseType:
+    properties:
+        numberOfCompetitors:
+            expose: true
+            access_type: public_method
+            serialized_name: numberOfCompetitors
+            accessor:
+                getter: getNumberOfCompetitors
+                setter: setNumberOfCompetitors
+            xml_attribute: true
+            type: int
+        modifyTime:
+            expose: true
+            access_type: public_method
+            serialized_name: modifyTime
+            accessor:
+                getter: getModifyTime
+                setter: setModifyTime
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getId
+                setter: setId
+            type: Petrocki\IofXmlPhp\IdType
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: Name
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getName
+                setter: setName
+            type: string
+        courseFamily:
+            expose: true
+            access_type: public_method
+            serialized_name: CourseFamily
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getCourseFamily
+                setter: setCourseFamily
+            type: string
+        length:
+            expose: true
+            access_type: public_method
+            serialized_name: Length
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getLength
+                setter: setLength
+            type: float
+        climb:
+            expose: true
+            access_type: public_method
+            serialized_name: Climb
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getClimb
+                setter: setClimb
+            type: float
+        courseControl:
+            expose: true
+            access_type: public_method
+            serialized_name: CourseControl
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getCourseControl
+                setter: setCourseControl
+            xml_list:
+                inline: true
+                entry_name: CourseControl
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            type: array<Petrocki\IofXmlPhp\CourseControlType>
+        mapId:
+            expose: true
+            access_type: public_method
+            serialized_name: MapId
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getMapId
+                setter: setMapId
+            type: int
+        extensions:
+            expose: true
+            access_type: public_method
+            serialized_name: Extensions
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getExtensions
+                setter: setExtensions
+            type: Petrocki\IofXmlPhp\ExtensionsType

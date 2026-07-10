@@ -1,0 +1,36 @@
+Petrocki\IofXmlPhp\StartList\StartListAType:
+    properties:
+        event:
+            expose: true
+            access_type: public_method
+            serialized_name: Event
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getEvent
+                setter: setEvent
+            type: Petrocki\IofXmlPhp\EventType
+        classStart:
+            expose: true
+            access_type: public_method
+            serialized_name: ClassStart
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getClassStart
+                setter: setClassStart
+            xml_list:
+                inline: true
+                entry_name: ClassStart
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            type: array<Petrocki\IofXmlPhp\ClassStartType>
+        extensions:
+            expose: true
+            access_type: public_method
+            serialized_name: Extensions
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getExtensions
+                setter: setExtensions
+            type: Petrocki\IofXmlPhp\ExtensionsType

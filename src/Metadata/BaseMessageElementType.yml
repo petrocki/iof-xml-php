@@ -1,0 +1,29 @@
+Petrocki\IofXmlPhp\BaseMessageElementType:
+    properties:
+        iofVersion:
+            expose: true
+            access_type: public_method
+            serialized_name: iofVersion
+            accessor:
+                getter: getIofVersion
+                setter: setIofVersion
+            xml_attribute: true
+            type: string
+        createTime:
+            expose: true
+            access_type: public_method
+            serialized_name: createTime
+            accessor:
+                getter: getCreateTime
+                setter: setCreateTime
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        creator:
+            expose: true
+            access_type: public_method
+            serialized_name: creator
+            accessor:
+                getter: getCreator
+                setter: setCreator
+            xml_attribute: true
+            type: string

@@ -1,0 +1,134 @@
+Petrocki\IofXmlPhp\FeeType:
+    properties:
+        type:
+            expose: true
+            access_type: public_method
+            serialized_name: type
+            accessor:
+                getter: getType
+                setter: setType
+            xml_attribute: true
+            type: string
+        modifyTime:
+            expose: true
+            access_type: public_method
+            serialized_name: modifyTime
+            accessor:
+                getter: getModifyTime
+                setter: setModifyTime
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getId
+                setter: setId
+            type: Petrocki\IofXmlPhp\IdType
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: Name
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getName
+                setter: setName
+            xml_list:
+                inline: true
+                entry_name: Name
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            type: array<Petrocki\IofXmlPhp\LanguageStringType>
+        amount:
+            expose: true
+            access_type: public_method
+            serialized_name: Amount
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getAmount
+                setter: setAmount
+            type: Petrocki\IofXmlPhp\AmountType
+        taxableAmount:
+            expose: true
+            access_type: public_method
+            serialized_name: TaxableAmount
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getTaxableAmount
+                setter: setTaxableAmount
+            type: Petrocki\IofXmlPhp\AmountType
+        percentage:
+            expose: true
+            access_type: public_method
+            serialized_name: Percentage
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getPercentage
+                setter: setPercentage
+            type: float
+        taxablePercentage:
+            expose: true
+            access_type: public_method
+            serialized_name: TaxablePercentage
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getTaxablePercentage
+                setter: setTaxablePercentage
+            type: float
+        validFromTime:
+            expose: true
+            access_type: public_method
+            serialized_name: ValidFromTime
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getValidFromTime
+                setter: setValidFromTime
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        validToTime:
+            expose: true
+            access_type: public_method
+            serialized_name: ValidToTime
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getValidToTime
+                setter: setValidToTime
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        fromDateOfBirth:
+            expose: true
+            access_type: public_method
+            serialized_name: FromDateOfBirth
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getFromDateOfBirth
+                setter: setFromDateOfBirth
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        toDateOfBirth:
+            expose: true
+            access_type: public_method
+            serialized_name: ToDateOfBirth
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getToDateOfBirth
+                setter: setToDateOfBirth
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        extensions:
+            expose: true
+            access_type: public_method
+            serialized_name: Extensions
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getExtensions
+                setter: setExtensions
+            type: Petrocki\IofXmlPhp\ExtensionsType

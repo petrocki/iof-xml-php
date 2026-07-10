@@ -1,0 +1,66 @@
+Petrocki\IofXmlPhp\OverallResultType:
+    properties:
+        time:
+            expose: true
+            access_type: public_method
+            serialized_name: Time
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getTime
+                setter: setTime
+            type: float
+        timeBehind:
+            expose: true
+            access_type: public_method
+            serialized_name: TimeBehind
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getTimeBehind
+                setter: setTimeBehind
+            type: float
+        position:
+            expose: true
+            access_type: public_method
+            serialized_name: Position
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getPosition
+                setter: setPosition
+            type: int
+        status:
+            expose: true
+            access_type: public_method
+            serialized_name: Status
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getStatus
+                setter: setStatus
+            type: string
+        score:
+            expose: true
+            access_type: public_method
+            serialized_name: Score
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getScore
+                setter: setScore
+            xml_list:
+                inline: true
+                entry_name: Score
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            type: array<Petrocki\IofXmlPhp\ScoreType>
+        extensions:
+            expose: true
+            access_type: public_method
+            serialized_name: Extensions
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getExtensions
+                setter: setExtensions
+            type: Petrocki\IofXmlPhp\ExtensionsType

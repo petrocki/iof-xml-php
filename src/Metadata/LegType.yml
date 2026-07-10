@@ -1,0 +1,40 @@
+Petrocki\IofXmlPhp\LegType:
+    properties:
+        minNumberOfCompetitors:
+            expose: true
+            access_type: public_method
+            serialized_name: minNumberOfCompetitors
+            accessor:
+                getter: getMinNumberOfCompetitors
+                setter: setMinNumberOfCompetitors
+            xml_attribute: true
+            type: int
+        maxNumberOfCompetitors:
+            expose: true
+            access_type: public_method
+            serialized_name: maxNumberOfCompetitors
+            accessor:
+                getter: getMaxNumberOfCompetitors
+                setter: setMaxNumberOfCompetitors
+            xml_attribute: true
+            type: int
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: Name
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getName
+                setter: setName
+            type: string
+        extensions:
+            expose: true
+            access_type: public_method
+            serialized_name: Extensions
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getExtensions
+                setter: setExtensions
+            type: Petrocki\IofXmlPhp\ExtensionsType

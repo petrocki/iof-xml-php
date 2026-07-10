@@ -1,0 +1,29 @@
+Petrocki\IofXmlPhp\GeoPositionType:
+    properties:
+        lng:
+            expose: true
+            access_type: public_method
+            serialized_name: lng
+            accessor:
+                getter: getLng
+                setter: setLng
+            xml_attribute: true
+            type: float
+        lat:
+            expose: true
+            access_type: public_method
+            serialized_name: lat
+            accessor:
+                getter: getLat
+                setter: setLat
+            xml_attribute: true
+            type: float
+        alt:
+            expose: true
+            access_type: public_method
+            serialized_name: alt
+            accessor:
+                getter: getAlt
+                setter: setAlt
+            xml_attribute: true
+            type: float

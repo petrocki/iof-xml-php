@@ -1,0 +1,62 @@
+Petrocki\IofXmlPhp\MapType:
+    properties:
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getId
+                setter: setId
+            type: Petrocki\IofXmlPhp\IdType
+        image:
+            expose: true
+            access_type: public_method
+            serialized_name: Image
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getImage
+                setter: setImage
+            type: Petrocki\IofXmlPhp\ImageType
+        scale:
+            expose: true
+            access_type: public_method
+            serialized_name: Scale
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getScale
+                setter: setScale
+            type: float
+        mapPositionTopLeft:
+            expose: true
+            access_type: public_method
+            serialized_name: MapPositionTopLeft
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getMapPositionTopLeft
+                setter: setMapPositionTopLeft
+            type: Petrocki\IofXmlPhp\MapPositionType
+        mapPositionBottomRight:
+            expose: true
+            access_type: public_method
+            serialized_name: MapPositionBottomRight
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getMapPositionBottomRight
+                setter: setMapPositionBottomRight
+            type: Petrocki\IofXmlPhp\MapPositionType
+        extensions:
+            expose: true
+            access_type: public_method
+            serialized_name: Extensions
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getExtensions
+                setter: setExtensions
+            type: Petrocki\IofXmlPhp\ExtensionsType

@@ -1,0 +1,62 @@
+Petrocki\IofXmlPhp\SimpleCourseType:
+    properties:
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getId
+                setter: setId
+            type: Petrocki\IofXmlPhp\IdType
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: Name
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getName
+                setter: setName
+            type: string
+        courseFamily:
+            expose: true
+            access_type: public_method
+            serialized_name: CourseFamily
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getCourseFamily
+                setter: setCourseFamily
+            type: string
+        length:
+            expose: true
+            access_type: public_method
+            serialized_name: Length
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getLength
+                setter: setLength
+            type: float
+        climb:
+            expose: true
+            access_type: public_method
+            serialized_name: Climb
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getClimb
+                setter: setClimb
+            type: float
+        numberOfControls:
+            expose: true
+            access_type: public_method
+            serialized_name: NumberOfControls
+            xml_element:
+                namespace: 'http://www.orienteering.org/datastandard/3.0'
+            accessor:
+                getter: getNumberOfControls
+                setter: setNumberOfControls
+            type: int
