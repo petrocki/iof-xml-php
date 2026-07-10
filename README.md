@@ -17,3 +17,8 @@ The generated model classes are already included, to regenerate them in the cont
 ```
 vendor/bin/xsd2php convert config/xsd2php.yaml resources/IOF.xsd
 ```
+
+Test the code at runtime with the bin/dump script:
+```
+php bin/dump.php
+```

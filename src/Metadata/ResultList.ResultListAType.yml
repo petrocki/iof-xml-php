@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\ResultList\ResultListAType:
+Petrocki\IofXmlPhp\Model\ResultList\ResultListAType:
     properties:
         status:
             expose: true
@@ -18,7 +18,7 @@ Petrocki\IofXmlPhp\ResultList\ResultListAType:
             accessor:
                 getter: getEvent
                 setter: setEvent
-            type: Petrocki\IofXmlPhp\EventType
+            type: Petrocki\IofXmlPhp\Model\EventType
         classResult:
             expose: true
             access_type: public_method
@@ -32,7 +32,7 @@ Petrocki\IofXmlPhp\ResultList\ResultListAType:
                 inline: true
                 entry_name: ClassResult
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\ClassResultType>
+            type: array<Petrocki\IofXmlPhp\Model\ClassResultType>
         extensions:
             expose: true
             access_type: public_method
@@ -42,4 +42,4 @@ Petrocki\IofXmlPhp\ResultList\ResultListAType:
             accessor:
                 getter: getExtensions
                 setter: setExtensions
-            type: Petrocki\IofXmlPhp\ExtensionsType
+            type: Petrocki\IofXmlPhp\Model\ExtensionsType

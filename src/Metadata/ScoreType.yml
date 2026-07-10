@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\ScoreType:
+Petrocki\IofXmlPhp\Model\ScoreType:
     properties:
         __value:
             expose: true

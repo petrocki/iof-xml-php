@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\AccountType:
+Petrocki\IofXmlPhp\Model\AccountType:
     properties:
         __value:
             expose: true

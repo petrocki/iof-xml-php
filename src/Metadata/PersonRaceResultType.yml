@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\PersonRaceResultType:
+Petrocki\IofXmlPhp\Model\PersonRaceResultType:
     properties:
         raceNumber:
             expose: true
@@ -92,7 +92,7 @@ Petrocki\IofXmlPhp\PersonRaceResultType:
                 inline: true
                 entry_name: Score
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\ScoreType>
+            type: array<Petrocki\IofXmlPhp\Model\ScoreType>
         overallResult:
             expose: true
             access_type: public_method
@@ -102,7 +102,7 @@ Petrocki\IofXmlPhp\PersonRaceResultType:
             accessor:
                 getter: getOverallResult
                 setter: setOverallResult
-            type: Petrocki\IofXmlPhp\OverallResultType
+            type: Petrocki\IofXmlPhp\Model\OverallResultType
         course:
             expose: true
             access_type: public_method
@@ -112,7 +112,7 @@ Petrocki\IofXmlPhp\PersonRaceResultType:
             accessor:
                 getter: getCourse
                 setter: setCourse
-            type: Petrocki\IofXmlPhp\SimpleCourseType
+            type: Petrocki\IofXmlPhp\Model\SimpleCourseType
         splitTime:
             expose: true
             access_type: public_method
@@ -126,7 +126,7 @@ Petrocki\IofXmlPhp\PersonRaceResultType:
                 inline: true
                 entry_name: SplitTime
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\SplitTimeType>
+            type: array<Petrocki\IofXmlPhp\Model\SplitTimeType>
         controlAnswer:
             expose: true
             access_type: public_method
@@ -140,7 +140,7 @@ Petrocki\IofXmlPhp\PersonRaceResultType:
                 inline: true
                 entry_name: ControlAnswer
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\ControlAnswerType>
+            type: array<Petrocki\IofXmlPhp\Model\ControlAnswerType>
         route:
             expose: true
             access_type: public_method
@@ -164,7 +164,7 @@ Petrocki\IofXmlPhp\PersonRaceResultType:
                 inline: true
                 entry_name: ControlCard
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\ControlCardType>
+            type: array<Petrocki\IofXmlPhp\Model\ControlCardType>
         assignedFee:
             expose: true
             access_type: public_method
@@ -178,7 +178,7 @@ Petrocki\IofXmlPhp\PersonRaceResultType:
                 inline: true
                 entry_name: AssignedFee
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\AssignedFeeType>
+            type: array<Petrocki\IofXmlPhp\Model\AssignedFeeType>
         serviceRequest:
             expose: true
             access_type: public_method
@@ -192,7 +192,7 @@ Petrocki\IofXmlPhp\PersonRaceResultType:
                 inline: true
                 entry_name: ServiceRequest
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\ServiceRequestType>
+            type: array<Petrocki\IofXmlPhp\Model\ServiceRequestType>
         extensions:
             expose: true
             access_type: public_method
@@ -202,4 +202,4 @@ Petrocki\IofXmlPhp\PersonRaceResultType:
             accessor:
                 getter: getExtensions
                 setter: setExtensions
-            type: Petrocki\IofXmlPhp\ExtensionsType
+            type: Petrocki\IofXmlPhp\Model\ExtensionsType

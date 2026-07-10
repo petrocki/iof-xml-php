@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\LanguageStringType:
+Petrocki\IofXmlPhp\Model\LanguageStringType:
     properties:
         __value:
             expose: true

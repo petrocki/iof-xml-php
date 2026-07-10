@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\CountryType:
+Petrocki\IofXmlPhp\Model\CountryType:
     properties:
         __value:
             expose: true

@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\CourseType:
+Petrocki\IofXmlPhp\Model\CourseType:
     properties:
         numberOfCompetitors:
             expose: true
@@ -27,7 +27,7 @@ Petrocki\IofXmlPhp\CourseType:
             accessor:
                 getter: getId
                 setter: setId
-            type: Petrocki\IofXmlPhp\IdType
+            type: Petrocki\IofXmlPhp\Model\IdType
         name:
             expose: true
             access_type: public_method
@@ -81,7 +81,7 @@ Petrocki\IofXmlPhp\CourseType:
                 inline: true
                 entry_name: CourseControl
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\CourseControlType>
+            type: array<Petrocki\IofXmlPhp\Model\CourseControlType>
         mapId:
             expose: true
             access_type: public_method
@@ -101,4 +101,4 @@ Petrocki\IofXmlPhp\CourseType:
             accessor:
                 getter: getExtensions
                 setter: setExtensions
-            type: Petrocki\IofXmlPhp\ExtensionsType
+            type: Petrocki\IofXmlPhp\Model\ExtensionsType

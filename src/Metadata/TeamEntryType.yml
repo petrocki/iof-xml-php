@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\TeamEntryType:
+Petrocki\IofXmlPhp\Model\TeamEntryType:
     properties:
         modifyTime:
             expose: true
@@ -18,7 +18,7 @@ Petrocki\IofXmlPhp\TeamEntryType:
             accessor:
                 getter: getId
                 setter: setId
-            type: Petrocki\IofXmlPhp\IdType
+            type: Petrocki\IofXmlPhp\Model\IdType
         name:
             expose: true
             access_type: public_method
@@ -42,7 +42,7 @@ Petrocki\IofXmlPhp\TeamEntryType:
                 inline: true
                 entry_name: Organisation
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\OrganisationType>
+            type: array<Petrocki\IofXmlPhp\Model\OrganisationType>
         teamEntryPerson:
             expose: true
             access_type: public_method
@@ -56,7 +56,7 @@ Petrocki\IofXmlPhp\TeamEntryType:
                 inline: true
                 entry_name: TeamEntryPerson
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\TeamEntryPersonType>
+            type: array<Petrocki\IofXmlPhp\Model\TeamEntryPersonType>
         class:
             expose: true
             access_type: public_method
@@ -70,7 +70,7 @@ Petrocki\IofXmlPhp\TeamEntryType:
                 inline: true
                 entry_name: Class
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\ClassType>
+            type: array<Petrocki\IofXmlPhp\Model\ClassType>
         race:
             expose: true
             access_type: public_method
@@ -98,7 +98,7 @@ Petrocki\IofXmlPhp\TeamEntryType:
                 inline: true
                 entry_name: AssignedFee
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\AssignedFeeType>
+            type: array<Petrocki\IofXmlPhp\Model\AssignedFeeType>
         serviceRequest:
             expose: true
             access_type: public_method
@@ -112,7 +112,7 @@ Petrocki\IofXmlPhp\TeamEntryType:
                 inline: true
                 entry_name: ServiceRequest
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\ServiceRequestType>
+            type: array<Petrocki\IofXmlPhp\Model\ServiceRequestType>
         startTimeAllocationRequest:
             expose: true
             access_type: public_method
@@ -122,7 +122,7 @@ Petrocki\IofXmlPhp\TeamEntryType:
             accessor:
                 getter: getStartTimeAllocationRequest
                 setter: setStartTimeAllocationRequest
-            type: Petrocki\IofXmlPhp\StartTimeAllocationRequestType
+            type: Petrocki\IofXmlPhp\Model\StartTimeAllocationRequestType
         contactInformation:
             expose: true
             access_type: public_method
@@ -152,4 +152,4 @@ Petrocki\IofXmlPhp\TeamEntryType:
             accessor:
                 getter: getExtensions
                 setter: setExtensions
-            type: Petrocki\IofXmlPhp\ExtensionsType
+            type: Petrocki\IofXmlPhp\Model\ExtensionsType

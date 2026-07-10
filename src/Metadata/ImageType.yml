@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\ImageType:
+Petrocki\IofXmlPhp\Model\ImageType:
     properties:
         __value:
             expose: true

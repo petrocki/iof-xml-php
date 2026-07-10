@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\ClassStartType:
+Petrocki\IofXmlPhp\Model\ClassStartType:
     properties:
         timeResolution:
             expose: true
@@ -27,7 +27,7 @@ Petrocki\IofXmlPhp\ClassStartType:
             accessor:
                 getter: getClass
                 setter: setClass
-            type: Petrocki\IofXmlPhp\ClassType
+            type: Petrocki\IofXmlPhp\Model\ClassType
         course:
             expose: true
             access_type: public_method
@@ -41,7 +41,7 @@ Petrocki\IofXmlPhp\ClassStartType:
                 inline: true
                 entry_name: Course
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\SimpleRaceCourseType>
+            type: array<Petrocki\IofXmlPhp\Model\SimpleRaceCourseType>
         startName:
             expose: true
             access_type: public_method
@@ -55,7 +55,7 @@ Petrocki\IofXmlPhp\ClassStartType:
                 inline: true
                 entry_name: StartName
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\StartNameType>
+            type: array<Petrocki\IofXmlPhp\Model\StartNameType>
         personStart:
             expose: true
             access_type: public_method
@@ -69,7 +69,7 @@ Petrocki\IofXmlPhp\ClassStartType:
                 inline: true
                 entry_name: PersonStart
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\PersonStartType>
+            type: array<Petrocki\IofXmlPhp\Model\PersonStartType>
         teamStart:
             expose: true
             access_type: public_method
@@ -83,7 +83,7 @@ Petrocki\IofXmlPhp\ClassStartType:
                 inline: true
                 entry_name: TeamStart
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\TeamStartType>
+            type: array<Petrocki\IofXmlPhp\Model\TeamStartType>
         extensions:
             expose: true
             access_type: public_method
@@ -93,4 +93,4 @@ Petrocki\IofXmlPhp\ClassStartType:
             accessor:
                 getter: getExtensions
                 setter: setExtensions
-            type: Petrocki\IofXmlPhp\ExtensionsType
+            type: Petrocki\IofXmlPhp\Model\ExtensionsType

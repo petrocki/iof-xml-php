@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\TeamCourseAssignmentType:
+Petrocki\IofXmlPhp\Model\TeamCourseAssignmentType:
     properties:
         bibNumber:
             expose: true
@@ -43,7 +43,7 @@ Petrocki\IofXmlPhp\TeamCourseAssignmentType:
                 inline: true
                 entry_name: TeamMemberCourseAssignment
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\TeamMemberCourseAssignmentType>
+            type: array<Petrocki\IofXmlPhp\Model\TeamMemberCourseAssignmentType>
         extensions:
             expose: true
             access_type: public_method
@@ -53,4 +53,4 @@ Petrocki\IofXmlPhp\TeamCourseAssignmentType:
             accessor:
                 getter: getExtensions
                 setter: setExtensions
-            type: Petrocki\IofXmlPhp\ExtensionsType
+            type: Petrocki\IofXmlPhp\Model\ExtensionsType

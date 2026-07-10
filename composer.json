@@ -17,6 +17,9 @@
         "jms/serializer": "^3.32"
     },
     "require-dev": {
-        "goetas-webservices/xsd2php": "^0.4.14"
+        "goetas-webservices/xsd2php": "^0.4.14",
+        "friendsofphp/php-cs-fixer": "^3.95",
+        "symfony/var-dumper": "^7.4",
+        "phpunit/phpunit": "^12.5"
     }
 }

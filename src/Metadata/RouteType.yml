@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\RouteType:
+Petrocki\IofXmlPhp\Model\RouteType:
     properties:
         __value:
             expose: true

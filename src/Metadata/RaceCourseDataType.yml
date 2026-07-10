@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\RaceCourseDataType:
+Petrocki\IofXmlPhp\Model\RaceCourseDataType:
     properties:
         raceNumber:
             expose: true
@@ -22,7 +22,7 @@ Petrocki\IofXmlPhp\RaceCourseDataType:
                 inline: true
                 entry_name: Map
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\MapType>
+            type: array<Petrocki\IofXmlPhp\Model\MapType>
         control:
             expose: true
             access_type: public_method
@@ -36,7 +36,7 @@ Petrocki\IofXmlPhp\RaceCourseDataType:
                 inline: true
                 entry_name: Control
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\ControlType>
+            type: array<Petrocki\IofXmlPhp\Model\ControlType>
         course:
             expose: true
             access_type: public_method
@@ -50,7 +50,7 @@ Petrocki\IofXmlPhp\RaceCourseDataType:
                 inline: true
                 entry_name: Course
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\CourseType>
+            type: array<Petrocki\IofXmlPhp\Model\CourseType>
         classCourseAssignment:
             expose: true
             access_type: public_method
@@ -64,7 +64,7 @@ Petrocki\IofXmlPhp\RaceCourseDataType:
                 inline: true
                 entry_name: ClassCourseAssignment
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\ClassCourseAssignmentType>
+            type: array<Petrocki\IofXmlPhp\Model\ClassCourseAssignmentType>
         personCourseAssignment:
             expose: true
             access_type: public_method
@@ -78,7 +78,7 @@ Petrocki\IofXmlPhp\RaceCourseDataType:
                 inline: true
                 entry_name: PersonCourseAssignment
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\PersonCourseAssignmentType>
+            type: array<Petrocki\IofXmlPhp\Model\PersonCourseAssignmentType>
         teamCourseAssignment:
             expose: true
             access_type: public_method
@@ -92,7 +92,7 @@ Petrocki\IofXmlPhp\RaceCourseDataType:
                 inline: true
                 entry_name: TeamCourseAssignment
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\TeamCourseAssignmentType>
+            type: array<Petrocki\IofXmlPhp\Model\TeamCourseAssignmentType>
         extensions:
             expose: true
             access_type: public_method
@@ -102,4 +102,4 @@ Petrocki\IofXmlPhp\RaceCourseDataType:
             accessor:
                 getter: getExtensions
                 setter: setExtensions
-            type: Petrocki\IofXmlPhp\ExtensionsType
+            type: Petrocki\IofXmlPhp\Model\ExtensionsType

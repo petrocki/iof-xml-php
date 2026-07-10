@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\ControlType:
+Petrocki\IofXmlPhp\Model\ControlType:
     properties:
         type:
             expose: true
@@ -27,7 +27,7 @@ Petrocki\IofXmlPhp\ControlType:
             accessor:
                 getter: getId
                 setter: setId
-            type: Petrocki\IofXmlPhp\IdType
+            type: Petrocki\IofXmlPhp\Model\IdType
         punchingUnitId:
             expose: true
             access_type: public_method
@@ -41,7 +41,7 @@ Petrocki\IofXmlPhp\ControlType:
                 inline: true
                 entry_name: PunchingUnitId
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\IdType>
+            type: array<Petrocki\IofXmlPhp\Model\IdType>
         name:
             expose: true
             access_type: public_method
@@ -55,7 +55,7 @@ Petrocki\IofXmlPhp\ControlType:
                 inline: true
                 entry_name: Name
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\LanguageStringType>
+            type: array<Petrocki\IofXmlPhp\Model\LanguageStringType>
         position:
             expose: true
             access_type: public_method
@@ -65,7 +65,7 @@ Petrocki\IofXmlPhp\ControlType:
             accessor:
                 getter: getPosition
                 setter: setPosition
-            type: Petrocki\IofXmlPhp\GeoPositionType
+            type: Petrocki\IofXmlPhp\Model\GeoPositionType
         mapPosition:
             expose: true
             access_type: public_method
@@ -75,7 +75,7 @@ Petrocki\IofXmlPhp\ControlType:
             accessor:
                 getter: getMapPosition
                 setter: setMapPosition
-            type: Petrocki\IofXmlPhp\MapPositionType
+            type: Petrocki\IofXmlPhp\Model\MapPositionType
         extensions:
             expose: true
             access_type: public_method
@@ -85,4 +85,4 @@ Petrocki\IofXmlPhp\ControlType:
             accessor:
                 getter: getExtensions
                 setter: setExtensions
-            type: Petrocki\IofXmlPhp\ExtensionsType
+            type: Petrocki\IofXmlPhp\Model\ExtensionsType

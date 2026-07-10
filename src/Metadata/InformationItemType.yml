@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\InformationItemType:
+Petrocki\IofXmlPhp\Model\InformationItemType:
     properties:
         modifyTime:
             expose: true

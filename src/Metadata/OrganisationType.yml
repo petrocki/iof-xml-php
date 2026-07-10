@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\OrganisationType:
+Petrocki\IofXmlPhp\Model\OrganisationType:
     properties:
         type:
             expose: true
@@ -27,7 +27,7 @@ Petrocki\IofXmlPhp\OrganisationType:
             accessor:
                 getter: getId
                 setter: setId
-            type: Petrocki\IofXmlPhp\IdType
+            type: Petrocki\IofXmlPhp\Model\IdType
         name:
             expose: true
             access_type: public_method
@@ -77,7 +77,7 @@ Petrocki\IofXmlPhp\OrganisationType:
             accessor:
                 getter: getCountry
                 setter: setCountry
-            type: Petrocki\IofXmlPhp\CountryType
+            type: Petrocki\IofXmlPhp\Model\CountryType
         address:
             expose: true
             access_type: public_method
@@ -91,7 +91,7 @@ Petrocki\IofXmlPhp\OrganisationType:
                 inline: true
                 entry_name: Address
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\AddressType>
+            type: array<Petrocki\IofXmlPhp\Model\AddressType>
         contact:
             expose: true
             access_type: public_method
@@ -105,7 +105,7 @@ Petrocki\IofXmlPhp\OrganisationType:
                 inline: true
                 entry_name: Contact
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\ContactType>
+            type: array<Petrocki\IofXmlPhp\Model\ContactType>
         position:
             expose: true
             access_type: public_method
@@ -115,7 +115,7 @@ Petrocki\IofXmlPhp\OrganisationType:
             accessor:
                 getter: getPosition
                 setter: setPosition
-            type: Petrocki\IofXmlPhp\GeoPositionType
+            type: Petrocki\IofXmlPhp\Model\GeoPositionType
         account:
             expose: true
             access_type: public_method
@@ -129,7 +129,7 @@ Petrocki\IofXmlPhp\OrganisationType:
                 inline: true
                 entry_name: Account
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\AccountType>
+            type: array<Petrocki\IofXmlPhp\Model\AccountType>
         role:
             expose: true
             access_type: public_method
@@ -143,7 +143,7 @@ Petrocki\IofXmlPhp\OrganisationType:
                 inline: true
                 entry_name: Role
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\RoleType>
+            type: array<Petrocki\IofXmlPhp\Model\RoleType>
         logotype:
             expose: true
             access_type: public_method
@@ -157,7 +157,7 @@ Petrocki\IofXmlPhp\OrganisationType:
                 inline: true
                 entry_name: Logotype
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\ImageType>
+            type: array<Petrocki\IofXmlPhp\Model\ImageType>
         extensions:
             expose: true
             access_type: public_method
@@ -167,4 +167,4 @@ Petrocki\IofXmlPhp\OrganisationType:
             accessor:
                 getter: getExtensions
                 setter: setExtensions
-            type: Petrocki\IofXmlPhp\ExtensionsType
+            type: Petrocki\IofXmlPhp\Model\ExtensionsType

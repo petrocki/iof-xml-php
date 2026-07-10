@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\ControlAnswerType:
+Petrocki\IofXmlPhp\Model\ControlAnswerType:
     properties:
         answer:
             expose: true
@@ -39,4 +39,4 @@ Petrocki\IofXmlPhp\ControlAnswerType:
             accessor:
                 getter: getExtensions
                 setter: setExtensions
-            type: Petrocki\IofXmlPhp\ExtensionsType
+            type: Petrocki\IofXmlPhp\Model\ExtensionsType

@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\AddressType:
+Petrocki\IofXmlPhp\Model\AddressType:
     properties:
         type:
             expose: true
@@ -77,4 +77,4 @@ Petrocki\IofXmlPhp\AddressType:
             accessor:
                 getter: getCountry
                 setter: setCountry
-            type: Petrocki\IofXmlPhp\CountryType
+            type: Petrocki\IofXmlPhp\Model\CountryType

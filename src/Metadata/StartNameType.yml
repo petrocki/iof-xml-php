@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\StartNameType:
+Petrocki\IofXmlPhp\Model\StartNameType:
     properties:
         __value:
             expose: true

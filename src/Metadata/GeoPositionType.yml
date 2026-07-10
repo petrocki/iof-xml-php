@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\GeoPositionType:
+Petrocki\IofXmlPhp\Model\GeoPositionType:
     properties:
         lng:
             expose: true

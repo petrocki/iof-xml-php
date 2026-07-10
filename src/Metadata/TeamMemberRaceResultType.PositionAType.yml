@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\TeamMemberRaceResultType\PositionAType:
+Petrocki\IofXmlPhp\Model\TeamMemberRaceResultType\PositionAType:
     properties:
         __value:
             expose: true

@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\OverallResultType:
+Petrocki\IofXmlPhp\Model\OverallResultType:
     properties:
         time:
             expose: true
@@ -53,7 +53,7 @@ Petrocki\IofXmlPhp\OverallResultType:
                 inline: true
                 entry_name: Score
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\ScoreType>
+            type: array<Petrocki\IofXmlPhp\Model\ScoreType>
         extensions:
             expose: true
             access_type: public_method
@@ -63,4 +63,4 @@ Petrocki\IofXmlPhp\OverallResultType:
             accessor:
                 getter: getExtensions
                 setter: setExtensions
-            type: Petrocki\IofXmlPhp\ExtensionsType
+            type: Petrocki\IofXmlPhp\Model\ExtensionsType

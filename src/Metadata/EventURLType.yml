@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\EventURLType:
+Petrocki\IofXmlPhp\Model\EventURLType:
     properties:
         __value:
             expose: true

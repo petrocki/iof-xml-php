@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\ServiceRequestList\ServiceRequestListAType:
+Petrocki\IofXmlPhp\Model\ServiceRequestList\ServiceRequestListAType:
     properties:
         event:
             expose: true
@@ -9,7 +9,7 @@ Petrocki\IofXmlPhp\ServiceRequestList\ServiceRequestListAType:
             accessor:
                 getter: getEvent
                 setter: setEvent
-            type: Petrocki\IofXmlPhp\EventType
+            type: Petrocki\IofXmlPhp\Model\EventType
         organisationServiceRequest:
             expose: true
             access_type: public_method
@@ -23,7 +23,7 @@ Petrocki\IofXmlPhp\ServiceRequestList\ServiceRequestListAType:
                 inline: true
                 entry_name: OrganisationServiceRequest
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\OrganisationServiceRequestType>
+            type: array<Petrocki\IofXmlPhp\Model\OrganisationServiceRequestType>
         personServiceRequest:
             expose: true
             access_type: public_method
@@ -37,7 +37,7 @@ Petrocki\IofXmlPhp\ServiceRequestList\ServiceRequestListAType:
                 inline: true
                 entry_name: PersonServiceRequest
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\PersonServiceRequestType>
+            type: array<Petrocki\IofXmlPhp\Model\PersonServiceRequestType>
         extensions:
             expose: true
             access_type: public_method
@@ -47,4 +47,4 @@ Petrocki\IofXmlPhp\ServiceRequestList\ServiceRequestListAType:
             accessor:
                 getter: getExtensions
                 setter: setExtensions
-            type: Petrocki\IofXmlPhp\ExtensionsType
+            type: Petrocki\IofXmlPhp\Model\ExtensionsType

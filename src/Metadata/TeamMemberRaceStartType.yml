@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\TeamMemberRaceStartType:
+Petrocki\IofXmlPhp\Model\TeamMemberRaceStartType:
     properties:
         raceNumber:
             expose: true
@@ -58,7 +58,7 @@ Petrocki\IofXmlPhp\TeamMemberRaceStartType:
             accessor:
                 getter: getCourse
                 setter: setCourse
-            type: Petrocki\IofXmlPhp\SimpleCourseType
+            type: Petrocki\IofXmlPhp\Model\SimpleCourseType
         controlCard:
             expose: true
             access_type: public_method
@@ -72,7 +72,7 @@ Petrocki\IofXmlPhp\TeamMemberRaceStartType:
                 inline: true
                 entry_name: ControlCard
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\ControlCardType>
+            type: array<Petrocki\IofXmlPhp\Model\ControlCardType>
         assignedFee:
             expose: true
             access_type: public_method
@@ -86,7 +86,7 @@ Petrocki\IofXmlPhp\TeamMemberRaceStartType:
                 inline: true
                 entry_name: AssignedFee
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\AssignedFeeType>
+            type: array<Petrocki\IofXmlPhp\Model\AssignedFeeType>
         serviceRequest:
             expose: true
             access_type: public_method
@@ -100,7 +100,7 @@ Petrocki\IofXmlPhp\TeamMemberRaceStartType:
                 inline: true
                 entry_name: ServiceRequest
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\ServiceRequestType>
+            type: array<Petrocki\IofXmlPhp\Model\ServiceRequestType>
         extensions:
             expose: true
             access_type: public_method
@@ -110,4 +110,4 @@ Petrocki\IofXmlPhp\TeamMemberRaceStartType:
             accessor:
                 getter: getExtensions
                 setter: setExtensions
-            type: Petrocki\IofXmlPhp\ExtensionsType
+            type: Petrocki\IofXmlPhp\Model\ExtensionsType

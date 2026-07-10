@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\RaceClassType:
+Petrocki\IofXmlPhp\Model\RaceClassType:
     properties:
         raceNumber:
             expose: true
@@ -54,7 +54,7 @@ Petrocki\IofXmlPhp\RaceClassType:
                 inline: true
                 entry_name: TeamFee
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\FeeType>
+            type: array<Petrocki\IofXmlPhp\Model\FeeType>
         fee:
             expose: true
             access_type: public_method
@@ -68,7 +68,7 @@ Petrocki\IofXmlPhp\RaceClassType:
                 inline: true
                 entry_name: Fee
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\FeeType>
+            type: array<Petrocki\IofXmlPhp\Model\FeeType>
         firstStart:
             expose: true
             access_type: public_method
@@ -102,7 +102,7 @@ Petrocki\IofXmlPhp\RaceClassType:
                 inline: true
                 entry_name: Course
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\SimpleCourseType>
+            type: array<Petrocki\IofXmlPhp\Model\SimpleCourseType>
         onlineControl:
             expose: true
             access_type: public_method
@@ -116,7 +116,7 @@ Petrocki\IofXmlPhp\RaceClassType:
                 inline: true
                 entry_name: OnlineControl
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\ControlType>
+            type: array<Petrocki\IofXmlPhp\Model\ControlType>
         extensions:
             expose: true
             access_type: public_method
@@ -126,4 +126,4 @@ Petrocki\IofXmlPhp\RaceClassType:
             accessor:
                 getter: getExtensions
                 setter: setExtensions
-            type: Petrocki\IofXmlPhp\ExtensionsType
+            type: Petrocki\IofXmlPhp\Model\ExtensionsType

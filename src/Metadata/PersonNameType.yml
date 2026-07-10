@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\PersonNameType:
+Petrocki\IofXmlPhp\Model\PersonNameType:
     properties:
         family:
             expose: true

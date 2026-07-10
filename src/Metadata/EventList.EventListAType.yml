@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\EventList\EventListAType:
+Petrocki\IofXmlPhp\Model\EventList\EventListAType:
     properties:
         event:
             expose: true
@@ -13,7 +13,7 @@ Petrocki\IofXmlPhp\EventList\EventListAType:
                 inline: true
                 entry_name: Event
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\EventType>
+            type: array<Petrocki\IofXmlPhp\Model\EventType>
         extensions:
             expose: true
             access_type: public_method
@@ -23,4 +23,4 @@ Petrocki\IofXmlPhp\EventList\EventListAType:
             accessor:
                 getter: getExtensions
                 setter: setExtensions
-            type: Petrocki\IofXmlPhp\ExtensionsType
+            type: Petrocki\IofXmlPhp\Model\ExtensionsType

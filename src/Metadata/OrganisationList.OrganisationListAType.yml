@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\OrganisationList\OrganisationListAType:
+Petrocki\IofXmlPhp\Model\OrganisationList\OrganisationListAType:
     properties:
         organisation:
             expose: true
@@ -13,7 +13,7 @@ Petrocki\IofXmlPhp\OrganisationList\OrganisationListAType:
                 inline: true
                 entry_name: Organisation
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\OrganisationType>
+            type: array<Petrocki\IofXmlPhp\Model\OrganisationType>
         extensions:
             expose: true
             access_type: public_method
@@ -23,4 +23,4 @@ Petrocki\IofXmlPhp\OrganisationList\OrganisationListAType:
             accessor:
                 getter: getExtensions
                 setter: setExtensions
-            type: Petrocki\IofXmlPhp\ExtensionsType
+            type: Petrocki\IofXmlPhp\Model\ExtensionsType

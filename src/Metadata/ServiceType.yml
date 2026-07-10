@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\ServiceType:
+Petrocki\IofXmlPhp\Model\ServiceType:
     properties:
         type:
             expose: true
@@ -27,7 +27,7 @@ Petrocki\IofXmlPhp\ServiceType:
             accessor:
                 getter: getId
                 setter: setId
-            type: Petrocki\IofXmlPhp\IdType
+            type: Petrocki\IofXmlPhp\Model\IdType
         name:
             expose: true
             access_type: public_method
@@ -41,7 +41,7 @@ Petrocki\IofXmlPhp\ServiceType:
                 inline: true
                 entry_name: Name
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\LanguageStringType>
+            type: array<Petrocki\IofXmlPhp\Model\LanguageStringType>
         fee:
             expose: true
             access_type: public_method
@@ -55,7 +55,7 @@ Petrocki\IofXmlPhp\ServiceType:
                 inline: true
                 entry_name: Fee
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\FeeType>
+            type: array<Petrocki\IofXmlPhp\Model\FeeType>
         description:
             expose: true
             access_type: public_method
@@ -69,7 +69,7 @@ Petrocki\IofXmlPhp\ServiceType:
                 inline: true
                 entry_name: Description
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\LanguageStringType>
+            type: array<Petrocki\IofXmlPhp\Model\LanguageStringType>
         maxNumber:
             expose: true
             access_type: public_method
@@ -99,4 +99,4 @@ Petrocki\IofXmlPhp\ServiceType:
             accessor:
                 getter: getExtensions
                 setter: setExtensions
-            type: Petrocki\IofXmlPhp\ExtensionsType
+            type: Petrocki\IofXmlPhp\Model\ExtensionsType

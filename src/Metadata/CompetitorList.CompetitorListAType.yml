@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\CompetitorList\CompetitorListAType:
+Petrocki\IofXmlPhp\Model\CompetitorList\CompetitorListAType:
     properties:
         competitor:
             expose: true
@@ -13,7 +13,7 @@ Petrocki\IofXmlPhp\CompetitorList\CompetitorListAType:
                 inline: true
                 entry_name: Competitor
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\CompetitorType>
+            type: array<Petrocki\IofXmlPhp\Model\CompetitorType>
         extensions:
             expose: true
             access_type: public_method
@@ -23,4 +23,4 @@ Petrocki\IofXmlPhp\CompetitorList\CompetitorListAType:
             accessor:
                 getter: getExtensions
                 setter: setExtensions
-            type: Petrocki\IofXmlPhp\ExtensionsType
+            type: Petrocki\IofXmlPhp\Model\ExtensionsType

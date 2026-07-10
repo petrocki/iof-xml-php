@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\AmountType:
+Petrocki\IofXmlPhp\Model\AmountType:
     properties:
         __value:
             expose: true
