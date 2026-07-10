@@ -21,5 +21,9 @@
         "friendsofphp/php-cs-fixer": "^3.95",
         "symfony/var-dumper": "^7.4",
         "phpunit/phpunit": "^12.5"
+    },
+    "scripts": {
+        "cs-check": "vendor/friendsofphp/php-cs-fixer/php-cs-fixer check -vvv",
+        "cs-fix": "vendor/friendsofphp/php-cs-fixer/php-cs-fixer fix"
     }
 }

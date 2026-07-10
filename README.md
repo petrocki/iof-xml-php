@@ -24,3 +24,8 @@ Test the code at runtime with the bin/dump script:
 ```
 php bin/dump.php
 ```
+
+Run the PHPUnit tests:
+```
+vendor/bin/phpunit tests/
+```

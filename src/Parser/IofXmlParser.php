@@ -3,17 +3,17 @@
 namespace Petrocki\IofXmlPhp\Parser;
 
 use JMS\Serializer\Serializer;
-use Petrocki\IofXmlPhp\Serializer\SerializerFactory;
-use Petrocki\IofXmlPhp\Model\EntryList;
-use Petrocki\IofXmlPhp\Model\StartList;
-use Petrocki\IofXmlPhp\Model\ResultList;
-use Petrocki\IofXmlPhp\Model\CourseData;
 use Petrocki\IofXmlPhp\Model\ClassList;
 use Petrocki\IofXmlPhp\Model\CompetitorList;
-use Petrocki\IofXmlPhp\Model\OrganisationList;
-use Petrocki\IofXmlPhp\Model\EventList;
-use Petrocki\IofXmlPhp\Model\ServiceRequestList;
 use Petrocki\IofXmlPhp\Model\ControlCardList;
+use Petrocki\IofXmlPhp\Model\CourseData;
+use Petrocki\IofXmlPhp\Model\EntryList;
+use Petrocki\IofXmlPhp\Model\EventList;
+use Petrocki\IofXmlPhp\Model\OrganisationList;
+use Petrocki\IofXmlPhp\Model\ResultList;
+use Petrocki\IofXmlPhp\Model\ServiceRequestList;
+use Petrocki\IofXmlPhp\Model\StartList;
+use Petrocki\IofXmlPhp\Serializer\SerializerFactory;
 
 class IofXmlParser
 {

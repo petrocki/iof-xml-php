@@ -14,7 +14,7 @@ class SerializerFactory
     {
         return SerializerBuilder::create()
             ->addMetadataDir(
-                __DIR__ . '/../Metadata',
+                __DIR__.'/../Metadata',
                 'Petrocki\IofXmlPhp\Model'
             )
             ->configureHandlers(function (HandlerRegistryInterface $registry) {
