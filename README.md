@@ -1,6 +1,8 @@
 # IOF XML PHP
 PHP model classes and parser for the IOF XML 3.0 data standard
 
+> ⚠️ **Development status:** This repository is currently under active development and is **not ready for production use**.
+
 ### Docker usage
 
 Build image:
