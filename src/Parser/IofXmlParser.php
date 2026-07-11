@@ -2,7 +2,8 @@
 
 namespace Petrocki\IofXmlPhp\Parser;
 
-use JMS\Serializer\Serializer;
+use JMS\Serializer\SerializerInterface;
+use Petrocki\IofXmlPhp\Internal\SerializerFactory;
 use Petrocki\IofXmlPhp\Model\ClassList;
 use Petrocki\IofXmlPhp\Model\CompetitorList;
 use Petrocki\IofXmlPhp\Model\ControlCardList;
@@ -13,13 +14,12 @@ use Petrocki\IofXmlPhp\Model\OrganisationList;
 use Petrocki\IofXmlPhp\Model\ResultList;
 use Petrocki\IofXmlPhp\Model\ServiceRequestList;
 use Petrocki\IofXmlPhp\Model\StartList;
-use Petrocki\IofXmlPhp\Serializer\SerializerFactory;
 
 class IofXmlParser
 {
-    private Serializer $serializer;
+    private SerializerInterface $serializer;
 
-    public function __construct(?Serializer $serializer = null)
+    public function __construct(?SerializerInterface $serializer = null)
     {
         $this->serializer = $serializer ?? SerializerFactory::create();
     }

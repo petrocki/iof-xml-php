@@ -1,31 +1,74 @@
 # IOF XML PHP
-PHP model classes and parser for the IOF XML 3.0 data standard
+
+PHP parser and serializer for the [IOF XML 3.0](https://orienteering.sport/iof/it/data-standard-3-0/) data standard.
 
 > ⚠️ **Development status:** This repository is currently under active development and is **not ready for production use**.
 
-### Docker usage
+## Requirements
+
+- PHP 8.3+
+
+## Installation
+
+```bash
+composer require petrocki/iof-xml-php
+```
+
+## Usage
+
+### Parsing (XML → PHP objects)
+
+```php
+use Petrocki\IofXmlPhp\Parser\IofXmlParser;
+
+$parser = new IofXmlParser();
+$entryList = $parser->parseEntryList(file_get_contents('entry-list.xml'));
+
+echo $entryList->getEvent()->getName();
+```
+
+### Serializing (PHP objects → XML)
+
+```php
+use Petrocki\IofXmlPhp\Serializer\IofXmlSerializer;
+
+$serializer = new IofXmlSerializer();
+$xml = $serializer->serializeEntryList($entryList);
+```
+
+## Development
+
+### Docker
 
 Build image:
-```
+
+```bash
 docker build -t iof-xml-php:current .
 ```
 
 Use bash in the container:
-```
+
+```bash
 docker run -it -v "$(pwd):/var/www/iof-xml-php" iof-xml-php:current bash
 ```
 
-The generated model classes are already included, to regenerate them in the container:
-```
+### Regenerating model classes
+
+The classes in `src/Model/` and metadata in `src/Metadata/` are auto-generated from `resources/IOF.xsd`. Do not edit them manually. To regenerate after an XSD change:
+
+```bash
 vendor/bin/xsd2php convert config/xsd2php.yaml resources/IOF.xsd
 ```
 
-Test the code at runtime with the bin/dump script:
-```
-php bin/dump.php
+### Running tests
+
+```bash
+composer phpunit
 ```
 
-Run the PHPUnit tests:
-```
-vendor/bin/phpunit tests/
+### Code style
+
+```bash
+composer cs-check
+composer cs-fix
 ```

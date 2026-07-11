@@ -1,6 +1,6 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Serializer;
+namespace Petrocki\IofXmlPhp\Internal;
 
 use GoetasWebservices\Xsd\XsdToPhpRuntime\Jms\Handler\BaseTypesHandler;
 use GoetasWebservices\Xsd\XsdToPhpRuntime\Jms\Handler\XmlSchemaDateHandler;

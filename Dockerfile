@@ -1,8 +1,8 @@
 FROM php:8.3
 
-RUN apt-get update && apt-get install -y
-RUN apt-get install -y libzip-dev
-RUN docker-php-ext-install zip
+RUN apt-get update && apt-get install -y libzip-dev \
+    && docker-php-ext-install zip \
+    && rm -rf /var/lib/apt/lists/*
 
 COPY --from=composer:2.10.2 /usr/bin/composer /usr/bin/composer
 
