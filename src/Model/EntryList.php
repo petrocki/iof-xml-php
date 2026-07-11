@@ -1,8 +1,8 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model;
+namespace IofXmlPhp\Model;
 
-use Petrocki\IofXmlPhp\Model\EntryList\EntryListAType;
+use IofXmlPhp\Model\EntryList\EntryListAType;
 
 /**
  * Class representing EntryList

@@ -1,8 +1,8 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model\CourseData;
+namespace IofXmlPhp\Model\CourseData;
 
-use Petrocki\IofXmlPhp\Model\BaseMessageElementType;
+use IofXmlPhp\Model\BaseMessageElementType;
 
 /**
  * Class representing CourseDataAType
@@ -12,14 +12,14 @@ class CourseDataAType extends BaseMessageElementType
     /**
      * The event that the course data belongs to.
      *
-     * @var \Petrocki\IofXmlPhp\Model\EventType $event
+     * @var \IofXmlPhp\Model\EventType $event
      */
     private $event = null;
 
     /**
      * The course data for each race; one element per race in the event.
      *
-     * @var \Petrocki\IofXmlPhp\Model\RaceCourseDataType[] $raceCourseData
+     * @var \IofXmlPhp\Model\RaceCourseDataType[] $raceCourseData
      */
     private $raceCourseData = [
         
@@ -28,7 +28,7 @@ class CourseDataAType extends BaseMessageElementType
     /**
      * Container element for custom elements from other schemas.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @var \IofXmlPhp\Model\ExtensionsType $extensions
      */
     private $extensions = null;
 
@@ -37,7 +37,7 @@ class CourseDataAType extends BaseMessageElementType
      *
      * The event that the course data belongs to.
      *
-     * @return \Petrocki\IofXmlPhp\Model\EventType
+     * @return \IofXmlPhp\Model\EventType
      */
     public function getEvent()
     {
@@ -49,10 +49,10 @@ class CourseDataAType extends BaseMessageElementType
      *
      * The event that the course data belongs to.
      *
-     * @param \Petrocki\IofXmlPhp\Model\EventType $event
+     * @param \IofXmlPhp\Model\EventType $event
      * @return self
      */
-    public function setEvent(\Petrocki\IofXmlPhp\Model\EventType $event)
+    public function setEvent(\IofXmlPhp\Model\EventType $event)
     {
         $this->event = $event;
         return $this;
@@ -64,9 +64,9 @@ class CourseDataAType extends BaseMessageElementType
      * The course data for each race; one element per race in the event.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\RaceCourseDataType $raceCourseData
+     * @param \IofXmlPhp\Model\RaceCourseDataType $raceCourseData
      */
-    public function addToRaceCourseData(\Petrocki\IofXmlPhp\Model\RaceCourseDataType $raceCourseData)
+    public function addToRaceCourseData(\IofXmlPhp\Model\RaceCourseDataType $raceCourseData)
     {
         $this->raceCourseData[] = $raceCourseData;
         return $this;
@@ -103,7 +103,7 @@ class CourseDataAType extends BaseMessageElementType
      *
      * The course data for each race; one element per race in the event.
      *
-     * @return \Petrocki\IofXmlPhp\Model\RaceCourseDataType[]
+     * @return \IofXmlPhp\Model\RaceCourseDataType[]
      */
     public function getRaceCourseData()
     {
@@ -115,7 +115,7 @@ class CourseDataAType extends BaseMessageElementType
      *
      * The course data for each race; one element per race in the event.
      *
-     * @param \Petrocki\IofXmlPhp\Model\RaceCourseDataType[] $raceCourseData
+     * @param \IofXmlPhp\Model\RaceCourseDataType[] $raceCourseData
      * @return self
      */
     public function setRaceCourseData(array $raceCourseData)
@@ -129,7 +129,7 @@ class CourseDataAType extends BaseMessageElementType
      *
      * Container element for custom elements from other schemas.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ExtensionsType
+     * @return \IofXmlPhp\Model\ExtensionsType
      */
     public function getExtensions()
     {
@@ -141,10 +141,10 @@ class CourseDataAType extends BaseMessageElementType
      *
      * Container element for custom elements from other schemas.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @param \IofXmlPhp\Model\ExtensionsType $extensions
      * @return self
      */
-    public function setExtensions(?\Petrocki\IofXmlPhp\Model\ExtensionsType $extensions = null)
+    public function setExtensions(?\IofXmlPhp\Model\ExtensionsType $extensions = null)
     {
         $this->extensions = $extensions;
         return $this;

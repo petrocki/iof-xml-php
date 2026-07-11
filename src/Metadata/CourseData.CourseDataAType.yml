@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\Model\CourseData\CourseDataAType:
+IofXmlPhp\Model\CourseData\CourseDataAType:
     properties:
         event:
             expose: true
@@ -9,7 +9,7 @@ Petrocki\IofXmlPhp\Model\CourseData\CourseDataAType:
             accessor:
                 getter: getEvent
                 setter: setEvent
-            type: Petrocki\IofXmlPhp\Model\EventType
+            type: IofXmlPhp\Model\EventType
         raceCourseData:
             expose: true
             access_type: public_method
@@ -23,7 +23,7 @@ Petrocki\IofXmlPhp\Model\CourseData\CourseDataAType:
                 inline: true
                 entry_name: RaceCourseData
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\Model\RaceCourseDataType>
+            type: array<IofXmlPhp\Model\RaceCourseDataType>
         extensions:
             expose: true
             access_type: public_method
@@ -33,4 +33,4 @@ Petrocki\IofXmlPhp\Model\CourseData\CourseDataAType:
             accessor:
                 getter: getExtensions
                 setter: setExtensions
-            type: Petrocki\IofXmlPhp\Model\ExtensionsType
+            type: IofXmlPhp\Model\ExtensionsType

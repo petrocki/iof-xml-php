@@ -1,8 +1,8 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model;
+namespace IofXmlPhp\Model;
 
-use Petrocki\IofXmlPhp\Model\OrganisationList\OrganisationListAType;
+use IofXmlPhp\Model\OrganisationList\OrganisationListAType;
 
 /**
  * Class representing OrganisationList

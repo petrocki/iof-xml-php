@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\Model\LegType:
+IofXmlPhp\Model\LegType:
     properties:
         minNumberOfCompetitors:
             expose: true
@@ -37,4 +37,4 @@ Petrocki\IofXmlPhp\Model\LegType:
             accessor:
                 getter: getExtensions
                 setter: setExtensions
-            type: Petrocki\IofXmlPhp\Model\ExtensionsType
+            type: IofXmlPhp\Model\ExtensionsType

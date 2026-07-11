@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\Model\TeamResultType:
+IofXmlPhp\Model\TeamResultType:
     properties:
         entryId:
             expose: true
@@ -9,7 +9,7 @@ Petrocki\IofXmlPhp\Model\TeamResultType:
             accessor:
                 getter: getEntryId
                 setter: setEntryId
-            type: Petrocki\IofXmlPhp\Model\IdType
+            type: IofXmlPhp\Model\IdType
         name:
             expose: true
             access_type: public_method
@@ -33,7 +33,7 @@ Petrocki\IofXmlPhp\Model\TeamResultType:
                 inline: true
                 entry_name: Organisation
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\Model\OrganisationType>
+            type: array<IofXmlPhp\Model\OrganisationType>
         bibNumber:
             expose: true
             access_type: public_method
@@ -57,7 +57,7 @@ Petrocki\IofXmlPhp\Model\TeamResultType:
                 inline: true
                 entry_name: TeamMemberResult
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\Model\TeamMemberResultType>
+            type: array<IofXmlPhp\Model\TeamMemberResultType>
         assignedFee:
             expose: true
             access_type: public_method
@@ -71,7 +71,7 @@ Petrocki\IofXmlPhp\Model\TeamResultType:
                 inline: true
                 entry_name: AssignedFee
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\Model\AssignedFeeType>
+            type: array<IofXmlPhp\Model\AssignedFeeType>
         serviceRequest:
             expose: true
             access_type: public_method
@@ -85,7 +85,7 @@ Petrocki\IofXmlPhp\Model\TeamResultType:
                 inline: true
                 entry_name: ServiceRequest
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\Model\ServiceRequestType>
+            type: array<IofXmlPhp\Model\ServiceRequestType>
         extensions:
             expose: true
             access_type: public_method
@@ -95,4 +95,4 @@ Petrocki\IofXmlPhp\Model\TeamResultType:
             accessor:
                 getter: getExtensions
                 setter: setExtensions
-            type: Petrocki\IofXmlPhp\Model\ExtensionsType
+            type: IofXmlPhp\Model\ExtensionsType

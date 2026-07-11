@@ -1,6 +1,6 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model;
+namespace IofXmlPhp\Model;
 
 /**
  * Class representing EntryReceiverType
@@ -11,14 +11,14 @@ namespace Petrocki\IofXmlPhp\Model;
 class EntryReceiverType
 {
     /**
-     * @var \Petrocki\IofXmlPhp\Model\AddressType[] $address
+     * @var \IofXmlPhp\Model\AddressType[] $address
      */
     private $address = [
         
     ];
 
     /**
-     * @var \Petrocki\IofXmlPhp\Model\ContactType[] $contact
+     * @var \IofXmlPhp\Model\ContactType[] $contact
      */
     private $contact = [
         
@@ -28,9 +28,9 @@ class EntryReceiverType
      * Adds as address
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\AddressType $address
+     * @param \IofXmlPhp\Model\AddressType $address
      */
-    public function addToAddress(\Petrocki\IofXmlPhp\Model\AddressType $address)
+    public function addToAddress(\IofXmlPhp\Model\AddressType $address)
     {
         $this->address[] = $address;
         return $this;
@@ -61,7 +61,7 @@ class EntryReceiverType
     /**
      * Gets as address
      *
-     * @return \Petrocki\IofXmlPhp\Model\AddressType[]
+     * @return \IofXmlPhp\Model\AddressType[]
      */
     public function getAddress()
     {
@@ -71,7 +71,7 @@ class EntryReceiverType
     /**
      * Sets a new address
      *
-     * @param \Petrocki\IofXmlPhp\Model\AddressType[] $address
+     * @param \IofXmlPhp\Model\AddressType[] $address
      * @return self
      */
     public function setAddress(?array $address = null)
@@ -84,9 +84,9 @@ class EntryReceiverType
      * Adds as contact
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\ContactType $contact
+     * @param \IofXmlPhp\Model\ContactType $contact
      */
-    public function addToContact(\Petrocki\IofXmlPhp\Model\ContactType $contact)
+    public function addToContact(\IofXmlPhp\Model\ContactType $contact)
     {
         $this->contact[] = $contact;
         return $this;
@@ -117,7 +117,7 @@ class EntryReceiverType
     /**
      * Gets as contact
      *
-     * @return \Petrocki\IofXmlPhp\Model\ContactType[]
+     * @return \IofXmlPhp\Model\ContactType[]
      */
     public function getContact()
     {
@@ -127,7 +127,7 @@ class EntryReceiverType
     /**
      * Sets a new contact
      *
-     * @param \Petrocki\IofXmlPhp\Model\ContactType[] $contact
+     * @param \IofXmlPhp\Model\ContactType[] $contact
      * @return self
      */
     public function setContact(?array $contact = null)

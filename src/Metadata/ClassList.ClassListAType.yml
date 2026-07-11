@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\Model\ClassList\ClassListAType:
+IofXmlPhp\Model\ClassList\ClassListAType:
     properties:
         class:
             expose: true
@@ -13,7 +13,7 @@ Petrocki\IofXmlPhp\Model\ClassList\ClassListAType:
                 inline: true
                 entry_name: Class
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\Model\ClassType>
+            type: array<IofXmlPhp\Model\ClassType>
         extensions:
             expose: true
             access_type: public_method
@@ -23,4 +23,4 @@ Petrocki\IofXmlPhp\Model\ClassList\ClassListAType:
             accessor:
                 getter: getExtensions
                 setter: setExtensions
-            type: Petrocki\IofXmlPhp\Model\ExtensionsType
+            type: IofXmlPhp\Model\ExtensionsType

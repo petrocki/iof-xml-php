@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\Model\SimpleCourseType:
+IofXmlPhp\Model\SimpleCourseType:
     properties:
         id:
             expose: true
@@ -9,7 +9,7 @@ Petrocki\IofXmlPhp\Model\SimpleCourseType:
             accessor:
                 getter: getId
                 setter: setId
-            type: Petrocki\IofXmlPhp\Model\IdType
+            type: IofXmlPhp\Model\IdType
         name:
             expose: true
             access_type: public_method

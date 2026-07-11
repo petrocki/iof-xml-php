@@ -1,6 +1,6 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model;
+namespace IofXmlPhp\Model;
 
 /**
  * Class representing RaceType
@@ -30,14 +30,14 @@ class RaceType
     /**
      * The start time for the first starting competitor of the race.
      *
-     * @var \Petrocki\IofXmlPhp\Model\DateAndOptionalTimeType $startTime
+     * @var \IofXmlPhp\Model\DateAndOptionalTimeType $startTime
      */
     private $startTime = null;
 
     /**
      * The time when the finish closes.
      *
-     * @var \Petrocki\IofXmlPhp\Model\DateAndOptionalTimeType $endTime
+     * @var \IofXmlPhp\Model\DateAndOptionalTimeType $endTime
      */
     private $endTime = null;
 
@@ -58,7 +58,7 @@ class RaceType
     /**
      * The geographical location of the arena.
      *
-     * @var \Petrocki\IofXmlPhp\Model\GeoPositionType $position
+     * @var \IofXmlPhp\Model\GeoPositionType $position
      */
     private $position = null;
 
@@ -72,7 +72,7 @@ class RaceType
     /**
      * The organisations that organise the event.
      *
-     * @var \Petrocki\IofXmlPhp\Model\OrganisationType[] $organiser
+     * @var \IofXmlPhp\Model\OrganisationType[] $organiser
      */
     private $organiser = [
         
@@ -81,7 +81,7 @@ class RaceType
     /**
      * The main officials of the event, e.g. course setter and event president.
      *
-     * @var \Petrocki\IofXmlPhp\Model\RoleType[] $official
+     * @var \IofXmlPhp\Model\RoleType[] $official
      */
     private $official = [
         
@@ -90,7 +90,7 @@ class RaceType
     /**
      * The services available for the race, e.g. accomodation and transport.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ServiceType[] $service
+     * @var \IofXmlPhp\Model\ServiceType[] $service
      */
     private $service = [
         
@@ -99,7 +99,7 @@ class RaceType
     /**
      * URLs to various types of additional information regarding the event, e.g. event website or result list.
      *
-     * @var \Petrocki\IofXmlPhp\Model\EventURLType[] $uRL
+     * @var \IofXmlPhp\Model\EventURLType[] $uRL
      */
     private $uRL = [
         
@@ -108,7 +108,7 @@ class RaceType
     /**
      * Container element for custom elements from other schemas.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @var \IofXmlPhp\Model\ExtensionsType $extensions
      */
     private $extensions = null;
 
@@ -187,7 +187,7 @@ class RaceType
      *
      * The start time for the first starting competitor of the race.
      *
-     * @return \Petrocki\IofXmlPhp\Model\DateAndOptionalTimeType
+     * @return \IofXmlPhp\Model\DateAndOptionalTimeType
      */
     public function getStartTime()
     {
@@ -199,10 +199,10 @@ class RaceType
      *
      * The start time for the first starting competitor of the race.
      *
-     * @param \Petrocki\IofXmlPhp\Model\DateAndOptionalTimeType $startTime
+     * @param \IofXmlPhp\Model\DateAndOptionalTimeType $startTime
      * @return self
      */
-    public function setStartTime(?\Petrocki\IofXmlPhp\Model\DateAndOptionalTimeType $startTime = null)
+    public function setStartTime(?\IofXmlPhp\Model\DateAndOptionalTimeType $startTime = null)
     {
         $this->startTime = $startTime;
         return $this;
@@ -213,7 +213,7 @@ class RaceType
      *
      * The time when the finish closes.
      *
-     * @return \Petrocki\IofXmlPhp\Model\DateAndOptionalTimeType
+     * @return \IofXmlPhp\Model\DateAndOptionalTimeType
      */
     public function getEndTime()
     {
@@ -225,10 +225,10 @@ class RaceType
      *
      * The time when the finish closes.
      *
-     * @param \Petrocki\IofXmlPhp\Model\DateAndOptionalTimeType $endTime
+     * @param \IofXmlPhp\Model\DateAndOptionalTimeType $endTime
      * @return self
      */
-    public function setEndTime(?\Petrocki\IofXmlPhp\Model\DateAndOptionalTimeType $endTime = null)
+    public function setEndTime(?\IofXmlPhp\Model\DateAndOptionalTimeType $endTime = null)
     {
         $this->endTime = $endTime;
         return $this;
@@ -291,7 +291,7 @@ class RaceType
      *
      * The geographical location of the arena.
      *
-     * @return \Petrocki\IofXmlPhp\Model\GeoPositionType
+     * @return \IofXmlPhp\Model\GeoPositionType
      */
     public function getPosition()
     {
@@ -303,10 +303,10 @@ class RaceType
      *
      * The geographical location of the arena.
      *
-     * @param \Petrocki\IofXmlPhp\Model\GeoPositionType $position
+     * @param \IofXmlPhp\Model\GeoPositionType $position
      * @return self
      */
-    public function setPosition(?\Petrocki\IofXmlPhp\Model\GeoPositionType $position = null)
+    public function setPosition(?\IofXmlPhp\Model\GeoPositionType $position = null)
     {
         $this->position = $position;
         return $this;
@@ -374,9 +374,9 @@ class RaceType
      * The organisations that organise the event.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\OrganisationType $organiser
+     * @param \IofXmlPhp\Model\OrganisationType $organiser
      */
-    public function addToOrganiser(\Petrocki\IofXmlPhp\Model\OrganisationType $organiser)
+    public function addToOrganiser(\IofXmlPhp\Model\OrganisationType $organiser)
     {
         $this->organiser[] = $organiser;
         return $this;
@@ -413,7 +413,7 @@ class RaceType
      *
      * The organisations that organise the event.
      *
-     * @return \Petrocki\IofXmlPhp\Model\OrganisationType[]
+     * @return \IofXmlPhp\Model\OrganisationType[]
      */
     public function getOrganiser()
     {
@@ -425,7 +425,7 @@ class RaceType
      *
      * The organisations that organise the event.
      *
-     * @param \Petrocki\IofXmlPhp\Model\OrganisationType[] $organiser
+     * @param \IofXmlPhp\Model\OrganisationType[] $organiser
      * @return self
      */
     public function setOrganiser(?array $organiser = null)
@@ -440,9 +440,9 @@ class RaceType
      * The main officials of the event, e.g. course setter and event president.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\RoleType $official
+     * @param \IofXmlPhp\Model\RoleType $official
      */
-    public function addToOfficial(\Petrocki\IofXmlPhp\Model\RoleType $official)
+    public function addToOfficial(\IofXmlPhp\Model\RoleType $official)
     {
         $this->official[] = $official;
         return $this;
@@ -479,7 +479,7 @@ class RaceType
      *
      * The main officials of the event, e.g. course setter and event president.
      *
-     * @return \Petrocki\IofXmlPhp\Model\RoleType[]
+     * @return \IofXmlPhp\Model\RoleType[]
      */
     public function getOfficial()
     {
@@ -491,7 +491,7 @@ class RaceType
      *
      * The main officials of the event, e.g. course setter and event president.
      *
-     * @param \Petrocki\IofXmlPhp\Model\RoleType[] $official
+     * @param \IofXmlPhp\Model\RoleType[] $official
      * @return self
      */
     public function setOfficial(?array $official = null)
@@ -506,9 +506,9 @@ class RaceType
      * The services available for the race, e.g. accomodation and transport.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\ServiceType $service
+     * @param \IofXmlPhp\Model\ServiceType $service
      */
-    public function addToService(\Petrocki\IofXmlPhp\Model\ServiceType $service)
+    public function addToService(\IofXmlPhp\Model\ServiceType $service)
     {
         $this->service[] = $service;
         return $this;
@@ -545,7 +545,7 @@ class RaceType
      *
      * The services available for the race, e.g. accomodation and transport.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ServiceType[]
+     * @return \IofXmlPhp\Model\ServiceType[]
      */
     public function getService()
     {
@@ -557,7 +557,7 @@ class RaceType
      *
      * The services available for the race, e.g. accomodation and transport.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ServiceType[] $service
+     * @param \IofXmlPhp\Model\ServiceType[] $service
      * @return self
      */
     public function setService(?array $service = null)
@@ -572,9 +572,9 @@ class RaceType
      * URLs to various types of additional information regarding the event, e.g. event website or result list.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\EventURLType $uRL
+     * @param \IofXmlPhp\Model\EventURLType $uRL
      */
-    public function addToURL(\Petrocki\IofXmlPhp\Model\EventURLType $uRL)
+    public function addToURL(\IofXmlPhp\Model\EventURLType $uRL)
     {
         $this->uRL[] = $uRL;
         return $this;
@@ -611,7 +611,7 @@ class RaceType
      *
      * URLs to various types of additional information regarding the event, e.g. event website or result list.
      *
-     * @return \Petrocki\IofXmlPhp\Model\EventURLType[]
+     * @return \IofXmlPhp\Model\EventURLType[]
      */
     public function getURL()
     {
@@ -623,7 +623,7 @@ class RaceType
      *
      * URLs to various types of additional information regarding the event, e.g. event website or result list.
      *
-     * @param \Petrocki\IofXmlPhp\Model\EventURLType[] $uRL
+     * @param \IofXmlPhp\Model\EventURLType[] $uRL
      * @return self
      */
     public function setURL(?array $uRL = null)
@@ -637,7 +637,7 @@ class RaceType
      *
      * Container element for custom elements from other schemas.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ExtensionsType
+     * @return \IofXmlPhp\Model\ExtensionsType
      */
     public function getExtensions()
     {
@@ -649,10 +649,10 @@ class RaceType
      *
      * Container element for custom elements from other schemas.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @param \IofXmlPhp\Model\ExtensionsType $extensions
      * @return self
      */
-    public function setExtensions(?\Petrocki\IofXmlPhp\Model\ExtensionsType $extensions = null)
+    public function setExtensions(?\IofXmlPhp\Model\ExtensionsType $extensions = null)
     {
         $this->extensions = $extensions;
         return $this;

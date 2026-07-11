@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\Model\ServiceRequestType:
+IofXmlPhp\Model\ServiceRequestType:
     properties:
         modifyTime:
             expose: true
@@ -18,7 +18,7 @@ Petrocki\IofXmlPhp\Model\ServiceRequestType:
             accessor:
                 getter: getId
                 setter: setId
-            type: Petrocki\IofXmlPhp\Model\IdType
+            type: IofXmlPhp\Model\IdType
         service:
             expose: true
             access_type: public_method
@@ -28,7 +28,7 @@ Petrocki\IofXmlPhp\Model\ServiceRequestType:
             accessor:
                 getter: getService
                 setter: setService
-            type: Petrocki\IofXmlPhp\Model\ServiceType
+            type: IofXmlPhp\Model\ServiceType
         requestedQuantity:
             expose: true
             access_type: public_method
@@ -72,7 +72,7 @@ Petrocki\IofXmlPhp\Model\ServiceRequestType:
                 inline: true
                 entry_name: AssignedFee
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\Model\AssignedFeeType>
+            type: array<IofXmlPhp\Model\AssignedFeeType>
         extensions:
             expose: true
             access_type: public_method
@@ -82,4 +82,4 @@ Petrocki\IofXmlPhp\Model\ServiceRequestType:
             accessor:
                 getter: getExtensions
                 setter: setExtensions
-            type: Petrocki\IofXmlPhp\Model\ExtensionsType
+            type: IofXmlPhp\Model\ExtensionsType

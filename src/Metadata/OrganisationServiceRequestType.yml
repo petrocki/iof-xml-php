@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\Model\OrganisationServiceRequestType:
+IofXmlPhp\Model\OrganisationServiceRequestType:
     properties:
         organisation:
             expose: true
@@ -9,7 +9,7 @@ Petrocki\IofXmlPhp\Model\OrganisationServiceRequestType:
             accessor:
                 getter: getOrganisation
                 setter: setOrganisation
-            type: Petrocki\IofXmlPhp\Model\OrganisationType
+            type: IofXmlPhp\Model\OrganisationType
         serviceRequest:
             expose: true
             access_type: public_method
@@ -23,7 +23,7 @@ Petrocki\IofXmlPhp\Model\OrganisationServiceRequestType:
                 inline: true
                 entry_name: ServiceRequest
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\Model\ServiceRequestType>
+            type: array<IofXmlPhp\Model\ServiceRequestType>
         personServiceRequest:
             expose: true
             access_type: public_method
@@ -37,4 +37,4 @@ Petrocki\IofXmlPhp\Model\OrganisationServiceRequestType:
                 inline: true
                 entry_name: PersonServiceRequest
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\Model\PersonServiceRequestType>
+            type: array<IofXmlPhp\Model\PersonServiceRequestType>

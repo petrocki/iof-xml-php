@@ -1,19 +1,19 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Serializer;
+namespace IofXmlPhp\Serializer;
 
 use JMS\Serializer\SerializerInterface;
-use Petrocki\IofXmlPhp\Internal\SerializerFactory;
-use Petrocki\IofXmlPhp\Model\ClassList;
-use Petrocki\IofXmlPhp\Model\CompetitorList;
-use Petrocki\IofXmlPhp\Model\ControlCardList;
-use Petrocki\IofXmlPhp\Model\CourseData;
-use Petrocki\IofXmlPhp\Model\EntryList;
-use Petrocki\IofXmlPhp\Model\EventList;
-use Petrocki\IofXmlPhp\Model\OrganisationList;
-use Petrocki\IofXmlPhp\Model\ResultList;
-use Petrocki\IofXmlPhp\Model\ServiceRequestList;
-use Petrocki\IofXmlPhp\Model\StartList;
+use IofXmlPhp\Internal\SerializerFactory;
+use IofXmlPhp\Model\ClassList;
+use IofXmlPhp\Model\CompetitorList;
+use IofXmlPhp\Model\ControlCardList;
+use IofXmlPhp\Model\CourseData;
+use IofXmlPhp\Model\EntryList;
+use IofXmlPhp\Model\EventList;
+use IofXmlPhp\Model\OrganisationList;
+use IofXmlPhp\Model\ResultList;
+use IofXmlPhp\Model\ServiceRequestList;
+use IofXmlPhp\Model\StartList;
 
 class IofXmlSerializer
 {

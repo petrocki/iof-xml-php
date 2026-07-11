@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\Model\TeamEntryPersonType:
+IofXmlPhp\Model\TeamEntryPersonType:
     properties:
         person:
             expose: true
@@ -9,7 +9,7 @@ Petrocki\IofXmlPhp\Model\TeamEntryPersonType:
             accessor:
                 getter: getPerson
                 setter: setPerson
-            type: Petrocki\IofXmlPhp\Model\PersonType
+            type: IofXmlPhp\Model\PersonType
         organisation:
             expose: true
             access_type: public_method
@@ -19,7 +19,7 @@ Petrocki\IofXmlPhp\Model\TeamEntryPersonType:
             accessor:
                 getter: getOrganisation
                 setter: setOrganisation
-            type: Petrocki\IofXmlPhp\Model\OrganisationType
+            type: IofXmlPhp\Model\OrganisationType
         leg:
             expose: true
             access_type: public_method
@@ -53,7 +53,7 @@ Petrocki\IofXmlPhp\Model\TeamEntryPersonType:
                 inline: true
                 entry_name: ControlCard
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\Model\ControlCardType>
+            type: array<IofXmlPhp\Model\ControlCardType>
         score:
             expose: true
             access_type: public_method
@@ -67,7 +67,7 @@ Petrocki\IofXmlPhp\Model\TeamEntryPersonType:
                 inline: true
                 entry_name: Score
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\Model\ScoreType>
+            type: array<IofXmlPhp\Model\ScoreType>
         assignedFee:
             expose: true
             access_type: public_method
@@ -81,7 +81,7 @@ Petrocki\IofXmlPhp\Model\TeamEntryPersonType:
                 inline: true
                 entry_name: AssignedFee
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\Model\AssignedFeeType>
+            type: array<IofXmlPhp\Model\AssignedFeeType>
         extensions:
             expose: true
             access_type: public_method
@@ -91,4 +91,4 @@ Petrocki\IofXmlPhp\Model\TeamEntryPersonType:
             accessor:
                 getter: getExtensions
                 setter: setExtensions
-            type: Petrocki\IofXmlPhp\Model\ExtensionsType
+            type: IofXmlPhp\Model\ExtensionsType

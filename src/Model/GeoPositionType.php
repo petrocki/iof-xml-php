@@ -1,6 +1,6 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model;
+namespace IofXmlPhp\Model;
 
 /**
  * Class representing GeoPositionType

@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\Model\ContactType:
+IofXmlPhp\Model\ContactType:
     properties:
         __value:
             expose: true

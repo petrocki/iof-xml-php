@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\Model\EntryList\EntryListAType:
+IofXmlPhp\Model\EntryList\EntryListAType:
     properties:
         event:
             expose: true
@@ -9,7 +9,7 @@ Petrocki\IofXmlPhp\Model\EntryList\EntryListAType:
             accessor:
                 getter: getEvent
                 setter: setEvent
-            type: Petrocki\IofXmlPhp\Model\EventType
+            type: IofXmlPhp\Model\EventType
         teamEntry:
             expose: true
             access_type: public_method
@@ -23,7 +23,7 @@ Petrocki\IofXmlPhp\Model\EntryList\EntryListAType:
                 inline: true
                 entry_name: TeamEntry
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\Model\TeamEntryType>
+            type: array<IofXmlPhp\Model\TeamEntryType>
         personEntry:
             expose: true
             access_type: public_method
@@ -37,7 +37,7 @@ Petrocki\IofXmlPhp\Model\EntryList\EntryListAType:
                 inline: true
                 entry_name: PersonEntry
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\Model\PersonEntryType>
+            type: array<IofXmlPhp\Model\PersonEntryType>
         extensions:
             expose: true
             access_type: public_method
@@ -47,4 +47,4 @@ Petrocki\IofXmlPhp\Model\EntryList\EntryListAType:
             accessor:
                 getter: getExtensions
                 setter: setExtensions
-            type: Petrocki\IofXmlPhp\Model\ExtensionsType
+            type: IofXmlPhp\Model\ExtensionsType

@@ -1,6 +1,6 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Tests;
+namespace IofXmlPhp\Tests;
 
 /**
  * @internal

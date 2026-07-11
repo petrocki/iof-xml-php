@@ -1,6 +1,6 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model;
+namespace IofXmlPhp\Model;
 
 /**
  * Class representing ControlType
@@ -25,14 +25,14 @@ class ControlType
     /**
      * The code of the control.
      *
-     * @var \Petrocki\IofXmlPhp\Model\IdType $id
+     * @var \IofXmlPhp\Model\IdType $id
      */
     private $id = null;
 
     /**
      * If the control has multiple punching units with separate codes, specify all these codes using elements of this kind. Omit this element if there is a single punching unit whose code is the same as the control code.
      *
-     * @var \Petrocki\IofXmlPhp\Model\IdType[] $punchingUnitId
+     * @var \IofXmlPhp\Model\IdType[] $punchingUnitId
      */
     private $punchingUnitId = [
         
@@ -41,7 +41,7 @@ class ControlType
     /**
      * The name of the control, used for e.g. online controls ('spectator control', 'prewarning').
      *
-     * @var \Petrocki\IofXmlPhp\Model\LanguageStringType[] $name
+     * @var \IofXmlPhp\Model\LanguageStringType[] $name
      */
     private $name = [
         
@@ -50,21 +50,21 @@ class ControlType
     /**
      * The geographical position of the control.
      *
-     * @var \Petrocki\IofXmlPhp\Model\GeoPositionType $position
+     * @var \IofXmlPhp\Model\GeoPositionType $position
      */
     private $position = null;
 
     /**
      * The position of the control according to tha map's coordinate system.
      *
-     * @var \Petrocki\IofXmlPhp\Model\MapPositionType $mapPosition
+     * @var \IofXmlPhp\Model\MapPositionType $mapPosition
      */
     private $mapPosition = null;
 
     /**
      * Container element for custom elements from other schemas.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @var \IofXmlPhp\Model\ExtensionsType $extensions
      */
     private $extensions = null;
 
@@ -121,7 +121,7 @@ class ControlType
      *
      * The code of the control.
      *
-     * @return \Petrocki\IofXmlPhp\Model\IdType
+     * @return \IofXmlPhp\Model\IdType
      */
     public function getId()
     {
@@ -133,10 +133,10 @@ class ControlType
      *
      * The code of the control.
      *
-     * @param \Petrocki\IofXmlPhp\Model\IdType $id
+     * @param \IofXmlPhp\Model\IdType $id
      * @return self
      */
-    public function setId(?\Petrocki\IofXmlPhp\Model\IdType $id = null)
+    public function setId(?\IofXmlPhp\Model\IdType $id = null)
     {
         $this->id = $id;
         return $this;
@@ -148,9 +148,9 @@ class ControlType
      * If the control has multiple punching units with separate codes, specify all these codes using elements of this kind. Omit this element if there is a single punching unit whose code is the same as the control code.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\IdType $punchingUnitId
+     * @param \IofXmlPhp\Model\IdType $punchingUnitId
      */
-    public function addToPunchingUnitId(\Petrocki\IofXmlPhp\Model\IdType $punchingUnitId)
+    public function addToPunchingUnitId(\IofXmlPhp\Model\IdType $punchingUnitId)
     {
         $this->punchingUnitId[] = $punchingUnitId;
         return $this;
@@ -187,7 +187,7 @@ class ControlType
      *
      * If the control has multiple punching units with separate codes, specify all these codes using elements of this kind. Omit this element if there is a single punching unit whose code is the same as the control code.
      *
-     * @return \Petrocki\IofXmlPhp\Model\IdType[]
+     * @return \IofXmlPhp\Model\IdType[]
      */
     public function getPunchingUnitId()
     {
@@ -199,7 +199,7 @@ class ControlType
      *
      * If the control has multiple punching units with separate codes, specify all these codes using elements of this kind. Omit this element if there is a single punching unit whose code is the same as the control code.
      *
-     * @param \Petrocki\IofXmlPhp\Model\IdType[] $punchingUnitId
+     * @param \IofXmlPhp\Model\IdType[] $punchingUnitId
      * @return self
      */
     public function setPunchingUnitId(?array $punchingUnitId = null)
@@ -214,9 +214,9 @@ class ControlType
      * The name of the control, used for e.g. online controls ('spectator control', 'prewarning').
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\LanguageStringType $name
+     * @param \IofXmlPhp\Model\LanguageStringType $name
      */
-    public function addToName(\Petrocki\IofXmlPhp\Model\LanguageStringType $name)
+    public function addToName(\IofXmlPhp\Model\LanguageStringType $name)
     {
         $this->name[] = $name;
         return $this;
@@ -253,7 +253,7 @@ class ControlType
      *
      * The name of the control, used for e.g. online controls ('spectator control', 'prewarning').
      *
-     * @return \Petrocki\IofXmlPhp\Model\LanguageStringType[]
+     * @return \IofXmlPhp\Model\LanguageStringType[]
      */
     public function getName()
     {
@@ -265,7 +265,7 @@ class ControlType
      *
      * The name of the control, used for e.g. online controls ('spectator control', 'prewarning').
      *
-     * @param \Petrocki\IofXmlPhp\Model\LanguageStringType[] $name
+     * @param \IofXmlPhp\Model\LanguageStringType[] $name
      * @return self
      */
     public function setName(?array $name = null)
@@ -279,7 +279,7 @@ class ControlType
      *
      * The geographical position of the control.
      *
-     * @return \Petrocki\IofXmlPhp\Model\GeoPositionType
+     * @return \IofXmlPhp\Model\GeoPositionType
      */
     public function getPosition()
     {
@@ -291,10 +291,10 @@ class ControlType
      *
      * The geographical position of the control.
      *
-     * @param \Petrocki\IofXmlPhp\Model\GeoPositionType $position
+     * @param \IofXmlPhp\Model\GeoPositionType $position
      * @return self
      */
-    public function setPosition(?\Petrocki\IofXmlPhp\Model\GeoPositionType $position = null)
+    public function setPosition(?\IofXmlPhp\Model\GeoPositionType $position = null)
     {
         $this->position = $position;
         return $this;
@@ -305,7 +305,7 @@ class ControlType
      *
      * The position of the control according to tha map's coordinate system.
      *
-     * @return \Petrocki\IofXmlPhp\Model\MapPositionType
+     * @return \IofXmlPhp\Model\MapPositionType
      */
     public function getMapPosition()
     {
@@ -317,10 +317,10 @@ class ControlType
      *
      * The position of the control according to tha map's coordinate system.
      *
-     * @param \Petrocki\IofXmlPhp\Model\MapPositionType $mapPosition
+     * @param \IofXmlPhp\Model\MapPositionType $mapPosition
      * @return self
      */
-    public function setMapPosition(?\Petrocki\IofXmlPhp\Model\MapPositionType $mapPosition = null)
+    public function setMapPosition(?\IofXmlPhp\Model\MapPositionType $mapPosition = null)
     {
         $this->mapPosition = $mapPosition;
         return $this;
@@ -331,7 +331,7 @@ class ControlType
      *
      * Container element for custom elements from other schemas.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ExtensionsType
+     * @return \IofXmlPhp\Model\ExtensionsType
      */
     public function getExtensions()
     {
@@ -343,10 +343,10 @@ class ControlType
      *
      * Container element for custom elements from other schemas.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @param \IofXmlPhp\Model\ExtensionsType $extensions
      * @return self
      */
-    public function setExtensions(?\Petrocki\IofXmlPhp\Model\ExtensionsType $extensions = null)
+    public function setExtensions(?\IofXmlPhp\Model\ExtensionsType $extensions = null)
     {
         $this->extensions = $extensions;
         return $this;

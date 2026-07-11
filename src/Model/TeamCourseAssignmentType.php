@@ -1,6 +1,6 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model;
+namespace IofXmlPhp\Model;
 
 /**
  * Class representing TeamCourseAssignmentType
@@ -34,7 +34,7 @@ class TeamCourseAssignmentType
     /**
      * The assignment of courses to team members.
      *
-     * @var \Petrocki\IofXmlPhp\Model\TeamMemberCourseAssignmentType[] $teamMemberCourseAssignment
+     * @var \IofXmlPhp\Model\TeamMemberCourseAssignmentType[] $teamMemberCourseAssignment
      */
     private $teamMemberCourseAssignment = [
         
@@ -43,7 +43,7 @@ class TeamCourseAssignmentType
     /**
      * Container element for custom elements from other schemas.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @var \IofXmlPhp\Model\ExtensionsType $extensions
      */
     private $extensions = null;
 
@@ -131,9 +131,9 @@ class TeamCourseAssignmentType
      * The assignment of courses to team members.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\TeamMemberCourseAssignmentType $teamMemberCourseAssignment
+     * @param \IofXmlPhp\Model\TeamMemberCourseAssignmentType $teamMemberCourseAssignment
      */
-    public function addToTeamMemberCourseAssignment(\Petrocki\IofXmlPhp\Model\TeamMemberCourseAssignmentType $teamMemberCourseAssignment)
+    public function addToTeamMemberCourseAssignment(\IofXmlPhp\Model\TeamMemberCourseAssignmentType $teamMemberCourseAssignment)
     {
         $this->teamMemberCourseAssignment[] = $teamMemberCourseAssignment;
         return $this;
@@ -170,7 +170,7 @@ class TeamCourseAssignmentType
      *
      * The assignment of courses to team members.
      *
-     * @return \Petrocki\IofXmlPhp\Model\TeamMemberCourseAssignmentType[]
+     * @return \IofXmlPhp\Model\TeamMemberCourseAssignmentType[]
      */
     public function getTeamMemberCourseAssignment()
     {
@@ -182,7 +182,7 @@ class TeamCourseAssignmentType
      *
      * The assignment of courses to team members.
      *
-     * @param \Petrocki\IofXmlPhp\Model\TeamMemberCourseAssignmentType[] $teamMemberCourseAssignment
+     * @param \IofXmlPhp\Model\TeamMemberCourseAssignmentType[] $teamMemberCourseAssignment
      * @return self
      */
     public function setTeamMemberCourseAssignment(?array $teamMemberCourseAssignment = null)
@@ -196,7 +196,7 @@ class TeamCourseAssignmentType
      *
      * Container element for custom elements from other schemas.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ExtensionsType
+     * @return \IofXmlPhp\Model\ExtensionsType
      */
     public function getExtensions()
     {
@@ -208,10 +208,10 @@ class TeamCourseAssignmentType
      *
      * Container element for custom elements from other schemas.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @param \IofXmlPhp\Model\ExtensionsType $extensions
      * @return self
      */
-    public function setExtensions(?\Petrocki\IofXmlPhp\Model\ExtensionsType $extensions = null)
+    public function setExtensions(?\IofXmlPhp\Model\ExtensionsType $extensions = null)
     {
         $this->extensions = $extensions;
         return $this;

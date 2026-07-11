@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\Model\IdType:
+IofXmlPhp\Model\IdType:
     properties:
         __value:
             expose: true

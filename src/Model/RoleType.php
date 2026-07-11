@@ -1,6 +1,6 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model;
+namespace IofXmlPhp\Model;
 
 /**
  * Class representing RoleType
@@ -18,7 +18,7 @@ class RoleType
     private $type = null;
 
     /**
-     * @var \Petrocki\IofXmlPhp\Model\PersonType $person
+     * @var \IofXmlPhp\Model\PersonType $person
      */
     private $person = null;
 
@@ -51,7 +51,7 @@ class RoleType
     /**
      * Gets as person
      *
-     * @return \Petrocki\IofXmlPhp\Model\PersonType
+     * @return \IofXmlPhp\Model\PersonType
      */
     public function getPerson()
     {
@@ -61,10 +61,10 @@ class RoleType
     /**
      * Sets a new person
      *
-     * @param \Petrocki\IofXmlPhp\Model\PersonType $person
+     * @param \IofXmlPhp\Model\PersonType $person
      * @return self
      */
-    public function setPerson(\Petrocki\IofXmlPhp\Model\PersonType $person)
+    public function setPerson(\IofXmlPhp\Model\PersonType $person)
     {
         $this->person = $person;
         return $this;

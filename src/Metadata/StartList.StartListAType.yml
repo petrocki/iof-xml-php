@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\Model\StartList\StartListAType:
+IofXmlPhp\Model\StartList\StartListAType:
     properties:
         event:
             expose: true
@@ -9,7 +9,7 @@ Petrocki\IofXmlPhp\Model\StartList\StartListAType:
             accessor:
                 getter: getEvent
                 setter: setEvent
-            type: Petrocki\IofXmlPhp\Model\EventType
+            type: IofXmlPhp\Model\EventType
         classStart:
             expose: true
             access_type: public_method
@@ -23,7 +23,7 @@ Petrocki\IofXmlPhp\Model\StartList\StartListAType:
                 inline: true
                 entry_name: ClassStart
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\Model\ClassStartType>
+            type: array<IofXmlPhp\Model\ClassStartType>
         extensions:
             expose: true
             access_type: public_method
@@ -33,4 +33,4 @@ Petrocki\IofXmlPhp\Model\StartList\StartListAType:
             accessor:
                 getter: getExtensions
                 setter: setExtensions
-            type: Petrocki\IofXmlPhp\Model\ExtensionsType
+            type: IofXmlPhp\Model\ExtensionsType

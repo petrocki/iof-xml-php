@@ -1,9 +1,9 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Tests;
+namespace IofXmlPhp\Tests;
 
-use Petrocki\IofXmlPhp\Parser\IofXmlParser;
-use Petrocki\IofXmlPhp\Serializer\IofXmlSerializer;
+use IofXmlPhp\Parser\IofXmlParser;
+use IofXmlPhp\Serializer\IofXmlSerializer;
 use PHPUnit\Framework\TestCase;
 
 abstract class AbstractIofXmlTestCase extends TestCase

@@ -1,6 +1,6 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model;
+namespace IofXmlPhp\Model;
 
 /**
  * Class representing ScheduleType
@@ -46,7 +46,7 @@ class ScheduleType
     /**
      * The geographical position of the sub-event.
      *
-     * @var \Petrocki\IofXmlPhp\Model\GeoPositionType $position
+     * @var \IofXmlPhp\Model\GeoPositionType $position
      */
     private $position = null;
 
@@ -188,7 +188,7 @@ class ScheduleType
      *
      * The geographical position of the sub-event.
      *
-     * @return \Petrocki\IofXmlPhp\Model\GeoPositionType
+     * @return \IofXmlPhp\Model\GeoPositionType
      */
     public function getPosition()
     {
@@ -200,10 +200,10 @@ class ScheduleType
      *
      * The geographical position of the sub-event.
      *
-     * @param \Petrocki\IofXmlPhp\Model\GeoPositionType $position
+     * @param \IofXmlPhp\Model\GeoPositionType $position
      * @return self
      */
-    public function setPosition(?\Petrocki\IofXmlPhp\Model\GeoPositionType $position = null)
+    public function setPosition(?\IofXmlPhp\Model\GeoPositionType $position = null)
     {
         $this->position = $position;
         return $this;

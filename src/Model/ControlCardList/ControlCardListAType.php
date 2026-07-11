@@ -1,8 +1,8 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model\ControlCardList;
+namespace IofXmlPhp\Model\ControlCardList;
 
-use Petrocki\IofXmlPhp\Model\BaseMessageElementType;
+use IofXmlPhp\Model\BaseMessageElementType;
 
 /**
  * Class representing ControlCardListAType
@@ -19,7 +19,7 @@ class ControlCardListAType extends BaseMessageElementType
     /**
      * The control cards.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ControlCardType[] $controlCard
+     * @var \IofXmlPhp\Model\ControlCardType[] $controlCard
      */
     private $controlCard = [
         
@@ -28,7 +28,7 @@ class ControlCardListAType extends BaseMessageElementType
     /**
      * Container element for custom elements from other schemas.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @var \IofXmlPhp\Model\ExtensionsType $extensions
      */
     private $extensions = null;
 
@@ -64,9 +64,9 @@ class ControlCardListAType extends BaseMessageElementType
      * The control cards.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\ControlCardType $controlCard
+     * @param \IofXmlPhp\Model\ControlCardType $controlCard
      */
-    public function addToControlCard(\Petrocki\IofXmlPhp\Model\ControlCardType $controlCard)
+    public function addToControlCard(\IofXmlPhp\Model\ControlCardType $controlCard)
     {
         $this->controlCard[] = $controlCard;
         return $this;
@@ -103,7 +103,7 @@ class ControlCardListAType extends BaseMessageElementType
      *
      * The control cards.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ControlCardType[]
+     * @return \IofXmlPhp\Model\ControlCardType[]
      */
     public function getControlCard()
     {
@@ -115,7 +115,7 @@ class ControlCardListAType extends BaseMessageElementType
      *
      * The control cards.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ControlCardType[] $controlCard
+     * @param \IofXmlPhp\Model\ControlCardType[] $controlCard
      * @return self
      */
     public function setControlCard(array $controlCard)
@@ -129,7 +129,7 @@ class ControlCardListAType extends BaseMessageElementType
      *
      * Container element for custom elements from other schemas.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ExtensionsType
+     * @return \IofXmlPhp\Model\ExtensionsType
      */
     public function getExtensions()
     {
@@ -141,10 +141,10 @@ class ControlCardListAType extends BaseMessageElementType
      *
      * Container element for custom elements from other schemas.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @param \IofXmlPhp\Model\ExtensionsType $extensions
      * @return self
      */
-    public function setExtensions(?\Petrocki\IofXmlPhp\Model\ExtensionsType $extensions = null)
+    public function setExtensions(?\IofXmlPhp\Model\ExtensionsType $extensions = null)
     {
         $this->extensions = $extensions;
         return $this;

@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\Model\MapPositionType:
+IofXmlPhp\Model\MapPositionType:
     properties:
         x:
             expose: true

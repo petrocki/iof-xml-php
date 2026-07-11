@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\Model\PersonType:
+IofXmlPhp\Model\PersonType:
     properties:
         sex:
             expose: true
@@ -31,7 +31,7 @@ Petrocki\IofXmlPhp\Model\PersonType:
                 inline: true
                 entry_name: Id
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\Model\IdType>
+            type: array<IofXmlPhp\Model\IdType>
         name:
             expose: true
             access_type: public_method
@@ -41,7 +41,7 @@ Petrocki\IofXmlPhp\Model\PersonType:
             accessor:
                 getter: getName
                 setter: setName
-            type: Petrocki\IofXmlPhp\Model\PersonNameType
+            type: IofXmlPhp\Model\PersonNameType
         birthDate:
             expose: true
             access_type: public_method
@@ -61,7 +61,7 @@ Petrocki\IofXmlPhp\Model\PersonType:
             accessor:
                 getter: getNationality
                 setter: setNationality
-            type: Petrocki\IofXmlPhp\Model\CountryType
+            type: IofXmlPhp\Model\CountryType
         address:
             expose: true
             access_type: public_method
@@ -75,7 +75,7 @@ Petrocki\IofXmlPhp\Model\PersonType:
                 inline: true
                 entry_name: Address
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\Model\AddressType>
+            type: array<IofXmlPhp\Model\AddressType>
         contact:
             expose: true
             access_type: public_method
@@ -89,7 +89,7 @@ Petrocki\IofXmlPhp\Model\PersonType:
                 inline: true
                 entry_name: Contact
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\Model\ContactType>
+            type: array<IofXmlPhp\Model\ContactType>
         extensions:
             expose: true
             access_type: public_method
@@ -99,4 +99,4 @@ Petrocki\IofXmlPhp\Model\PersonType:
             accessor:
                 getter: getExtensions
                 setter: setExtensions
-            type: Petrocki\IofXmlPhp\Model\ExtensionsType
+            type: IofXmlPhp\Model\ExtensionsType

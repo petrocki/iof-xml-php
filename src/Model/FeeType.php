@@ -1,6 +1,6 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model;
+namespace IofXmlPhp\Model;
 
 /**
  * Class representing FeeType
@@ -23,14 +23,14 @@ class FeeType
     private $modifyTime = null;
 
     /**
-     * @var \Petrocki\IofXmlPhp\Model\IdType $id
+     * @var \IofXmlPhp\Model\IdType $id
      */
     private $id = null;
 
     /**
      * A describing name of the fee, e.g. 'Late entry fee'.
      *
-     * @var \Petrocki\IofXmlPhp\Model\LanguageStringType[] $name
+     * @var \IofXmlPhp\Model\LanguageStringType[] $name
      */
     private $name = [
         
@@ -39,14 +39,14 @@ class FeeType
     /**
      * The fee amount, optionally including currency code. This element must not be present if a Percentage element exists.
      *
-     * @var \Petrocki\IofXmlPhp\Model\AmountType $amount
+     * @var \IofXmlPhp\Model\AmountType $amount
      */
     private $amount = null;
 
     /**
      * The fee amount that is taxable, i.e. considered when calculating taxes for an event. This element must not be present if a Percentage element exists, or if an Amount element does not exist.
      *
-     * @var \Petrocki\IofXmlPhp\Model\AmountType $taxableAmount
+     * @var \IofXmlPhp\Model\AmountType $taxableAmount
      */
     private $taxableAmount = null;
 
@@ -95,7 +95,7 @@ class FeeType
     /**
      * Container element for custom elements from other schemas.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @var \IofXmlPhp\Model\ExtensionsType $extensions
      */
     private $extensions = null;
 
@@ -150,7 +150,7 @@ class FeeType
     /**
      * Gets as id
      *
-     * @return \Petrocki\IofXmlPhp\Model\IdType
+     * @return \IofXmlPhp\Model\IdType
      */
     public function getId()
     {
@@ -160,10 +160,10 @@ class FeeType
     /**
      * Sets a new id
      *
-     * @param \Petrocki\IofXmlPhp\Model\IdType $id
+     * @param \IofXmlPhp\Model\IdType $id
      * @return self
      */
-    public function setId(?\Petrocki\IofXmlPhp\Model\IdType $id = null)
+    public function setId(?\IofXmlPhp\Model\IdType $id = null)
     {
         $this->id = $id;
         return $this;
@@ -175,9 +175,9 @@ class FeeType
      * A describing name of the fee, e.g. 'Late entry fee'.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\LanguageStringType $name
+     * @param \IofXmlPhp\Model\LanguageStringType $name
      */
-    public function addToName(\Petrocki\IofXmlPhp\Model\LanguageStringType $name)
+    public function addToName(\IofXmlPhp\Model\LanguageStringType $name)
     {
         $this->name[] = $name;
         return $this;
@@ -214,7 +214,7 @@ class FeeType
      *
      * A describing name of the fee, e.g. 'Late entry fee'.
      *
-     * @return \Petrocki\IofXmlPhp\Model\LanguageStringType[]
+     * @return \IofXmlPhp\Model\LanguageStringType[]
      */
     public function getName()
     {
@@ -226,7 +226,7 @@ class FeeType
      *
      * A describing name of the fee, e.g. 'Late entry fee'.
      *
-     * @param \Petrocki\IofXmlPhp\Model\LanguageStringType[] $name
+     * @param \IofXmlPhp\Model\LanguageStringType[] $name
      * @return self
      */
     public function setName(array $name)
@@ -240,7 +240,7 @@ class FeeType
      *
      * The fee amount, optionally including currency code. This element must not be present if a Percentage element exists.
      *
-     * @return \Petrocki\IofXmlPhp\Model\AmountType
+     * @return \IofXmlPhp\Model\AmountType
      */
     public function getAmount()
     {
@@ -252,10 +252,10 @@ class FeeType
      *
      * The fee amount, optionally including currency code. This element must not be present if a Percentage element exists.
      *
-     * @param \Petrocki\IofXmlPhp\Model\AmountType $amount
+     * @param \IofXmlPhp\Model\AmountType $amount
      * @return self
      */
-    public function setAmount(?\Petrocki\IofXmlPhp\Model\AmountType $amount = null)
+    public function setAmount(?\IofXmlPhp\Model\AmountType $amount = null)
     {
         $this->amount = $amount;
         return $this;
@@ -266,7 +266,7 @@ class FeeType
      *
      * The fee amount that is taxable, i.e. considered when calculating taxes for an event. This element must not be present if a Percentage element exists, or if an Amount element does not exist.
      *
-     * @return \Petrocki\IofXmlPhp\Model\AmountType
+     * @return \IofXmlPhp\Model\AmountType
      */
     public function getTaxableAmount()
     {
@@ -278,10 +278,10 @@ class FeeType
      *
      * The fee amount that is taxable, i.e. considered when calculating taxes for an event. This element must not be present if a Percentage element exists, or if an Amount element does not exist.
      *
-     * @param \Petrocki\IofXmlPhp\Model\AmountType $taxableAmount
+     * @param \IofXmlPhp\Model\AmountType $taxableAmount
      * @return self
      */
-    public function setTaxableAmount(?\Petrocki\IofXmlPhp\Model\AmountType $taxableAmount = null)
+    public function setTaxableAmount(?\IofXmlPhp\Model\AmountType $taxableAmount = null)
     {
         $this->taxableAmount = $taxableAmount;
         return $this;
@@ -448,7 +448,7 @@ class FeeType
      *
      * Container element for custom elements from other schemas.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ExtensionsType
+     * @return \IofXmlPhp\Model\ExtensionsType
      */
     public function getExtensions()
     {
@@ -460,10 +460,10 @@ class FeeType
      *
      * Container element for custom elements from other schemas.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @param \IofXmlPhp\Model\ExtensionsType $extensions
      * @return self
      */
-    public function setExtensions(?\Petrocki\IofXmlPhp\Model\ExtensionsType $extensions = null)
+    public function setExtensions(?\IofXmlPhp\Model\ExtensionsType $extensions = null)
     {
         $this->extensions = $extensions;
         return $this;

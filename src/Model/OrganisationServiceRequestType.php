@@ -1,6 +1,6 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model;
+namespace IofXmlPhp\Model;
 
 /**
  * Class representing OrganisationServiceRequestType
@@ -13,14 +13,14 @@ class OrganisationServiceRequestType
     /**
      * The organisation that made the requests.
      *
-     * @var \Petrocki\IofXmlPhp\Model\OrganisationType $organisation
+     * @var \IofXmlPhp\Model\OrganisationType $organisation
      */
     private $organisation = null;
 
     /**
      * The service requests that the organisation made.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ServiceRequestType[] $serviceRequest
+     * @var \IofXmlPhp\Model\ServiceRequestType[] $serviceRequest
      */
     private $serviceRequest = [
         
@@ -29,7 +29,7 @@ class OrganisationServiceRequestType
     /**
      * The service requests made by persons representing the organisation.
      *
-     * @var \Petrocki\IofXmlPhp\Model\PersonServiceRequestType[] $personServiceRequest
+     * @var \IofXmlPhp\Model\PersonServiceRequestType[] $personServiceRequest
      */
     private $personServiceRequest = [
         
@@ -40,7 +40,7 @@ class OrganisationServiceRequestType
      *
      * The organisation that made the requests.
      *
-     * @return \Petrocki\IofXmlPhp\Model\OrganisationType
+     * @return \IofXmlPhp\Model\OrganisationType
      */
     public function getOrganisation()
     {
@@ -52,10 +52,10 @@ class OrganisationServiceRequestType
      *
      * The organisation that made the requests.
      *
-     * @param \Petrocki\IofXmlPhp\Model\OrganisationType $organisation
+     * @param \IofXmlPhp\Model\OrganisationType $organisation
      * @return self
      */
-    public function setOrganisation(\Petrocki\IofXmlPhp\Model\OrganisationType $organisation)
+    public function setOrganisation(\IofXmlPhp\Model\OrganisationType $organisation)
     {
         $this->organisation = $organisation;
         return $this;
@@ -67,9 +67,9 @@ class OrganisationServiceRequestType
      * The service requests that the organisation made.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\ServiceRequestType $serviceRequest
+     * @param \IofXmlPhp\Model\ServiceRequestType $serviceRequest
      */
-    public function addToServiceRequest(\Petrocki\IofXmlPhp\Model\ServiceRequestType $serviceRequest)
+    public function addToServiceRequest(\IofXmlPhp\Model\ServiceRequestType $serviceRequest)
     {
         $this->serviceRequest[] = $serviceRequest;
         return $this;
@@ -106,7 +106,7 @@ class OrganisationServiceRequestType
      *
      * The service requests that the organisation made.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ServiceRequestType[]
+     * @return \IofXmlPhp\Model\ServiceRequestType[]
      */
     public function getServiceRequest()
     {
@@ -118,7 +118,7 @@ class OrganisationServiceRequestType
      *
      * The service requests that the organisation made.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ServiceRequestType[] $serviceRequest
+     * @param \IofXmlPhp\Model\ServiceRequestType[] $serviceRequest
      * @return self
      */
     public function setServiceRequest(?array $serviceRequest = null)
@@ -133,9 +133,9 @@ class OrganisationServiceRequestType
      * The service requests made by persons representing the organisation.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\PersonServiceRequestType $personServiceRequest
+     * @param \IofXmlPhp\Model\PersonServiceRequestType $personServiceRequest
      */
-    public function addToPersonServiceRequest(\Petrocki\IofXmlPhp\Model\PersonServiceRequestType $personServiceRequest)
+    public function addToPersonServiceRequest(\IofXmlPhp\Model\PersonServiceRequestType $personServiceRequest)
     {
         $this->personServiceRequest[] = $personServiceRequest;
         return $this;
@@ -172,7 +172,7 @@ class OrganisationServiceRequestType
      *
      * The service requests made by persons representing the organisation.
      *
-     * @return \Petrocki\IofXmlPhp\Model\PersonServiceRequestType[]
+     * @return \IofXmlPhp\Model\PersonServiceRequestType[]
      */
     public function getPersonServiceRequest()
     {
@@ -184,7 +184,7 @@ class OrganisationServiceRequestType
      *
      * The service requests made by persons representing the organisation.
      *
-     * @param \Petrocki\IofXmlPhp\Model\PersonServiceRequestType[] $personServiceRequest
+     * @param \IofXmlPhp\Model\PersonServiceRequestType[] $personServiceRequest
      * @return self
      */
     public function setPersonServiceRequest(?array $personServiceRequest = null)

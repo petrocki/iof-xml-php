@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\Model\ClassType:
+IofXmlPhp\Model\ClassType:
     properties:
         modifyTime:
             expose: true
@@ -18,7 +18,7 @@ Petrocki\IofXmlPhp\Model\ClassType:
             accessor:
                 getter: getId
                 setter: setId
-            type: Petrocki\IofXmlPhp\Model\IdType
+            type: IofXmlPhp\Model\IdType
         name:
             expose: true
             access_type: public_method

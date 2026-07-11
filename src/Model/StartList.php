@@ -1,8 +1,8 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model;
+namespace IofXmlPhp\Model;
 
-use Petrocki\IofXmlPhp\Model\StartList\StartListAType;
+use IofXmlPhp\Model\StartList\StartListAType;
 
 /**
  * Class representing StartList

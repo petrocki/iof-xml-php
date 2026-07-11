@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\Model\PersonCourseAssignmentType:
+IofXmlPhp\Model\PersonCourseAssignmentType:
     properties:
         entryId:
             expose: true
@@ -9,7 +9,7 @@ Petrocki\IofXmlPhp\Model\PersonCourseAssignmentType:
             accessor:
                 getter: getEntryId
                 setter: setEntryId
-            type: Petrocki\IofXmlPhp\Model\IdType
+            type: IofXmlPhp\Model\IdType
         bibNumber:
             expose: true
             access_type: public_method
@@ -69,4 +69,4 @@ Petrocki\IofXmlPhp\Model\PersonCourseAssignmentType:
             accessor:
                 getter: getExtensions
                 setter: setExtensions
-            type: Petrocki\IofXmlPhp\Model\ExtensionsType
+            type: IofXmlPhp\Model\ExtensionsType

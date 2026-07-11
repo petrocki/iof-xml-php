@@ -1,3 +1,3 @@
-Petrocki\IofXmlPhp\Model\EventList:
+IofXmlPhp\Model\EventList:
     xml_root_name: EventList
     xml_root_namespace: 'http://www.orienteering.org/datastandard/3.0'

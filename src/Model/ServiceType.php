@@ -1,6 +1,6 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model;
+namespace IofXmlPhp\Model;
 
 /**
  * Class representing ServiceType
@@ -23,14 +23,14 @@ class ServiceType
     private $modifyTime = null;
 
     /**
-     * @var \Petrocki\IofXmlPhp\Model\IdType $id
+     * @var \IofXmlPhp\Model\IdType $id
      */
     private $id = null;
 
     /**
      * The name of the service.
      *
-     * @var \Petrocki\IofXmlPhp\Model\LanguageStringType[] $name
+     * @var \IofXmlPhp\Model\LanguageStringType[] $name
      */
     private $name = [
         
@@ -39,7 +39,7 @@ class ServiceType
     /**
      * The fees attached to this service.
      *
-     * @var \Petrocki\IofXmlPhp\Model\FeeType[] $fee
+     * @var \IofXmlPhp\Model\FeeType[] $fee
      */
     private $fee = [
         
@@ -48,7 +48,7 @@ class ServiceType
     /**
      * A further description of the service than the Name element gives.
      *
-     * @var \Petrocki\IofXmlPhp\Model\LanguageStringType[] $description
+     * @var \IofXmlPhp\Model\LanguageStringType[] $description
      */
     private $description = [
         
@@ -71,7 +71,7 @@ class ServiceType
     /**
      * Container element for custom elements from other schemas.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @var \IofXmlPhp\Model\ExtensionsType $extensions
      */
     private $extensions = null;
 
@@ -126,7 +126,7 @@ class ServiceType
     /**
      * Gets as id
      *
-     * @return \Petrocki\IofXmlPhp\Model\IdType
+     * @return \IofXmlPhp\Model\IdType
      */
     public function getId()
     {
@@ -136,10 +136,10 @@ class ServiceType
     /**
      * Sets a new id
      *
-     * @param \Petrocki\IofXmlPhp\Model\IdType $id
+     * @param \IofXmlPhp\Model\IdType $id
      * @return self
      */
-    public function setId(?\Petrocki\IofXmlPhp\Model\IdType $id = null)
+    public function setId(?\IofXmlPhp\Model\IdType $id = null)
     {
         $this->id = $id;
         return $this;
@@ -151,9 +151,9 @@ class ServiceType
      * The name of the service.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\LanguageStringType $name
+     * @param \IofXmlPhp\Model\LanguageStringType $name
      */
-    public function addToName(\Petrocki\IofXmlPhp\Model\LanguageStringType $name)
+    public function addToName(\IofXmlPhp\Model\LanguageStringType $name)
     {
         $this->name[] = $name;
         return $this;
@@ -190,7 +190,7 @@ class ServiceType
      *
      * The name of the service.
      *
-     * @return \Petrocki\IofXmlPhp\Model\LanguageStringType[]
+     * @return \IofXmlPhp\Model\LanguageStringType[]
      */
     public function getName()
     {
@@ -202,7 +202,7 @@ class ServiceType
      *
      * The name of the service.
      *
-     * @param \Petrocki\IofXmlPhp\Model\LanguageStringType[] $name
+     * @param \IofXmlPhp\Model\LanguageStringType[] $name
      * @return self
      */
     public function setName(array $name)
@@ -217,9 +217,9 @@ class ServiceType
      * The fees attached to this service.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\FeeType $fee
+     * @param \IofXmlPhp\Model\FeeType $fee
      */
-    public function addToFee(\Petrocki\IofXmlPhp\Model\FeeType $fee)
+    public function addToFee(\IofXmlPhp\Model\FeeType $fee)
     {
         $this->fee[] = $fee;
         return $this;
@@ -256,7 +256,7 @@ class ServiceType
      *
      * The fees attached to this service.
      *
-     * @return \Petrocki\IofXmlPhp\Model\FeeType[]
+     * @return \IofXmlPhp\Model\FeeType[]
      */
     public function getFee()
     {
@@ -268,7 +268,7 @@ class ServiceType
      *
      * The fees attached to this service.
      *
-     * @param \Petrocki\IofXmlPhp\Model\FeeType[] $fee
+     * @param \IofXmlPhp\Model\FeeType[] $fee
      * @return self
      */
     public function setFee(?array $fee = null)
@@ -283,9 +283,9 @@ class ServiceType
      * A further description of the service than the Name element gives.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\LanguageStringType $description
+     * @param \IofXmlPhp\Model\LanguageStringType $description
      */
-    public function addToDescription(\Petrocki\IofXmlPhp\Model\LanguageStringType $description)
+    public function addToDescription(\IofXmlPhp\Model\LanguageStringType $description)
     {
         $this->description[] = $description;
         return $this;
@@ -322,7 +322,7 @@ class ServiceType
      *
      * A further description of the service than the Name element gives.
      *
-     * @return \Petrocki\IofXmlPhp\Model\LanguageStringType[]
+     * @return \IofXmlPhp\Model\LanguageStringType[]
      */
     public function getDescription()
     {
@@ -334,7 +334,7 @@ class ServiceType
      *
      * A further description of the service than the Name element gives.
      *
-     * @param \Petrocki\IofXmlPhp\Model\LanguageStringType[] $description
+     * @param \IofXmlPhp\Model\LanguageStringType[] $description
      * @return self
      */
     public function setDescription(?array $description = null)
@@ -400,7 +400,7 @@ class ServiceType
      *
      * Container element for custom elements from other schemas.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ExtensionsType
+     * @return \IofXmlPhp\Model\ExtensionsType
      */
     public function getExtensions()
     {
@@ -412,10 +412,10 @@ class ServiceType
      *
      * Container element for custom elements from other schemas.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @param \IofXmlPhp\Model\ExtensionsType $extensions
      * @return self
      */
-    public function setExtensions(?\Petrocki\IofXmlPhp\Model\ExtensionsType $extensions = null)
+    public function setExtensions(?\IofXmlPhp\Model\ExtensionsType $extensions = null)
     {
         $this->extensions = $extensions;
         return $this;

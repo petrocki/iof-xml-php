@@ -1,6 +1,6 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model;
+namespace IofXmlPhp\Model;
 
 /**
  * Class representing EventType
@@ -16,7 +16,7 @@ class EventType
     private $modifyTime = null;
 
     /**
-     * @var \Petrocki\IofXmlPhp\Model\IdType $id
+     * @var \IofXmlPhp\Model\IdType $id
      */
     private $id = null;
 
@@ -28,14 +28,14 @@ class EventType
     /**
      * The start time for the first starting competitor of the event. If the event contains multiple races, this is the start time for the first starting competitor of the first race.
      *
-     * @var \Petrocki\IofXmlPhp\Model\DateAndOptionalTimeType $startTime
+     * @var \IofXmlPhp\Model\DateAndOptionalTimeType $startTime
      */
     private $startTime = null;
 
     /**
      * The expected finish time for the last finishing competitor of the event. If the event contains multiple races, this is the expected finish time for the last finishing competitor of the last race.
      *
-     * @var \Petrocki\IofXmlPhp\Model\DateAndOptionalTimeType $endTime
+     * @var \IofXmlPhp\Model\DateAndOptionalTimeType $endTime
      */
     private $endTime = null;
 
@@ -63,7 +63,7 @@ class EventType
     /**
      * The organisations that organise the event.
      *
-     * @var \Petrocki\IofXmlPhp\Model\OrganisationType[] $organiser
+     * @var \IofXmlPhp\Model\OrganisationType[] $organiser
      */
     private $organiser = [
         
@@ -72,7 +72,7 @@ class EventType
     /**
      * The main officials of the event, e.g. course setter and event president.
      *
-     * @var \Petrocki\IofXmlPhp\Model\RoleType[] $official
+     * @var \IofXmlPhp\Model\RoleType[] $official
      */
     private $official = [
         
@@ -81,7 +81,7 @@ class EventType
     /**
      * The classes that are available at the event.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ClassType[] $class
+     * @var \IofXmlPhp\Model\ClassType[] $class
      */
     private $class = [
         
@@ -90,7 +90,7 @@ class EventType
     /**
      * An event consists of a number of races. The number is equal to the number of times a competitor should start. Most events contain a single race, and this elemend could then be omitted.
      *
-     * @var \Petrocki\IofXmlPhp\Model\RaceType[] $race
+     * @var \IofXmlPhp\Model\RaceType[] $race
      */
     private $race = [
         
@@ -99,14 +99,14 @@ class EventType
     /**
      * Address and contact information to the person or organisation which registers the entries for the event.
      *
-     * @var \Petrocki\IofXmlPhp\Model\EntryReceiverType $entryReceiver
+     * @var \IofXmlPhp\Model\EntryReceiverType $entryReceiver
      */
     private $entryReceiver = null;
 
     /**
      * The services available for the event, e.g. accomodation and transport.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ServiceType[] $service
+     * @var \IofXmlPhp\Model\ServiceType[] $service
      */
     private $service = [
         
@@ -115,7 +115,7 @@ class EventType
     /**
      * The bank account for the event.
      *
-     * @var \Petrocki\IofXmlPhp\Model\AccountType[] $account
+     * @var \IofXmlPhp\Model\AccountType[] $account
      */
     private $account = [
         
@@ -124,7 +124,7 @@ class EventType
     /**
      * URLs to various types of additional information regarding the event, e.g. event website or result list.
      *
-     * @var \Petrocki\IofXmlPhp\Model\EventURLType[] $uRL
+     * @var \IofXmlPhp\Model\EventURLType[] $uRL
      */
     private $uRL = [
         
@@ -133,7 +133,7 @@ class EventType
     /**
      * Presents arbitrary data about the event, e.g. "Accommodation", "Local Attractions", and so on. Information present here should be defined well in advance of the event, in contrast to the 'News' element.
      *
-     * @var \Petrocki\IofXmlPhp\Model\InformationItemType[] $information
+     * @var \IofXmlPhp\Model\InformationItemType[] $information
      */
     private $information = [
         
@@ -142,7 +142,7 @@ class EventType
     /**
      * Defines the schedule of events that comprise the entire orienteering event, e.g. entry deadlines, banquet and social events, and awards ceremonies.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ScheduleType[] $schedule
+     * @var \IofXmlPhp\Model\ScheduleType[] $schedule
      */
     private $schedule = [
         
@@ -151,7 +151,7 @@ class EventType
     /**
      * Presents "last minute information" about the event.
      *
-     * @var \Petrocki\IofXmlPhp\Model\InformationItemType[] $news
+     * @var \IofXmlPhp\Model\InformationItemType[] $news
      */
     private $news = [
         
@@ -160,7 +160,7 @@ class EventType
     /**
      * Container element for custom elements from other schemas.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @var \IofXmlPhp\Model\ExtensionsType $extensions
      */
     private $extensions = null;
 
@@ -189,7 +189,7 @@ class EventType
     /**
      * Gets as id
      *
-     * @return \Petrocki\IofXmlPhp\Model\IdType
+     * @return \IofXmlPhp\Model\IdType
      */
     public function getId()
     {
@@ -199,10 +199,10 @@ class EventType
     /**
      * Sets a new id
      *
-     * @param \Petrocki\IofXmlPhp\Model\IdType $id
+     * @param \IofXmlPhp\Model\IdType $id
      * @return self
      */
-    public function setId(?\Petrocki\IofXmlPhp\Model\IdType $id = null)
+    public function setId(?\IofXmlPhp\Model\IdType $id = null)
     {
         $this->id = $id;
         return $this;
@@ -235,7 +235,7 @@ class EventType
      *
      * The start time for the first starting competitor of the event. If the event contains multiple races, this is the start time for the first starting competitor of the first race.
      *
-     * @return \Petrocki\IofXmlPhp\Model\DateAndOptionalTimeType
+     * @return \IofXmlPhp\Model\DateAndOptionalTimeType
      */
     public function getStartTime()
     {
@@ -247,10 +247,10 @@ class EventType
      *
      * The start time for the first starting competitor of the event. If the event contains multiple races, this is the start time for the first starting competitor of the first race.
      *
-     * @param \Petrocki\IofXmlPhp\Model\DateAndOptionalTimeType $startTime
+     * @param \IofXmlPhp\Model\DateAndOptionalTimeType $startTime
      * @return self
      */
-    public function setStartTime(?\Petrocki\IofXmlPhp\Model\DateAndOptionalTimeType $startTime = null)
+    public function setStartTime(?\IofXmlPhp\Model\DateAndOptionalTimeType $startTime = null)
     {
         $this->startTime = $startTime;
         return $this;
@@ -261,7 +261,7 @@ class EventType
      *
      * The expected finish time for the last finishing competitor of the event. If the event contains multiple races, this is the expected finish time for the last finishing competitor of the last race.
      *
-     * @return \Petrocki\IofXmlPhp\Model\DateAndOptionalTimeType
+     * @return \IofXmlPhp\Model\DateAndOptionalTimeType
      */
     public function getEndTime()
     {
@@ -273,10 +273,10 @@ class EventType
      *
      * The expected finish time for the last finishing competitor of the event. If the event contains multiple races, this is the expected finish time for the last finishing competitor of the last race.
      *
-     * @param \Petrocki\IofXmlPhp\Model\DateAndOptionalTimeType $endTime
+     * @param \IofXmlPhp\Model\DateAndOptionalTimeType $endTime
      * @return self
      */
-    public function setEndTime(?\Petrocki\IofXmlPhp\Model\DateAndOptionalTimeType $endTime = null)
+    public function setEndTime(?\IofXmlPhp\Model\DateAndOptionalTimeType $endTime = null)
     {
         $this->endTime = $endTime;
         return $this;
@@ -396,9 +396,9 @@ class EventType
      * The organisations that organise the event.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\OrganisationType $organiser
+     * @param \IofXmlPhp\Model\OrganisationType $organiser
      */
-    public function addToOrganiser(\Petrocki\IofXmlPhp\Model\OrganisationType $organiser)
+    public function addToOrganiser(\IofXmlPhp\Model\OrganisationType $organiser)
     {
         $this->organiser[] = $organiser;
         return $this;
@@ -435,7 +435,7 @@ class EventType
      *
      * The organisations that organise the event.
      *
-     * @return \Petrocki\IofXmlPhp\Model\OrganisationType[]
+     * @return \IofXmlPhp\Model\OrganisationType[]
      */
     public function getOrganiser()
     {
@@ -447,7 +447,7 @@ class EventType
      *
      * The organisations that organise the event.
      *
-     * @param \Petrocki\IofXmlPhp\Model\OrganisationType[] $organiser
+     * @param \IofXmlPhp\Model\OrganisationType[] $organiser
      * @return self
      */
     public function setOrganiser(?array $organiser = null)
@@ -462,9 +462,9 @@ class EventType
      * The main officials of the event, e.g. course setter and event president.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\RoleType $official
+     * @param \IofXmlPhp\Model\RoleType $official
      */
-    public function addToOfficial(\Petrocki\IofXmlPhp\Model\RoleType $official)
+    public function addToOfficial(\IofXmlPhp\Model\RoleType $official)
     {
         $this->official[] = $official;
         return $this;
@@ -501,7 +501,7 @@ class EventType
      *
      * The main officials of the event, e.g. course setter and event president.
      *
-     * @return \Petrocki\IofXmlPhp\Model\RoleType[]
+     * @return \IofXmlPhp\Model\RoleType[]
      */
     public function getOfficial()
     {
@@ -513,7 +513,7 @@ class EventType
      *
      * The main officials of the event, e.g. course setter and event president.
      *
-     * @param \Petrocki\IofXmlPhp\Model\RoleType[] $official
+     * @param \IofXmlPhp\Model\RoleType[] $official
      * @return self
      */
     public function setOfficial(?array $official = null)
@@ -528,9 +528,9 @@ class EventType
      * The classes that are available at the event.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\ClassType $class
+     * @param \IofXmlPhp\Model\ClassType $class
      */
-    public function addToClass(\Petrocki\IofXmlPhp\Model\ClassType $class)
+    public function addToClass(\IofXmlPhp\Model\ClassType $class)
     {
         $this->class[] = $class;
         return $this;
@@ -567,7 +567,7 @@ class EventType
      *
      * The classes that are available at the event.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ClassType[]
+     * @return \IofXmlPhp\Model\ClassType[]
      */
     public function getClass()
     {
@@ -579,7 +579,7 @@ class EventType
      *
      * The classes that are available at the event.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ClassType[] $class
+     * @param \IofXmlPhp\Model\ClassType[] $class
      * @return self
      */
     public function setClass(?array $class = null)
@@ -594,9 +594,9 @@ class EventType
      * An event consists of a number of races. The number is equal to the number of times a competitor should start. Most events contain a single race, and this elemend could then be omitted.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\RaceType $race
+     * @param \IofXmlPhp\Model\RaceType $race
      */
-    public function addToRace(\Petrocki\IofXmlPhp\Model\RaceType $race)
+    public function addToRace(\IofXmlPhp\Model\RaceType $race)
     {
         $this->race[] = $race;
         return $this;
@@ -633,7 +633,7 @@ class EventType
      *
      * An event consists of a number of races. The number is equal to the number of times a competitor should start. Most events contain a single race, and this elemend could then be omitted.
      *
-     * @return \Petrocki\IofXmlPhp\Model\RaceType[]
+     * @return \IofXmlPhp\Model\RaceType[]
      */
     public function getRace()
     {
@@ -645,7 +645,7 @@ class EventType
      *
      * An event consists of a number of races. The number is equal to the number of times a competitor should start. Most events contain a single race, and this elemend could then be omitted.
      *
-     * @param \Petrocki\IofXmlPhp\Model\RaceType[] $race
+     * @param \IofXmlPhp\Model\RaceType[] $race
      * @return self
      */
     public function setRace(?array $race = null)
@@ -659,7 +659,7 @@ class EventType
      *
      * Address and contact information to the person or organisation which registers the entries for the event.
      *
-     * @return \Petrocki\IofXmlPhp\Model\EntryReceiverType
+     * @return \IofXmlPhp\Model\EntryReceiverType
      */
     public function getEntryReceiver()
     {
@@ -671,10 +671,10 @@ class EventType
      *
      * Address and contact information to the person or organisation which registers the entries for the event.
      *
-     * @param \Petrocki\IofXmlPhp\Model\EntryReceiverType $entryReceiver
+     * @param \IofXmlPhp\Model\EntryReceiverType $entryReceiver
      * @return self
      */
-    public function setEntryReceiver(?\Petrocki\IofXmlPhp\Model\EntryReceiverType $entryReceiver = null)
+    public function setEntryReceiver(?\IofXmlPhp\Model\EntryReceiverType $entryReceiver = null)
     {
         $this->entryReceiver = $entryReceiver;
         return $this;
@@ -686,9 +686,9 @@ class EventType
      * The services available for the event, e.g. accomodation and transport.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\ServiceType $service
+     * @param \IofXmlPhp\Model\ServiceType $service
      */
-    public function addToService(\Petrocki\IofXmlPhp\Model\ServiceType $service)
+    public function addToService(\IofXmlPhp\Model\ServiceType $service)
     {
         $this->service[] = $service;
         return $this;
@@ -725,7 +725,7 @@ class EventType
      *
      * The services available for the event, e.g. accomodation and transport.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ServiceType[]
+     * @return \IofXmlPhp\Model\ServiceType[]
      */
     public function getService()
     {
@@ -737,7 +737,7 @@ class EventType
      *
      * The services available for the event, e.g. accomodation and transport.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ServiceType[] $service
+     * @param \IofXmlPhp\Model\ServiceType[] $service
      * @return self
      */
     public function setService(?array $service = null)
@@ -752,9 +752,9 @@ class EventType
      * The bank account for the event.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\AccountType $account
+     * @param \IofXmlPhp\Model\AccountType $account
      */
-    public function addToAccount(\Petrocki\IofXmlPhp\Model\AccountType $account)
+    public function addToAccount(\IofXmlPhp\Model\AccountType $account)
     {
         $this->account[] = $account;
         return $this;
@@ -791,7 +791,7 @@ class EventType
      *
      * The bank account for the event.
      *
-     * @return \Petrocki\IofXmlPhp\Model\AccountType[]
+     * @return \IofXmlPhp\Model\AccountType[]
      */
     public function getAccount()
     {
@@ -803,7 +803,7 @@ class EventType
      *
      * The bank account for the event.
      *
-     * @param \Petrocki\IofXmlPhp\Model\AccountType[] $account
+     * @param \IofXmlPhp\Model\AccountType[] $account
      * @return self
      */
     public function setAccount(?array $account = null)
@@ -818,9 +818,9 @@ class EventType
      * URLs to various types of additional information regarding the event, e.g. event website or result list.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\EventURLType $uRL
+     * @param \IofXmlPhp\Model\EventURLType $uRL
      */
-    public function addToURL(\Petrocki\IofXmlPhp\Model\EventURLType $uRL)
+    public function addToURL(\IofXmlPhp\Model\EventURLType $uRL)
     {
         $this->uRL[] = $uRL;
         return $this;
@@ -857,7 +857,7 @@ class EventType
      *
      * URLs to various types of additional information regarding the event, e.g. event website or result list.
      *
-     * @return \Petrocki\IofXmlPhp\Model\EventURLType[]
+     * @return \IofXmlPhp\Model\EventURLType[]
      */
     public function getURL()
     {
@@ -869,7 +869,7 @@ class EventType
      *
      * URLs to various types of additional information regarding the event, e.g. event website or result list.
      *
-     * @param \Petrocki\IofXmlPhp\Model\EventURLType[] $uRL
+     * @param \IofXmlPhp\Model\EventURLType[] $uRL
      * @return self
      */
     public function setURL(?array $uRL = null)
@@ -884,9 +884,9 @@ class EventType
      * Presents arbitrary data about the event, e.g. "Accommodation", "Local Attractions", and so on. Information present here should be defined well in advance of the event, in contrast to the 'News' element.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\InformationItemType $information
+     * @param \IofXmlPhp\Model\InformationItemType $information
      */
-    public function addToInformation(\Petrocki\IofXmlPhp\Model\InformationItemType $information)
+    public function addToInformation(\IofXmlPhp\Model\InformationItemType $information)
     {
         $this->information[] = $information;
         return $this;
@@ -923,7 +923,7 @@ class EventType
      *
      * Presents arbitrary data about the event, e.g. "Accommodation", "Local Attractions", and so on. Information present here should be defined well in advance of the event, in contrast to the 'News' element.
      *
-     * @return \Petrocki\IofXmlPhp\Model\InformationItemType[]
+     * @return \IofXmlPhp\Model\InformationItemType[]
      */
     public function getInformation()
     {
@@ -935,7 +935,7 @@ class EventType
      *
      * Presents arbitrary data about the event, e.g. "Accommodation", "Local Attractions", and so on. Information present here should be defined well in advance of the event, in contrast to the 'News' element.
      *
-     * @param \Petrocki\IofXmlPhp\Model\InformationItemType[] $information
+     * @param \IofXmlPhp\Model\InformationItemType[] $information
      * @return self
      */
     public function setInformation(?array $information = null)
@@ -950,9 +950,9 @@ class EventType
      * Defines the schedule of events that comprise the entire orienteering event, e.g. entry deadlines, banquet and social events, and awards ceremonies.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\ScheduleType $schedule
+     * @param \IofXmlPhp\Model\ScheduleType $schedule
      */
-    public function addToSchedule(\Petrocki\IofXmlPhp\Model\ScheduleType $schedule)
+    public function addToSchedule(\IofXmlPhp\Model\ScheduleType $schedule)
     {
         $this->schedule[] = $schedule;
         return $this;
@@ -989,7 +989,7 @@ class EventType
      *
      * Defines the schedule of events that comprise the entire orienteering event, e.g. entry deadlines, banquet and social events, and awards ceremonies.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ScheduleType[]
+     * @return \IofXmlPhp\Model\ScheduleType[]
      */
     public function getSchedule()
     {
@@ -1001,7 +1001,7 @@ class EventType
      *
      * Defines the schedule of events that comprise the entire orienteering event, e.g. entry deadlines, banquet and social events, and awards ceremonies.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ScheduleType[] $schedule
+     * @param \IofXmlPhp\Model\ScheduleType[] $schedule
      * @return self
      */
     public function setSchedule(?array $schedule = null)
@@ -1016,9 +1016,9 @@ class EventType
      * Presents "last minute information" about the event.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\InformationItemType $news
+     * @param \IofXmlPhp\Model\InformationItemType $news
      */
-    public function addToNews(\Petrocki\IofXmlPhp\Model\InformationItemType $news)
+    public function addToNews(\IofXmlPhp\Model\InformationItemType $news)
     {
         $this->news[] = $news;
         return $this;
@@ -1055,7 +1055,7 @@ class EventType
      *
      * Presents "last minute information" about the event.
      *
-     * @return \Petrocki\IofXmlPhp\Model\InformationItemType[]
+     * @return \IofXmlPhp\Model\InformationItemType[]
      */
     public function getNews()
     {
@@ -1067,7 +1067,7 @@ class EventType
      *
      * Presents "last minute information" about the event.
      *
-     * @param \Petrocki\IofXmlPhp\Model\InformationItemType[] $news
+     * @param \IofXmlPhp\Model\InformationItemType[] $news
      * @return self
      */
     public function setNews(?array $news = null)
@@ -1081,7 +1081,7 @@ class EventType
      *
      * Container element for custom elements from other schemas.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ExtensionsType
+     * @return \IofXmlPhp\Model\ExtensionsType
      */
     public function getExtensions()
     {
@@ -1093,10 +1093,10 @@ class EventType
      *
      * Container element for custom elements from other schemas.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @param \IofXmlPhp\Model\ExtensionsType $extensions
      * @return self
      */
-    public function setExtensions(?\Petrocki\IofXmlPhp\Model\ExtensionsType $extensions = null)
+    public function setExtensions(?\IofXmlPhp\Model\ExtensionsType $extensions = null)
     {
         $this->extensions = $extensions;
         return $this;

@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\Model\ControlCardList\ControlCardListAType:
+IofXmlPhp\Model\ControlCardList\ControlCardListAType:
     properties:
         owner:
             expose: true
@@ -23,7 +23,7 @@ Petrocki\IofXmlPhp\Model\ControlCardList\ControlCardListAType:
                 inline: true
                 entry_name: ControlCard
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\Model\ControlCardType>
+            type: array<IofXmlPhp\Model\ControlCardType>
         extensions:
             expose: true
             access_type: public_method
@@ -33,4 +33,4 @@ Petrocki\IofXmlPhp\Model\ControlCardList\ControlCardListAType:
             accessor:
                 getter: getExtensions
                 setter: setExtensions
-            type: Petrocki\IofXmlPhp\Model\ExtensionsType
+            type: IofXmlPhp\Model\ExtensionsType

@@ -1,6 +1,6 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model;
+namespace IofXmlPhp\Model;
 
 /**
  * Class representing TeamMemberRaceStartType
@@ -48,14 +48,14 @@ class TeamMemberRaceStartType
     /**
      * Defines the course assigned to the team member.
      *
-     * @var \Petrocki\IofXmlPhp\Model\SimpleCourseType $course
+     * @var \IofXmlPhp\Model\SimpleCourseType $course
      */
     private $course = null;
 
     /**
      * Defines the control card assigned to the team member. Multiple control cards can be specified, e.g. one for punch checking and another for timing.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ControlCardType[] $controlCard
+     * @var \IofXmlPhp\Model\ControlCardType[] $controlCard
      */
     private $controlCard = [
         
@@ -64,7 +64,7 @@ class TeamMemberRaceStartType
     /**
      * Defines the fees that the team member has been assigned.
      *
-     * @var \Petrocki\IofXmlPhp\Model\AssignedFeeType[] $assignedFee
+     * @var \IofXmlPhp\Model\AssignedFeeType[] $assignedFee
      */
     private $assignedFee = [
         
@@ -73,7 +73,7 @@ class TeamMemberRaceStartType
     /**
      * Defines the services requested by the team member.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ServiceRequestType[] $serviceRequest
+     * @var \IofXmlPhp\Model\ServiceRequestType[] $serviceRequest
      */
     private $serviceRequest = [
         
@@ -82,7 +82,7 @@ class TeamMemberRaceStartType
     /**
      * Container element for custom elements from other schemas.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @var \IofXmlPhp\Model\ExtensionsType $extensions
      */
     private $extensions = null;
 
@@ -221,7 +221,7 @@ class TeamMemberRaceStartType
      *
      * Defines the course assigned to the team member.
      *
-     * @return \Petrocki\IofXmlPhp\Model\SimpleCourseType
+     * @return \IofXmlPhp\Model\SimpleCourseType
      */
     public function getCourse()
     {
@@ -233,10 +233,10 @@ class TeamMemberRaceStartType
      *
      * Defines the course assigned to the team member.
      *
-     * @param \Petrocki\IofXmlPhp\Model\SimpleCourseType $course
+     * @param \IofXmlPhp\Model\SimpleCourseType $course
      * @return self
      */
-    public function setCourse(?\Petrocki\IofXmlPhp\Model\SimpleCourseType $course = null)
+    public function setCourse(?\IofXmlPhp\Model\SimpleCourseType $course = null)
     {
         $this->course = $course;
         return $this;
@@ -248,9 +248,9 @@ class TeamMemberRaceStartType
      * Defines the control card assigned to the team member. Multiple control cards can be specified, e.g. one for punch checking and another for timing.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\ControlCardType $controlCard
+     * @param \IofXmlPhp\Model\ControlCardType $controlCard
      */
-    public function addToControlCard(\Petrocki\IofXmlPhp\Model\ControlCardType $controlCard)
+    public function addToControlCard(\IofXmlPhp\Model\ControlCardType $controlCard)
     {
         $this->controlCard[] = $controlCard;
         return $this;
@@ -287,7 +287,7 @@ class TeamMemberRaceStartType
      *
      * Defines the control card assigned to the team member. Multiple control cards can be specified, e.g. one for punch checking and another for timing.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ControlCardType[]
+     * @return \IofXmlPhp\Model\ControlCardType[]
      */
     public function getControlCard()
     {
@@ -299,7 +299,7 @@ class TeamMemberRaceStartType
      *
      * Defines the control card assigned to the team member. Multiple control cards can be specified, e.g. one for punch checking and another for timing.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ControlCardType[] $controlCard
+     * @param \IofXmlPhp\Model\ControlCardType[] $controlCard
      * @return self
      */
     public function setControlCard(?array $controlCard = null)
@@ -314,9 +314,9 @@ class TeamMemberRaceStartType
      * Defines the fees that the team member has been assigned.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\AssignedFeeType $assignedFee
+     * @param \IofXmlPhp\Model\AssignedFeeType $assignedFee
      */
-    public function addToAssignedFee(\Petrocki\IofXmlPhp\Model\AssignedFeeType $assignedFee)
+    public function addToAssignedFee(\IofXmlPhp\Model\AssignedFeeType $assignedFee)
     {
         $this->assignedFee[] = $assignedFee;
         return $this;
@@ -353,7 +353,7 @@ class TeamMemberRaceStartType
      *
      * Defines the fees that the team member has been assigned.
      *
-     * @return \Petrocki\IofXmlPhp\Model\AssignedFeeType[]
+     * @return \IofXmlPhp\Model\AssignedFeeType[]
      */
     public function getAssignedFee()
     {
@@ -365,7 +365,7 @@ class TeamMemberRaceStartType
      *
      * Defines the fees that the team member has been assigned.
      *
-     * @param \Petrocki\IofXmlPhp\Model\AssignedFeeType[] $assignedFee
+     * @param \IofXmlPhp\Model\AssignedFeeType[] $assignedFee
      * @return self
      */
     public function setAssignedFee(?array $assignedFee = null)
@@ -380,9 +380,9 @@ class TeamMemberRaceStartType
      * Defines the services requested by the team member.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\ServiceRequestType $serviceRequest
+     * @param \IofXmlPhp\Model\ServiceRequestType $serviceRequest
      */
-    public function addToServiceRequest(\Petrocki\IofXmlPhp\Model\ServiceRequestType $serviceRequest)
+    public function addToServiceRequest(\IofXmlPhp\Model\ServiceRequestType $serviceRequest)
     {
         $this->serviceRequest[] = $serviceRequest;
         return $this;
@@ -419,7 +419,7 @@ class TeamMemberRaceStartType
      *
      * Defines the services requested by the team member.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ServiceRequestType[]
+     * @return \IofXmlPhp\Model\ServiceRequestType[]
      */
     public function getServiceRequest()
     {
@@ -431,7 +431,7 @@ class TeamMemberRaceStartType
      *
      * Defines the services requested by the team member.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ServiceRequestType[] $serviceRequest
+     * @param \IofXmlPhp\Model\ServiceRequestType[] $serviceRequest
      * @return self
      */
     public function setServiceRequest(?array $serviceRequest = null)
@@ -445,7 +445,7 @@ class TeamMemberRaceStartType
      *
      * Container element for custom elements from other schemas.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ExtensionsType
+     * @return \IofXmlPhp\Model\ExtensionsType
      */
     public function getExtensions()
     {
@@ -457,10 +457,10 @@ class TeamMemberRaceStartType
      *
      * Container element for custom elements from other schemas.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @param \IofXmlPhp\Model\ExtensionsType $extensions
      * @return self
      */
-    public function setExtensions(?\Petrocki\IofXmlPhp\Model\ExtensionsType $extensions = null)
+    public function setExtensions(?\IofXmlPhp\Model\ExtensionsType $extensions = null)
     {
         $this->extensions = $extensions;
         return $this;

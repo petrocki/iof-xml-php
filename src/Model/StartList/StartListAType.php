@@ -1,8 +1,8 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model\StartList;
+namespace IofXmlPhp\Model\StartList;
 
-use Petrocki\IofXmlPhp\Model\BaseMessageElementType;
+use IofXmlPhp\Model\BaseMessageElementType;
 
 /**
  * Class representing StartListAType
@@ -12,14 +12,14 @@ class StartListAType extends BaseMessageElementType
     /**
      * The event that the start lists belong to.
      *
-     * @var \Petrocki\IofXmlPhp\Model\EventType $event
+     * @var \IofXmlPhp\Model\EventType $event
      */
     private $event = null;
 
     /**
      * Start lists for the classes in the event.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ClassStartType[] $classStart
+     * @var \IofXmlPhp\Model\ClassStartType[] $classStart
      */
     private $classStart = [
         
@@ -28,7 +28,7 @@ class StartListAType extends BaseMessageElementType
     /**
      * Container element for custom elements from other schemas.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @var \IofXmlPhp\Model\ExtensionsType $extensions
      */
     private $extensions = null;
 
@@ -37,7 +37,7 @@ class StartListAType extends BaseMessageElementType
      *
      * The event that the start lists belong to.
      *
-     * @return \Petrocki\IofXmlPhp\Model\EventType
+     * @return \IofXmlPhp\Model\EventType
      */
     public function getEvent()
     {
@@ -49,10 +49,10 @@ class StartListAType extends BaseMessageElementType
      *
      * The event that the start lists belong to.
      *
-     * @param \Petrocki\IofXmlPhp\Model\EventType $event
+     * @param \IofXmlPhp\Model\EventType $event
      * @return self
      */
-    public function setEvent(\Petrocki\IofXmlPhp\Model\EventType $event)
+    public function setEvent(\IofXmlPhp\Model\EventType $event)
     {
         $this->event = $event;
         return $this;
@@ -64,9 +64,9 @@ class StartListAType extends BaseMessageElementType
      * Start lists for the classes in the event.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\ClassStartType $classStart
+     * @param \IofXmlPhp\Model\ClassStartType $classStart
      */
-    public function addToClassStart(\Petrocki\IofXmlPhp\Model\ClassStartType $classStart)
+    public function addToClassStart(\IofXmlPhp\Model\ClassStartType $classStart)
     {
         $this->classStart[] = $classStart;
         return $this;
@@ -103,7 +103,7 @@ class StartListAType extends BaseMessageElementType
      *
      * Start lists for the classes in the event.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ClassStartType[]
+     * @return \IofXmlPhp\Model\ClassStartType[]
      */
     public function getClassStart()
     {
@@ -115,7 +115,7 @@ class StartListAType extends BaseMessageElementType
      *
      * Start lists for the classes in the event.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ClassStartType[] $classStart
+     * @param \IofXmlPhp\Model\ClassStartType[] $classStart
      * @return self
      */
     public function setClassStart(?array $classStart = null)
@@ -129,7 +129,7 @@ class StartListAType extends BaseMessageElementType
      *
      * Container element for custom elements from other schemas.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ExtensionsType
+     * @return \IofXmlPhp\Model\ExtensionsType
      */
     public function getExtensions()
     {
@@ -141,10 +141,10 @@ class StartListAType extends BaseMessageElementType
      *
      * Container element for custom elements from other schemas.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @param \IofXmlPhp\Model\ExtensionsType $extensions
      * @return self
      */
-    public function setExtensions(?\Petrocki\IofXmlPhp\Model\ExtensionsType $extensions = null)
+    public function setExtensions(?\IofXmlPhp\Model\ExtensionsType $extensions = null)
     {
         $this->extensions = $extensions;
         return $this;

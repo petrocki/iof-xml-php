@@ -1,8 +1,8 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model;
+namespace IofXmlPhp\Model;
 
-use Petrocki\IofXmlPhp\Model\ControlCardList\ControlCardListAType;
+use IofXmlPhp\Model\ControlCardList\ControlCardListAType;
 
 /**
  * Class representing ControlCardList

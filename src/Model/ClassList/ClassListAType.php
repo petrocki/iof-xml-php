@@ -1,8 +1,8 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model\ClassList;
+namespace IofXmlPhp\Model\ClassList;
 
-use Petrocki\IofXmlPhp\Model\BaseMessageElementType;
+use IofXmlPhp\Model\BaseMessageElementType;
 
 /**
  * Class representing ClassListAType
@@ -10,7 +10,7 @@ use Petrocki\IofXmlPhp\Model\BaseMessageElementType;
 class ClassListAType extends BaseMessageElementType
 {
     /**
-     * @var \Petrocki\IofXmlPhp\Model\ClassType[] $class
+     * @var \IofXmlPhp\Model\ClassType[] $class
      */
     private $class = [
         
@@ -19,7 +19,7 @@ class ClassListAType extends BaseMessageElementType
     /**
      * Container element for custom elements from other schemas.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @var \IofXmlPhp\Model\ExtensionsType $extensions
      */
     private $extensions = null;
 
@@ -27,9 +27,9 @@ class ClassListAType extends BaseMessageElementType
      * Adds as class
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\ClassType $class
+     * @param \IofXmlPhp\Model\ClassType $class
      */
-    public function addToClass(\Petrocki\IofXmlPhp\Model\ClassType $class)
+    public function addToClass(\IofXmlPhp\Model\ClassType $class)
     {
         $this->class[] = $class;
         return $this;
@@ -60,7 +60,7 @@ class ClassListAType extends BaseMessageElementType
     /**
      * Gets as class
      *
-     * @return \Petrocki\IofXmlPhp\Model\ClassType[]
+     * @return \IofXmlPhp\Model\ClassType[]
      */
     public function getClass()
     {
@@ -70,7 +70,7 @@ class ClassListAType extends BaseMessageElementType
     /**
      * Sets a new class
      *
-     * @param \Petrocki\IofXmlPhp\Model\ClassType[] $class
+     * @param \IofXmlPhp\Model\ClassType[] $class
      * @return self
      */
     public function setClass(?array $class = null)
@@ -84,7 +84,7 @@ class ClassListAType extends BaseMessageElementType
      *
      * Container element for custom elements from other schemas.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ExtensionsType
+     * @return \IofXmlPhp\Model\ExtensionsType
      */
     public function getExtensions()
     {
@@ -96,10 +96,10 @@ class ClassListAType extends BaseMessageElementType
      *
      * Container element for custom elements from other schemas.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @param \IofXmlPhp\Model\ExtensionsType $extensions
      * @return self
      */
-    public function setExtensions(?\Petrocki\IofXmlPhp\Model\ExtensionsType $extensions = null)
+    public function setExtensions(?\IofXmlPhp\Model\ExtensionsType $extensions = null)
     {
         $this->extensions = $extensions;
         return $this;

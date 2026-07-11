@@ -1,6 +1,6 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model;
+namespace IofXmlPhp\Model;
 
 /**
  * Class representing RaceClassType
@@ -41,7 +41,7 @@ class RaceClassType
     /**
      * The entry fees for a team as a whole taking part in this class. Use the Fee element to specify a fee for an individual competitor in the team. Use the TeamFee subelement of the Class element to specify a fee on event level.
      *
-     * @var \Petrocki\IofXmlPhp\Model\FeeType[] $teamFee
+     * @var \IofXmlPhp\Model\FeeType[] $teamFee
      */
     private $teamFee = [
         
@@ -50,7 +50,7 @@ class RaceClassType
     /**
      * The entry fees for an individual competitor taking part in the race class. Use the TeamFee element to specify a fee for the team as a whole. Use the Fee subelement of the Class element to specify a fee on event level.
      *
-     * @var \Petrocki\IofXmlPhp\Model\FeeType[] $fee
+     * @var \IofXmlPhp\Model\FeeType[] $fee
      */
     private $fee = [
         
@@ -71,7 +71,7 @@ class RaceClassType
     /**
      * The courses assigned to this class. For a mass-start event or a relay event, there are usually multiple courses per class due to the usage of spreading methods.
      *
-     * @var \Petrocki\IofXmlPhp\Model\SimpleCourseType[] $course
+     * @var \IofXmlPhp\Model\SimpleCourseType[] $course
      */
     private $course = [
         
@@ -80,7 +80,7 @@ class RaceClassType
     /**
      * The controls that are online controls for this class.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ControlType[] $onlineControl
+     * @var \IofXmlPhp\Model\ControlType[] $onlineControl
      */
     private $onlineControl = [
         
@@ -89,7 +89,7 @@ class RaceClassType
     /**
      * Container element for custom elements from other schemas.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @var \IofXmlPhp\Model\ExtensionsType $extensions
      */
     private $extensions = null;
 
@@ -239,9 +239,9 @@ class RaceClassType
      * The entry fees for a team as a whole taking part in this class. Use the Fee element to specify a fee for an individual competitor in the team. Use the TeamFee subelement of the Class element to specify a fee on event level.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\FeeType $teamFee
+     * @param \IofXmlPhp\Model\FeeType $teamFee
      */
-    public function addToTeamFee(\Petrocki\IofXmlPhp\Model\FeeType $teamFee)
+    public function addToTeamFee(\IofXmlPhp\Model\FeeType $teamFee)
     {
         $this->teamFee[] = $teamFee;
         return $this;
@@ -278,7 +278,7 @@ class RaceClassType
      *
      * The entry fees for a team as a whole taking part in this class. Use the Fee element to specify a fee for an individual competitor in the team. Use the TeamFee subelement of the Class element to specify a fee on event level.
      *
-     * @return \Petrocki\IofXmlPhp\Model\FeeType[]
+     * @return \IofXmlPhp\Model\FeeType[]
      */
     public function getTeamFee()
     {
@@ -290,7 +290,7 @@ class RaceClassType
      *
      * The entry fees for a team as a whole taking part in this class. Use the Fee element to specify a fee for an individual competitor in the team. Use the TeamFee subelement of the Class element to specify a fee on event level.
      *
-     * @param \Petrocki\IofXmlPhp\Model\FeeType[] $teamFee
+     * @param \IofXmlPhp\Model\FeeType[] $teamFee
      * @return self
      */
     public function setTeamFee(?array $teamFee = null)
@@ -305,9 +305,9 @@ class RaceClassType
      * The entry fees for an individual competitor taking part in the race class. Use the TeamFee element to specify a fee for the team as a whole. Use the Fee subelement of the Class element to specify a fee on event level.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\FeeType $fee
+     * @param \IofXmlPhp\Model\FeeType $fee
      */
-    public function addToFee(\Petrocki\IofXmlPhp\Model\FeeType $fee)
+    public function addToFee(\IofXmlPhp\Model\FeeType $fee)
     {
         $this->fee[] = $fee;
         return $this;
@@ -344,7 +344,7 @@ class RaceClassType
      *
      * The entry fees for an individual competitor taking part in the race class. Use the TeamFee element to specify a fee for the team as a whole. Use the Fee subelement of the Class element to specify a fee on event level.
      *
-     * @return \Petrocki\IofXmlPhp\Model\FeeType[]
+     * @return \IofXmlPhp\Model\FeeType[]
      */
     public function getFee()
     {
@@ -356,7 +356,7 @@ class RaceClassType
      *
      * The entry fees for an individual competitor taking part in the race class. Use the TeamFee element to specify a fee for the team as a whole. Use the Fee subelement of the Class element to specify a fee on event level.
      *
-     * @param \Petrocki\IofXmlPhp\Model\FeeType[] $fee
+     * @param \IofXmlPhp\Model\FeeType[] $fee
      * @return self
      */
     public function setFee(?array $fee = null)
@@ -419,9 +419,9 @@ class RaceClassType
      * The courses assigned to this class. For a mass-start event or a relay event, there are usually multiple courses per class due to the usage of spreading methods.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\SimpleCourseType $course
+     * @param \IofXmlPhp\Model\SimpleCourseType $course
      */
-    public function addToCourse(\Petrocki\IofXmlPhp\Model\SimpleCourseType $course)
+    public function addToCourse(\IofXmlPhp\Model\SimpleCourseType $course)
     {
         $this->course[] = $course;
         return $this;
@@ -458,7 +458,7 @@ class RaceClassType
      *
      * The courses assigned to this class. For a mass-start event or a relay event, there are usually multiple courses per class due to the usage of spreading methods.
      *
-     * @return \Petrocki\IofXmlPhp\Model\SimpleCourseType[]
+     * @return \IofXmlPhp\Model\SimpleCourseType[]
      */
     public function getCourse()
     {
@@ -470,7 +470,7 @@ class RaceClassType
      *
      * The courses assigned to this class. For a mass-start event or a relay event, there are usually multiple courses per class due to the usage of spreading methods.
      *
-     * @param \Petrocki\IofXmlPhp\Model\SimpleCourseType[] $course
+     * @param \IofXmlPhp\Model\SimpleCourseType[] $course
      * @return self
      */
     public function setCourse(?array $course = null)
@@ -485,9 +485,9 @@ class RaceClassType
      * The controls that are online controls for this class.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\ControlType $onlineControl
+     * @param \IofXmlPhp\Model\ControlType $onlineControl
      */
-    public function addToOnlineControl(\Petrocki\IofXmlPhp\Model\ControlType $onlineControl)
+    public function addToOnlineControl(\IofXmlPhp\Model\ControlType $onlineControl)
     {
         $this->onlineControl[] = $onlineControl;
         return $this;
@@ -524,7 +524,7 @@ class RaceClassType
      *
      * The controls that are online controls for this class.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ControlType[]
+     * @return \IofXmlPhp\Model\ControlType[]
      */
     public function getOnlineControl()
     {
@@ -536,7 +536,7 @@ class RaceClassType
      *
      * The controls that are online controls for this class.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ControlType[] $onlineControl
+     * @param \IofXmlPhp\Model\ControlType[] $onlineControl
      * @return self
      */
     public function setOnlineControl(?array $onlineControl = null)
@@ -550,7 +550,7 @@ class RaceClassType
      *
      * Container element for custom elements from other schemas.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ExtensionsType
+     * @return \IofXmlPhp\Model\ExtensionsType
      */
     public function getExtensions()
     {
@@ -562,10 +562,10 @@ class RaceClassType
      *
      * Container element for custom elements from other schemas.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @param \IofXmlPhp\Model\ExtensionsType $extensions
      * @return self
      */
-    public function setExtensions(?\Petrocki\IofXmlPhp\Model\ExtensionsType $extensions = null)
+    public function setExtensions(?\IofXmlPhp\Model\ExtensionsType $extensions = null)
     {
         $this->extensions = $extensions;
         return $this;

@@ -1,8 +1,8 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model\CompetitorList;
+namespace IofXmlPhp\Model\CompetitorList;
 
-use Petrocki\IofXmlPhp\Model\BaseMessageElementType;
+use IofXmlPhp\Model\BaseMessageElementType;
 
 /**
  * Class representing CompetitorListAType
@@ -10,7 +10,7 @@ use Petrocki\IofXmlPhp\Model\BaseMessageElementType;
 class CompetitorListAType extends BaseMessageElementType
 {
     /**
-     * @var \Petrocki\IofXmlPhp\Model\CompetitorType[] $competitor
+     * @var \IofXmlPhp\Model\CompetitorType[] $competitor
      */
     private $competitor = [
         
@@ -19,7 +19,7 @@ class CompetitorListAType extends BaseMessageElementType
     /**
      * Container element for custom elements from other schemas.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @var \IofXmlPhp\Model\ExtensionsType $extensions
      */
     private $extensions = null;
 
@@ -27,9 +27,9 @@ class CompetitorListAType extends BaseMessageElementType
      * Adds as competitor
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\CompetitorType $competitor
+     * @param \IofXmlPhp\Model\CompetitorType $competitor
      */
-    public function addToCompetitor(\Petrocki\IofXmlPhp\Model\CompetitorType $competitor)
+    public function addToCompetitor(\IofXmlPhp\Model\CompetitorType $competitor)
     {
         $this->competitor[] = $competitor;
         return $this;
@@ -60,7 +60,7 @@ class CompetitorListAType extends BaseMessageElementType
     /**
      * Gets as competitor
      *
-     * @return \Petrocki\IofXmlPhp\Model\CompetitorType[]
+     * @return \IofXmlPhp\Model\CompetitorType[]
      */
     public function getCompetitor()
     {
@@ -70,7 +70,7 @@ class CompetitorListAType extends BaseMessageElementType
     /**
      * Sets a new competitor
      *
-     * @param \Petrocki\IofXmlPhp\Model\CompetitorType[] $competitor
+     * @param \IofXmlPhp\Model\CompetitorType[] $competitor
      * @return self
      */
     public function setCompetitor(?array $competitor = null)
@@ -84,7 +84,7 @@ class CompetitorListAType extends BaseMessageElementType
      *
      * Container element for custom elements from other schemas.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ExtensionsType
+     * @return \IofXmlPhp\Model\ExtensionsType
      */
     public function getExtensions()
     {
@@ -96,10 +96,10 @@ class CompetitorListAType extends BaseMessageElementType
      *
      * Container element for custom elements from other schemas.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @param \IofXmlPhp\Model\ExtensionsType $extensions
      * @return self
      */
-    public function setExtensions(?\Petrocki\IofXmlPhp\Model\ExtensionsType $extensions = null)
+    public function setExtensions(?\IofXmlPhp\Model\ExtensionsType $extensions = null)
     {
         $this->extensions = $extensions;
         return $this;

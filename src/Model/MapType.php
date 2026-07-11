@@ -1,6 +1,6 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model;
+namespace IofXmlPhp\Model;
 
 /**
  * Class representing MapType
@@ -11,14 +11,14 @@ namespace Petrocki\IofXmlPhp\Model;
 class MapType
 {
     /**
-     * @var \Petrocki\IofXmlPhp\Model\IdType $id
+     * @var \IofXmlPhp\Model\IdType $id
      */
     private $id = null;
 
     /**
      * The map image.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ImageType $image
+     * @var \IofXmlPhp\Model\ImageType $image
      */
     private $image = null;
 
@@ -32,28 +32,28 @@ class MapType
     /**
      * The position of the map's top left corner given in the map's coordinate system, usually (0, 0).
      *
-     * @var \Petrocki\IofXmlPhp\Model\MapPositionType $mapPositionTopLeft
+     * @var \IofXmlPhp\Model\MapPositionType $mapPositionTopLeft
      */
     private $mapPositionTopLeft = null;
 
     /**
      * The position of the map's bottom right corner given in the map's coordinate system.
      *
-     * @var \Petrocki\IofXmlPhp\Model\MapPositionType $mapPositionBottomRight
+     * @var \IofXmlPhp\Model\MapPositionType $mapPositionBottomRight
      */
     private $mapPositionBottomRight = null;
 
     /**
      * Container element for custom elements from other schemas.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @var \IofXmlPhp\Model\ExtensionsType $extensions
      */
     private $extensions = null;
 
     /**
      * Gets as id
      *
-     * @return \Petrocki\IofXmlPhp\Model\IdType
+     * @return \IofXmlPhp\Model\IdType
      */
     public function getId()
     {
@@ -63,10 +63,10 @@ class MapType
     /**
      * Sets a new id
      *
-     * @param \Petrocki\IofXmlPhp\Model\IdType $id
+     * @param \IofXmlPhp\Model\IdType $id
      * @return self
      */
-    public function setId(?\Petrocki\IofXmlPhp\Model\IdType $id = null)
+    public function setId(?\IofXmlPhp\Model\IdType $id = null)
     {
         $this->id = $id;
         return $this;
@@ -77,7 +77,7 @@ class MapType
      *
      * The map image.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ImageType
+     * @return \IofXmlPhp\Model\ImageType
      */
     public function getImage()
     {
@@ -89,10 +89,10 @@ class MapType
      *
      * The map image.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ImageType $image
+     * @param \IofXmlPhp\Model\ImageType $image
      * @return self
      */
-    public function setImage(?\Petrocki\IofXmlPhp\Model\ImageType $image = null)
+    public function setImage(?\IofXmlPhp\Model\ImageType $image = null)
     {
         $this->image = $image;
         return $this;
@@ -129,7 +129,7 @@ class MapType
      *
      * The position of the map's top left corner given in the map's coordinate system, usually (0, 0).
      *
-     * @return \Petrocki\IofXmlPhp\Model\MapPositionType
+     * @return \IofXmlPhp\Model\MapPositionType
      */
     public function getMapPositionTopLeft()
     {
@@ -141,10 +141,10 @@ class MapType
      *
      * The position of the map's top left corner given in the map's coordinate system, usually (0, 0).
      *
-     * @param \Petrocki\IofXmlPhp\Model\MapPositionType $mapPositionTopLeft
+     * @param \IofXmlPhp\Model\MapPositionType $mapPositionTopLeft
      * @return self
      */
-    public function setMapPositionTopLeft(\Petrocki\IofXmlPhp\Model\MapPositionType $mapPositionTopLeft)
+    public function setMapPositionTopLeft(\IofXmlPhp\Model\MapPositionType $mapPositionTopLeft)
     {
         $this->mapPositionTopLeft = $mapPositionTopLeft;
         return $this;
@@ -155,7 +155,7 @@ class MapType
      *
      * The position of the map's bottom right corner given in the map's coordinate system.
      *
-     * @return \Petrocki\IofXmlPhp\Model\MapPositionType
+     * @return \IofXmlPhp\Model\MapPositionType
      */
     public function getMapPositionBottomRight()
     {
@@ -167,10 +167,10 @@ class MapType
      *
      * The position of the map's bottom right corner given in the map's coordinate system.
      *
-     * @param \Petrocki\IofXmlPhp\Model\MapPositionType $mapPositionBottomRight
+     * @param \IofXmlPhp\Model\MapPositionType $mapPositionBottomRight
      * @return self
      */
-    public function setMapPositionBottomRight(\Petrocki\IofXmlPhp\Model\MapPositionType $mapPositionBottomRight)
+    public function setMapPositionBottomRight(\IofXmlPhp\Model\MapPositionType $mapPositionBottomRight)
     {
         $this->mapPositionBottomRight = $mapPositionBottomRight;
         return $this;
@@ -181,7 +181,7 @@ class MapType
      *
      * Container element for custom elements from other schemas.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ExtensionsType
+     * @return \IofXmlPhp\Model\ExtensionsType
      */
     public function getExtensions()
     {
@@ -193,10 +193,10 @@ class MapType
      *
      * Container element for custom elements from other schemas.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @param \IofXmlPhp\Model\ExtensionsType $extensions
      * @return self
      */
-    public function setExtensions(?\Petrocki\IofXmlPhp\Model\ExtensionsType $extensions = null)
+    public function setExtensions(?\IofXmlPhp\Model\ExtensionsType $extensions = null)
     {
         $this->extensions = $extensions;
         return $this;

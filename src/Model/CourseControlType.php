@@ -1,6 +1,6 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model;
+namespace IofXmlPhp\Model;
 
 /**
  * Class representing CourseControlType
@@ -62,7 +62,7 @@ class CourseControlType
     /**
      * Indicates the position of the center of the text relative to the center of the control circle.
      *
-     * @var \Petrocki\IofXmlPhp\Model\MapPositionType $mapTextPosition
+     * @var \IofXmlPhp\Model\MapPositionType $mapTextPosition
      */
     private $mapTextPosition = null;
 
@@ -83,7 +83,7 @@ class CourseControlType
     /**
      * Container element for custom elements from other schemas.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @var \IofXmlPhp\Model\ExtensionsType $extensions
      */
     private $extensions = null;
 
@@ -310,7 +310,7 @@ class CourseControlType
      *
      * Indicates the position of the center of the text relative to the center of the control circle.
      *
-     * @return \Petrocki\IofXmlPhp\Model\MapPositionType
+     * @return \IofXmlPhp\Model\MapPositionType
      */
     public function getMapTextPosition()
     {
@@ -322,10 +322,10 @@ class CourseControlType
      *
      * Indicates the position of the center of the text relative to the center of the control circle.
      *
-     * @param \Petrocki\IofXmlPhp\Model\MapPositionType $mapTextPosition
+     * @param \IofXmlPhp\Model\MapPositionType $mapTextPosition
      * @return self
      */
-    public function setMapTextPosition(?\Petrocki\IofXmlPhp\Model\MapPositionType $mapTextPosition = null)
+    public function setMapTextPosition(?\IofXmlPhp\Model\MapPositionType $mapTextPosition = null)
     {
         $this->mapTextPosition = $mapTextPosition;
         return $this;
@@ -388,7 +388,7 @@ class CourseControlType
      *
      * Container element for custom elements from other schemas.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ExtensionsType
+     * @return \IofXmlPhp\Model\ExtensionsType
      */
     public function getExtensions()
     {
@@ -400,10 +400,10 @@ class CourseControlType
      *
      * Container element for custom elements from other schemas.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @param \IofXmlPhp\Model\ExtensionsType $extensions
      * @return self
      */
-    public function setExtensions(?\Petrocki\IofXmlPhp\Model\ExtensionsType $extensions = null)
+    public function setExtensions(?\IofXmlPhp\Model\ExtensionsType $extensions = null)
     {
         $this->extensions = $extensions;
         return $this;

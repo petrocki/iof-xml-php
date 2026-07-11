@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\Model\PersonResultType:
+IofXmlPhp\Model\PersonResultType:
     properties:
         modifyTime:
             expose: true
@@ -18,7 +18,7 @@ Petrocki\IofXmlPhp\Model\PersonResultType:
             accessor:
                 getter: getEntryId
                 setter: setEntryId
-            type: Petrocki\IofXmlPhp\Model\IdType
+            type: IofXmlPhp\Model\IdType
         person:
             expose: true
             access_type: public_method
@@ -28,7 +28,7 @@ Petrocki\IofXmlPhp\Model\PersonResultType:
             accessor:
                 getter: getPerson
                 setter: setPerson
-            type: Petrocki\IofXmlPhp\Model\PersonType
+            type: IofXmlPhp\Model\PersonType
         organisation:
             expose: true
             access_type: public_method
@@ -38,7 +38,7 @@ Petrocki\IofXmlPhp\Model\PersonResultType:
             accessor:
                 getter: getOrganisation
                 setter: setOrganisation
-            type: Petrocki\IofXmlPhp\Model\OrganisationType
+            type: IofXmlPhp\Model\OrganisationType
         result:
             expose: true
             access_type: public_method
@@ -52,7 +52,7 @@ Petrocki\IofXmlPhp\Model\PersonResultType:
                 inline: true
                 entry_name: Result
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\Model\PersonRaceResultType>
+            type: array<IofXmlPhp\Model\PersonRaceResultType>
         extensions:
             expose: true
             access_type: public_method
@@ -62,4 +62,4 @@ Petrocki\IofXmlPhp\Model\PersonResultType:
             accessor:
                 getter: getExtensions
                 setter: setExtensions
-            type: Petrocki\IofXmlPhp\Model\ExtensionsType
+            type: IofXmlPhp\Model\ExtensionsType

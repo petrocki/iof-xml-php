@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\Model\ClassResultType:
+IofXmlPhp\Model\ClassResultType:
     properties:
         timeResolution:
             expose: true
@@ -27,7 +27,7 @@ Petrocki\IofXmlPhp\Model\ClassResultType:
             accessor:
                 getter: getClass
                 setter: setClass
-            type: Petrocki\IofXmlPhp\Model\ClassType
+            type: IofXmlPhp\Model\ClassType
         course:
             expose: true
             access_type: public_method
@@ -41,7 +41,7 @@ Petrocki\IofXmlPhp\Model\ClassResultType:
                 inline: true
                 entry_name: Course
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\Model\SimpleRaceCourseType>
+            type: array<IofXmlPhp\Model\SimpleRaceCourseType>
         personResult:
             expose: true
             access_type: public_method
@@ -55,7 +55,7 @@ Petrocki\IofXmlPhp\Model\ClassResultType:
                 inline: true
                 entry_name: PersonResult
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\Model\PersonResultType>
+            type: array<IofXmlPhp\Model\PersonResultType>
         teamResult:
             expose: true
             access_type: public_method
@@ -69,7 +69,7 @@ Petrocki\IofXmlPhp\Model\ClassResultType:
                 inline: true
                 entry_name: TeamResult
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\Model\TeamResultType>
+            type: array<IofXmlPhp\Model\TeamResultType>
         extensions:
             expose: true
             access_type: public_method
@@ -79,4 +79,4 @@ Petrocki\IofXmlPhp\Model\ClassResultType:
             accessor:
                 getter: getExtensions
                 setter: setExtensions
-            type: Petrocki\IofXmlPhp\Model\ExtensionsType
+            type: IofXmlPhp\Model\ExtensionsType

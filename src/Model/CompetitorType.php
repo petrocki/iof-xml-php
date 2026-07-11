@@ -1,6 +1,6 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model;
+namespace IofXmlPhp\Model;
 
 /**
  * Class representing CompetitorType
@@ -16,14 +16,14 @@ class CompetitorType
     private $modifyTime = null;
 
     /**
-     * @var \Petrocki\IofXmlPhp\Model\PersonType $person
+     * @var \IofXmlPhp\Model\PersonType $person
      */
     private $person = null;
 
     /**
      * The organisations that the person is member of.
      *
-     * @var \Petrocki\IofXmlPhp\Model\OrganisationType[] $organisation
+     * @var \IofXmlPhp\Model\OrganisationType[] $organisation
      */
     private $organisation = [
         
@@ -32,7 +32,7 @@ class CompetitorType
     /**
      * The default control cards of the competitor.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ControlCardType[] $controlCard
+     * @var \IofXmlPhp\Model\ControlCardType[] $controlCard
      */
     private $controlCard = [
         
@@ -41,7 +41,7 @@ class CompetitorType
     /**
      * The default classes of the competitor.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ClassType[] $class
+     * @var \IofXmlPhp\Model\ClassType[] $class
      */
     private $class = [
         
@@ -50,7 +50,7 @@ class CompetitorType
     /**
      * Any scores, e.g. ranking scores, for the person.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ScoreType[] $score
+     * @var \IofXmlPhp\Model\ScoreType[] $score
      */
     private $score = [
         
@@ -59,7 +59,7 @@ class CompetitorType
     /**
      * Container element for custom elements from other schemas.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @var \IofXmlPhp\Model\ExtensionsType $extensions
      */
     private $extensions = null;
 
@@ -88,7 +88,7 @@ class CompetitorType
     /**
      * Gets as person
      *
-     * @return \Petrocki\IofXmlPhp\Model\PersonType
+     * @return \IofXmlPhp\Model\PersonType
      */
     public function getPerson()
     {
@@ -98,10 +98,10 @@ class CompetitorType
     /**
      * Sets a new person
      *
-     * @param \Petrocki\IofXmlPhp\Model\PersonType $person
+     * @param \IofXmlPhp\Model\PersonType $person
      * @return self
      */
-    public function setPerson(\Petrocki\IofXmlPhp\Model\PersonType $person)
+    public function setPerson(\IofXmlPhp\Model\PersonType $person)
     {
         $this->person = $person;
         return $this;
@@ -113,9 +113,9 @@ class CompetitorType
      * The organisations that the person is member of.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\OrganisationType $organisation
+     * @param \IofXmlPhp\Model\OrganisationType $organisation
      */
-    public function addToOrganisation(\Petrocki\IofXmlPhp\Model\OrganisationType $organisation)
+    public function addToOrganisation(\IofXmlPhp\Model\OrganisationType $organisation)
     {
         $this->organisation[] = $organisation;
         return $this;
@@ -152,7 +152,7 @@ class CompetitorType
      *
      * The organisations that the person is member of.
      *
-     * @return \Petrocki\IofXmlPhp\Model\OrganisationType[]
+     * @return \IofXmlPhp\Model\OrganisationType[]
      */
     public function getOrganisation()
     {
@@ -164,7 +164,7 @@ class CompetitorType
      *
      * The organisations that the person is member of.
      *
-     * @param \Petrocki\IofXmlPhp\Model\OrganisationType[] $organisation
+     * @param \IofXmlPhp\Model\OrganisationType[] $organisation
      * @return self
      */
     public function setOrganisation(?array $organisation = null)
@@ -179,9 +179,9 @@ class CompetitorType
      * The default control cards of the competitor.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\ControlCardType $controlCard
+     * @param \IofXmlPhp\Model\ControlCardType $controlCard
      */
-    public function addToControlCard(\Petrocki\IofXmlPhp\Model\ControlCardType $controlCard)
+    public function addToControlCard(\IofXmlPhp\Model\ControlCardType $controlCard)
     {
         $this->controlCard[] = $controlCard;
         return $this;
@@ -218,7 +218,7 @@ class CompetitorType
      *
      * The default control cards of the competitor.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ControlCardType[]
+     * @return \IofXmlPhp\Model\ControlCardType[]
      */
     public function getControlCard()
     {
@@ -230,7 +230,7 @@ class CompetitorType
      *
      * The default control cards of the competitor.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ControlCardType[] $controlCard
+     * @param \IofXmlPhp\Model\ControlCardType[] $controlCard
      * @return self
      */
     public function setControlCard(?array $controlCard = null)
@@ -245,9 +245,9 @@ class CompetitorType
      * The default classes of the competitor.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\ClassType $class
+     * @param \IofXmlPhp\Model\ClassType $class
      */
-    public function addToClass(\Petrocki\IofXmlPhp\Model\ClassType $class)
+    public function addToClass(\IofXmlPhp\Model\ClassType $class)
     {
         $this->class[] = $class;
         return $this;
@@ -284,7 +284,7 @@ class CompetitorType
      *
      * The default classes of the competitor.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ClassType[]
+     * @return \IofXmlPhp\Model\ClassType[]
      */
     public function getClass()
     {
@@ -296,7 +296,7 @@ class CompetitorType
      *
      * The default classes of the competitor.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ClassType[] $class
+     * @param \IofXmlPhp\Model\ClassType[] $class
      * @return self
      */
     public function setClass(?array $class = null)
@@ -311,9 +311,9 @@ class CompetitorType
      * Any scores, e.g. ranking scores, for the person.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\ScoreType $score
+     * @param \IofXmlPhp\Model\ScoreType $score
      */
-    public function addToScore(\Petrocki\IofXmlPhp\Model\ScoreType $score)
+    public function addToScore(\IofXmlPhp\Model\ScoreType $score)
     {
         $this->score[] = $score;
         return $this;
@@ -350,7 +350,7 @@ class CompetitorType
      *
      * Any scores, e.g. ranking scores, for the person.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ScoreType[]
+     * @return \IofXmlPhp\Model\ScoreType[]
      */
     public function getScore()
     {
@@ -362,7 +362,7 @@ class CompetitorType
      *
      * Any scores, e.g. ranking scores, for the person.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ScoreType[] $score
+     * @param \IofXmlPhp\Model\ScoreType[] $score
      * @return self
      */
     public function setScore(?array $score = null)
@@ -376,7 +376,7 @@ class CompetitorType
      *
      * Container element for custom elements from other schemas.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ExtensionsType
+     * @return \IofXmlPhp\Model\ExtensionsType
      */
     public function getExtensions()
     {
@@ -388,10 +388,10 @@ class CompetitorType
      *
      * Container element for custom elements from other schemas.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @param \IofXmlPhp\Model\ExtensionsType $extensions
      * @return self
      */
-    public function setExtensions(?\Petrocki\IofXmlPhp\Model\ExtensionsType $extensions = null)
+    public function setExtensions(?\IofXmlPhp\Model\ExtensionsType $extensions = null)
     {
         $this->extensions = $extensions;
         return $this;

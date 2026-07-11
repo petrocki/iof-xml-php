@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\Model\StartTimeAllocationRequestType:
+IofXmlPhp\Model\StartTimeAllocationRequestType:
     properties:
         type:
             expose: true
@@ -18,7 +18,7 @@ Petrocki\IofXmlPhp\Model\StartTimeAllocationRequestType:
             accessor:
                 getter: getOrganisation
                 setter: setOrganisation
-            type: Petrocki\IofXmlPhp\Model\OrganisationType
+            type: IofXmlPhp\Model\OrganisationType
         person:
             expose: true
             access_type: public_method
@@ -28,4 +28,4 @@ Petrocki\IofXmlPhp\Model\StartTimeAllocationRequestType:
             accessor:
                 getter: getPerson
                 setter: setPerson
-            type: Petrocki\IofXmlPhp\Model\PersonType
+            type: IofXmlPhp\Model\PersonType

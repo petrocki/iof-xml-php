@@ -1,6 +1,6 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model;
+namespace IofXmlPhp\Model;
 
 /**
  * Class representing TeamResultType
@@ -13,7 +13,7 @@ class TeamResultType
     /**
      * The id corresponding to this team's entry in an EntryList.
      *
-     * @var \Petrocki\IofXmlPhp\Model\IdType $entryId
+     * @var \IofXmlPhp\Model\IdType $entryId
      */
     private $entryId = null;
 
@@ -27,7 +27,7 @@ class TeamResultType
     /**
      * The organisation(s) the team is representing.
      *
-     * @var \Petrocki\IofXmlPhp\Model\OrganisationType[] $organisation
+     * @var \IofXmlPhp\Model\OrganisationType[] $organisation
      */
     private $organisation = [
         
@@ -43,7 +43,7 @@ class TeamResultType
     /**
      * Defines the result information for each team member. One element per relay leg must be included, even if the team has not assigned any team member to the leg.
      *
-     * @var \Petrocki\IofXmlPhp\Model\TeamMemberResultType[] $teamMemberResult
+     * @var \IofXmlPhp\Model\TeamMemberResultType[] $teamMemberResult
      */
     private $teamMemberResult = [
         
@@ -52,7 +52,7 @@ class TeamResultType
     /**
      * Defines the fees that the team has been assigned.
      *
-     * @var \Petrocki\IofXmlPhp\Model\AssignedFeeType[] $assignedFee
+     * @var \IofXmlPhp\Model\AssignedFeeType[] $assignedFee
      */
     private $assignedFee = [
         
@@ -61,7 +61,7 @@ class TeamResultType
     /**
      * Defines the services requested by the team.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ServiceRequestType[] $serviceRequest
+     * @var \IofXmlPhp\Model\ServiceRequestType[] $serviceRequest
      */
     private $serviceRequest = [
         
@@ -70,7 +70,7 @@ class TeamResultType
     /**
      * Container element for custom elements from other schemas.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @var \IofXmlPhp\Model\ExtensionsType $extensions
      */
     private $extensions = null;
 
@@ -79,7 +79,7 @@ class TeamResultType
      *
      * The id corresponding to this team's entry in an EntryList.
      *
-     * @return \Petrocki\IofXmlPhp\Model\IdType
+     * @return \IofXmlPhp\Model\IdType
      */
     public function getEntryId()
     {
@@ -91,10 +91,10 @@ class TeamResultType
      *
      * The id corresponding to this team's entry in an EntryList.
      *
-     * @param \Petrocki\IofXmlPhp\Model\IdType $entryId
+     * @param \IofXmlPhp\Model\IdType $entryId
      * @return self
      */
-    public function setEntryId(?\Petrocki\IofXmlPhp\Model\IdType $entryId = null)
+    public function setEntryId(?\IofXmlPhp\Model\IdType $entryId = null)
     {
         $this->entryId = $entryId;
         return $this;
@@ -132,9 +132,9 @@ class TeamResultType
      * The organisation(s) the team is representing.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\OrganisationType $organisation
+     * @param \IofXmlPhp\Model\OrganisationType $organisation
      */
-    public function addToOrganisation(\Petrocki\IofXmlPhp\Model\OrganisationType $organisation)
+    public function addToOrganisation(\IofXmlPhp\Model\OrganisationType $organisation)
     {
         $this->organisation[] = $organisation;
         return $this;
@@ -171,7 +171,7 @@ class TeamResultType
      *
      * The organisation(s) the team is representing.
      *
-     * @return \Petrocki\IofXmlPhp\Model\OrganisationType[]
+     * @return \IofXmlPhp\Model\OrganisationType[]
      */
     public function getOrganisation()
     {
@@ -183,7 +183,7 @@ class TeamResultType
      *
      * The organisation(s) the team is representing.
      *
-     * @param \Petrocki\IofXmlPhp\Model\OrganisationType[] $organisation
+     * @param \IofXmlPhp\Model\OrganisationType[] $organisation
      * @return self
      */
     public function setOrganisation(?array $organisation = null)
@@ -224,9 +224,9 @@ class TeamResultType
      * Defines the result information for each team member. One element per relay leg must be included, even if the team has not assigned any team member to the leg.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\TeamMemberResultType $teamMemberResult
+     * @param \IofXmlPhp\Model\TeamMemberResultType $teamMemberResult
      */
-    public function addToTeamMemberResult(\Petrocki\IofXmlPhp\Model\TeamMemberResultType $teamMemberResult)
+    public function addToTeamMemberResult(\IofXmlPhp\Model\TeamMemberResultType $teamMemberResult)
     {
         $this->teamMemberResult[] = $teamMemberResult;
         return $this;
@@ -263,7 +263,7 @@ class TeamResultType
      *
      * Defines the result information for each team member. One element per relay leg must be included, even if the team has not assigned any team member to the leg.
      *
-     * @return \Petrocki\IofXmlPhp\Model\TeamMemberResultType[]
+     * @return \IofXmlPhp\Model\TeamMemberResultType[]
      */
     public function getTeamMemberResult()
     {
@@ -275,7 +275,7 @@ class TeamResultType
      *
      * Defines the result information for each team member. One element per relay leg must be included, even if the team has not assigned any team member to the leg.
      *
-     * @param \Petrocki\IofXmlPhp\Model\TeamMemberResultType[] $teamMemberResult
+     * @param \IofXmlPhp\Model\TeamMemberResultType[] $teamMemberResult
      * @return self
      */
     public function setTeamMemberResult(?array $teamMemberResult = null)
@@ -290,9 +290,9 @@ class TeamResultType
      * Defines the fees that the team has been assigned.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\AssignedFeeType $assignedFee
+     * @param \IofXmlPhp\Model\AssignedFeeType $assignedFee
      */
-    public function addToAssignedFee(\Petrocki\IofXmlPhp\Model\AssignedFeeType $assignedFee)
+    public function addToAssignedFee(\IofXmlPhp\Model\AssignedFeeType $assignedFee)
     {
         $this->assignedFee[] = $assignedFee;
         return $this;
@@ -329,7 +329,7 @@ class TeamResultType
      *
      * Defines the fees that the team has been assigned.
      *
-     * @return \Petrocki\IofXmlPhp\Model\AssignedFeeType[]
+     * @return \IofXmlPhp\Model\AssignedFeeType[]
      */
     public function getAssignedFee()
     {
@@ -341,7 +341,7 @@ class TeamResultType
      *
      * Defines the fees that the team has been assigned.
      *
-     * @param \Petrocki\IofXmlPhp\Model\AssignedFeeType[] $assignedFee
+     * @param \IofXmlPhp\Model\AssignedFeeType[] $assignedFee
      * @return self
      */
     public function setAssignedFee(?array $assignedFee = null)
@@ -356,9 +356,9 @@ class TeamResultType
      * Defines the services requested by the team.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\ServiceRequestType $serviceRequest
+     * @param \IofXmlPhp\Model\ServiceRequestType $serviceRequest
      */
-    public function addToServiceRequest(\Petrocki\IofXmlPhp\Model\ServiceRequestType $serviceRequest)
+    public function addToServiceRequest(\IofXmlPhp\Model\ServiceRequestType $serviceRequest)
     {
         $this->serviceRequest[] = $serviceRequest;
         return $this;
@@ -395,7 +395,7 @@ class TeamResultType
      *
      * Defines the services requested by the team.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ServiceRequestType[]
+     * @return \IofXmlPhp\Model\ServiceRequestType[]
      */
     public function getServiceRequest()
     {
@@ -407,7 +407,7 @@ class TeamResultType
      *
      * Defines the services requested by the team.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ServiceRequestType[] $serviceRequest
+     * @param \IofXmlPhp\Model\ServiceRequestType[] $serviceRequest
      * @return self
      */
     public function setServiceRequest(?array $serviceRequest = null)
@@ -421,7 +421,7 @@ class TeamResultType
      *
      * Container element for custom elements from other schemas.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ExtensionsType
+     * @return \IofXmlPhp\Model\ExtensionsType
      */
     public function getExtensions()
     {
@@ -433,10 +433,10 @@ class TeamResultType
      *
      * Container element for custom elements from other schemas.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @param \IofXmlPhp\Model\ExtensionsType $extensions
      * @return self
      */
-    public function setExtensions(?\Petrocki\IofXmlPhp\Model\ExtensionsType $extensions = null)
+    public function setExtensions(?\IofXmlPhp\Model\ExtensionsType $extensions = null)
     {
         $this->extensions = $extensions;
         return $this;

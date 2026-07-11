@@ -1,8 +1,8 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model;
+namespace IofXmlPhp\Model;
 
-use Petrocki\IofXmlPhp\Model\CourseData\CourseDataAType;
+use IofXmlPhp\Model\CourseData\CourseDataAType;
 
 /**
  * Class representing CourseData

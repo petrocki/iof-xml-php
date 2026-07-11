@@ -1,6 +1,6 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model;
+namespace IofXmlPhp\Model;
 
 /**
  * Class representing ClassResultType
@@ -25,14 +25,14 @@ class ClassResultType
     /**
      * The class that the result list belongs to.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ClassType $class
+     * @var \IofXmlPhp\Model\ClassType $class
      */
     private $class = null;
 
     /**
      * Defines the course assigned to the class. If courses are unique per competitor, use PersonResult/Course or TeamResult/TeamMemberResult/Course instead. One element per race.
      *
-     * @var \Petrocki\IofXmlPhp\Model\SimpleRaceCourseType[] $course
+     * @var \IofXmlPhp\Model\SimpleRaceCourseType[] $course
      */
     private $course = [
         
@@ -41,7 +41,7 @@ class ClassResultType
     /**
      * Results for individual competitors in the class.
      *
-     * @var \Petrocki\IofXmlPhp\Model\PersonResultType[] $personResult
+     * @var \IofXmlPhp\Model\PersonResultType[] $personResult
      */
     private $personResult = [
         
@@ -50,7 +50,7 @@ class ClassResultType
     /**
      * Results for teams in the class.
      *
-     * @var \Petrocki\IofXmlPhp\Model\TeamResultType[] $teamResult
+     * @var \IofXmlPhp\Model\TeamResultType[] $teamResult
      */
     private $teamResult = [
         
@@ -59,7 +59,7 @@ class ClassResultType
     /**
      * Container element for custom elements from other schemas.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @var \IofXmlPhp\Model\ExtensionsType $extensions
      */
     private $extensions = null;
 
@@ -116,7 +116,7 @@ class ClassResultType
      *
      * The class that the result list belongs to.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ClassType
+     * @return \IofXmlPhp\Model\ClassType
      */
     public function getClass()
     {
@@ -128,10 +128,10 @@ class ClassResultType
      *
      * The class that the result list belongs to.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ClassType $class
+     * @param \IofXmlPhp\Model\ClassType $class
      * @return self
      */
-    public function setClass(\Petrocki\IofXmlPhp\Model\ClassType $class)
+    public function setClass(\IofXmlPhp\Model\ClassType $class)
     {
         $this->class = $class;
         return $this;
@@ -143,9 +143,9 @@ class ClassResultType
      * Defines the course assigned to the class. If courses are unique per competitor, use PersonResult/Course or TeamResult/TeamMemberResult/Course instead. One element per race.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\SimpleRaceCourseType $course
+     * @param \IofXmlPhp\Model\SimpleRaceCourseType $course
      */
-    public function addToCourse(\Petrocki\IofXmlPhp\Model\SimpleRaceCourseType $course)
+    public function addToCourse(\IofXmlPhp\Model\SimpleRaceCourseType $course)
     {
         $this->course[] = $course;
         return $this;
@@ -182,7 +182,7 @@ class ClassResultType
      *
      * Defines the course assigned to the class. If courses are unique per competitor, use PersonResult/Course or TeamResult/TeamMemberResult/Course instead. One element per race.
      *
-     * @return \Petrocki\IofXmlPhp\Model\SimpleRaceCourseType[]
+     * @return \IofXmlPhp\Model\SimpleRaceCourseType[]
      */
     public function getCourse()
     {
@@ -194,7 +194,7 @@ class ClassResultType
      *
      * Defines the course assigned to the class. If courses are unique per competitor, use PersonResult/Course or TeamResult/TeamMemberResult/Course instead. One element per race.
      *
-     * @param \Petrocki\IofXmlPhp\Model\SimpleRaceCourseType[] $course
+     * @param \IofXmlPhp\Model\SimpleRaceCourseType[] $course
      * @return self
      */
     public function setCourse(?array $course = null)
@@ -209,9 +209,9 @@ class ClassResultType
      * Results for individual competitors in the class.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\PersonResultType $personResult
+     * @param \IofXmlPhp\Model\PersonResultType $personResult
      */
-    public function addToPersonResult(\Petrocki\IofXmlPhp\Model\PersonResultType $personResult)
+    public function addToPersonResult(\IofXmlPhp\Model\PersonResultType $personResult)
     {
         $this->personResult[] = $personResult;
         return $this;
@@ -248,7 +248,7 @@ class ClassResultType
      *
      * Results for individual competitors in the class.
      *
-     * @return \Petrocki\IofXmlPhp\Model\PersonResultType[]
+     * @return \IofXmlPhp\Model\PersonResultType[]
      */
     public function getPersonResult()
     {
@@ -260,7 +260,7 @@ class ClassResultType
      *
      * Results for individual competitors in the class.
      *
-     * @param \Petrocki\IofXmlPhp\Model\PersonResultType[] $personResult
+     * @param \IofXmlPhp\Model\PersonResultType[] $personResult
      * @return self
      */
     public function setPersonResult(?array $personResult = null)
@@ -275,9 +275,9 @@ class ClassResultType
      * Results for teams in the class.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\TeamResultType $teamResult
+     * @param \IofXmlPhp\Model\TeamResultType $teamResult
      */
-    public function addToTeamResult(\Petrocki\IofXmlPhp\Model\TeamResultType $teamResult)
+    public function addToTeamResult(\IofXmlPhp\Model\TeamResultType $teamResult)
     {
         $this->teamResult[] = $teamResult;
         return $this;
@@ -314,7 +314,7 @@ class ClassResultType
      *
      * Results for teams in the class.
      *
-     * @return \Petrocki\IofXmlPhp\Model\TeamResultType[]
+     * @return \IofXmlPhp\Model\TeamResultType[]
      */
     public function getTeamResult()
     {
@@ -326,7 +326,7 @@ class ClassResultType
      *
      * Results for teams in the class.
      *
-     * @param \Petrocki\IofXmlPhp\Model\TeamResultType[] $teamResult
+     * @param \IofXmlPhp\Model\TeamResultType[] $teamResult
      * @return self
      */
     public function setTeamResult(?array $teamResult = null)
@@ -340,7 +340,7 @@ class ClassResultType
      *
      * Container element for custom elements from other schemas.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ExtensionsType
+     * @return \IofXmlPhp\Model\ExtensionsType
      */
     public function getExtensions()
     {
@@ -352,10 +352,10 @@ class ClassResultType
      *
      * Container element for custom elements from other schemas.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @param \IofXmlPhp\Model\ExtensionsType $extensions
      * @return self
      */
-    public function setExtensions(?\Petrocki\IofXmlPhp\Model\ExtensionsType $extensions = null)
+    public function setExtensions(?\IofXmlPhp\Model\ExtensionsType $extensions = null)
     {
         $this->extensions = $extensions;
         return $this;

@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\Model\CompetitorType:
+IofXmlPhp\Model\CompetitorType:
     properties:
         modifyTime:
             expose: true
@@ -18,7 +18,7 @@ Petrocki\IofXmlPhp\Model\CompetitorType:
             accessor:
                 getter: getPerson
                 setter: setPerson
-            type: Petrocki\IofXmlPhp\Model\PersonType
+            type: IofXmlPhp\Model\PersonType
         organisation:
             expose: true
             access_type: public_method
@@ -32,7 +32,7 @@ Petrocki\IofXmlPhp\Model\CompetitorType:
                 inline: true
                 entry_name: Organisation
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\Model\OrganisationType>
+            type: array<IofXmlPhp\Model\OrganisationType>
         controlCard:
             expose: true
             access_type: public_method
@@ -46,7 +46,7 @@ Petrocki\IofXmlPhp\Model\CompetitorType:
                 inline: true
                 entry_name: ControlCard
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\Model\ControlCardType>
+            type: array<IofXmlPhp\Model\ControlCardType>
         class:
             expose: true
             access_type: public_method
@@ -60,7 +60,7 @@ Petrocki\IofXmlPhp\Model\CompetitorType:
                 inline: true
                 entry_name: Class
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\Model\ClassType>
+            type: array<IofXmlPhp\Model\ClassType>
         score:
             expose: true
             access_type: public_method
@@ -74,7 +74,7 @@ Petrocki\IofXmlPhp\Model\CompetitorType:
                 inline: true
                 entry_name: Score
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\Model\ScoreType>
+            type: array<IofXmlPhp\Model\ScoreType>
         extensions:
             expose: true
             access_type: public_method
@@ -84,4 +84,4 @@ Petrocki\IofXmlPhp\Model\CompetitorType:
             accessor:
                 getter: getExtensions
                 setter: setExtensions
-            type: Petrocki\IofXmlPhp\Model\ExtensionsType
+            type: IofXmlPhp\Model\ExtensionsType

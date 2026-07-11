@@ -1,8 +1,8 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model;
+namespace IofXmlPhp\Model;
 
-use Petrocki\IofXmlPhp\Model\ClassList\ClassListAType;
+use IofXmlPhp\Model\ClassList\ClassListAType;
 
 /**
  * Class representing ClassList

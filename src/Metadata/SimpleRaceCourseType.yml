@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\Model\SimpleRaceCourseType:
+IofXmlPhp\Model\SimpleRaceCourseType:
     properties:
         raceNumber:
             expose: true

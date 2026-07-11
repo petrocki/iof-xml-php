@@ -1,6 +1,6 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model;
+namespace IofXmlPhp\Model;
 
 /**
  * Class representing StartTimeAllocationRequestType
@@ -20,14 +20,14 @@ class StartTimeAllocationRequestType
     /**
      * The reference organisation for the start time allocation request.
      *
-     * @var \Petrocki\IofXmlPhp\Model\OrganisationType $organisation
+     * @var \IofXmlPhp\Model\OrganisationType $organisation
      */
     private $organisation = null;
 
     /**
      * The reference person for the start time allocation request.
      *
-     * @var \Petrocki\IofXmlPhp\Model\PersonType $person
+     * @var \IofXmlPhp\Model\PersonType $person
      */
     private $person = null;
 
@@ -62,7 +62,7 @@ class StartTimeAllocationRequestType
      *
      * The reference organisation for the start time allocation request.
      *
-     * @return \Petrocki\IofXmlPhp\Model\OrganisationType
+     * @return \IofXmlPhp\Model\OrganisationType
      */
     public function getOrganisation()
     {
@@ -74,10 +74,10 @@ class StartTimeAllocationRequestType
      *
      * The reference organisation for the start time allocation request.
      *
-     * @param \Petrocki\IofXmlPhp\Model\OrganisationType $organisation
+     * @param \IofXmlPhp\Model\OrganisationType $organisation
      * @return self
      */
-    public function setOrganisation(?\Petrocki\IofXmlPhp\Model\OrganisationType $organisation = null)
+    public function setOrganisation(?\IofXmlPhp\Model\OrganisationType $organisation = null)
     {
         $this->organisation = $organisation;
         return $this;
@@ -88,7 +88,7 @@ class StartTimeAllocationRequestType
      *
      * The reference person for the start time allocation request.
      *
-     * @return \Petrocki\IofXmlPhp\Model\PersonType
+     * @return \IofXmlPhp\Model\PersonType
      */
     public function getPerson()
     {
@@ -100,10 +100,10 @@ class StartTimeAllocationRequestType
      *
      * The reference person for the start time allocation request.
      *
-     * @param \Petrocki\IofXmlPhp\Model\PersonType $person
+     * @param \IofXmlPhp\Model\PersonType $person
      * @return self
      */
-    public function setPerson(?\Petrocki\IofXmlPhp\Model\PersonType $person = null)
+    public function setPerson(?\IofXmlPhp\Model\PersonType $person = null)
     {
         $this->person = $person;
         return $this;

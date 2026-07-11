@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\Model\CourseControlType:
+IofXmlPhp\Model\CourseControlType:
     properties:
         type:
             expose: true
@@ -78,7 +78,7 @@ Petrocki\IofXmlPhp\Model\CourseControlType:
             accessor:
                 getter: getMapTextPosition
                 setter: setMapTextPosition
-            type: Petrocki\IofXmlPhp\Model\MapPositionType
+            type: IofXmlPhp\Model\MapPositionType
         legLength:
             expose: true
             access_type: public_method
@@ -108,4 +108,4 @@ Petrocki\IofXmlPhp\Model\CourseControlType:
             accessor:
                 getter: getExtensions
                 setter: setExtensions
-            type: Petrocki\IofXmlPhp\Model\ExtensionsType
+            type: IofXmlPhp\Model\ExtensionsType

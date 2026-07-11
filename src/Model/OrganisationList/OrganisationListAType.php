@@ -1,8 +1,8 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model\OrganisationList;
+namespace IofXmlPhp\Model\OrganisationList;
 
-use Petrocki\IofXmlPhp\Model\BaseMessageElementType;
+use IofXmlPhp\Model\BaseMessageElementType;
 
 /**
  * Class representing OrganisationListAType
@@ -10,7 +10,7 @@ use Petrocki\IofXmlPhp\Model\BaseMessageElementType;
 class OrganisationListAType extends BaseMessageElementType
 {
     /**
-     * @var \Petrocki\IofXmlPhp\Model\OrganisationType[] $organisation
+     * @var \IofXmlPhp\Model\OrganisationType[] $organisation
      */
     private $organisation = [
         
@@ -19,7 +19,7 @@ class OrganisationListAType extends BaseMessageElementType
     /**
      * Container element for custom elements from other schemas.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @var \IofXmlPhp\Model\ExtensionsType $extensions
      */
     private $extensions = null;
 
@@ -27,9 +27,9 @@ class OrganisationListAType extends BaseMessageElementType
      * Adds as organisation
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\OrganisationType $organisation
+     * @param \IofXmlPhp\Model\OrganisationType $organisation
      */
-    public function addToOrganisation(\Petrocki\IofXmlPhp\Model\OrganisationType $organisation)
+    public function addToOrganisation(\IofXmlPhp\Model\OrganisationType $organisation)
     {
         $this->organisation[] = $organisation;
         return $this;
@@ -60,7 +60,7 @@ class OrganisationListAType extends BaseMessageElementType
     /**
      * Gets as organisation
      *
-     * @return \Petrocki\IofXmlPhp\Model\OrganisationType[]
+     * @return \IofXmlPhp\Model\OrganisationType[]
      */
     public function getOrganisation()
     {
@@ -70,7 +70,7 @@ class OrganisationListAType extends BaseMessageElementType
     /**
      * Sets a new organisation
      *
-     * @param \Petrocki\IofXmlPhp\Model\OrganisationType[] $organisation
+     * @param \IofXmlPhp\Model\OrganisationType[] $organisation
      * @return self
      */
     public function setOrganisation(?array $organisation = null)
@@ -84,7 +84,7 @@ class OrganisationListAType extends BaseMessageElementType
      *
      * Container element for custom elements from other schemas.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ExtensionsType
+     * @return \IofXmlPhp\Model\ExtensionsType
      */
     public function getExtensions()
     {
@@ -96,10 +96,10 @@ class OrganisationListAType extends BaseMessageElementType
      *
      * Container element for custom elements from other schemas.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @param \IofXmlPhp\Model\ExtensionsType $extensions
      * @return self
      */
-    public function setExtensions(?\Petrocki\IofXmlPhp\Model\ExtensionsType $extensions = null)
+    public function setExtensions(?\IofXmlPhp\Model\ExtensionsType $extensions = null)
     {
         $this->extensions = $extensions;
         return $this;

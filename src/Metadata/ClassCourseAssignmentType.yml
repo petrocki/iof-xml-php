@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\Model\ClassCourseAssignmentType:
+IofXmlPhp\Model\ClassCourseAssignmentType:
     properties:
         numberOfCompetitors:
             expose: true
@@ -18,7 +18,7 @@ Petrocki\IofXmlPhp\Model\ClassCourseAssignmentType:
             accessor:
                 getter: getClassId
                 setter: setClassId
-            type: Petrocki\IofXmlPhp\Model\IdType
+            type: IofXmlPhp\Model\IdType
         className:
             expose: true
             access_type: public_method
@@ -72,4 +72,4 @@ Petrocki\IofXmlPhp\Model\ClassCourseAssignmentType:
             accessor:
                 getter: getExtensions
                 setter: setExtensions
-            type: Petrocki\IofXmlPhp\Model\ExtensionsType
+            type: IofXmlPhp\Model\ExtensionsType

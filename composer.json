@@ -6,12 +6,12 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Petrocki\\IofXmlPhp\\": "src/"
+            "IofXmlPhp\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Petrocki\\IofXmlPhp\\Tests\\": "tests/"
+            "IofXmlPhp\\Tests\\": "tests/"
         }
     },
     "authors": [

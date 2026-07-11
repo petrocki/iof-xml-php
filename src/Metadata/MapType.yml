@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\Model\MapType:
+IofXmlPhp\Model\MapType:
     properties:
         id:
             expose: true
@@ -9,7 +9,7 @@ Petrocki\IofXmlPhp\Model\MapType:
             accessor:
                 getter: getId
                 setter: setId
-            type: Petrocki\IofXmlPhp\Model\IdType
+            type: IofXmlPhp\Model\IdType
         image:
             expose: true
             access_type: public_method
@@ -19,7 +19,7 @@ Petrocki\IofXmlPhp\Model\MapType:
             accessor:
                 getter: getImage
                 setter: setImage
-            type: Petrocki\IofXmlPhp\Model\ImageType
+            type: IofXmlPhp\Model\ImageType
         scale:
             expose: true
             access_type: public_method
@@ -39,7 +39,7 @@ Petrocki\IofXmlPhp\Model\MapType:
             accessor:
                 getter: getMapPositionTopLeft
                 setter: setMapPositionTopLeft
-            type: Petrocki\IofXmlPhp\Model\MapPositionType
+            type: IofXmlPhp\Model\MapPositionType
         mapPositionBottomRight:
             expose: true
             access_type: public_method
@@ -49,7 +49,7 @@ Petrocki\IofXmlPhp\Model\MapType:
             accessor:
                 getter: getMapPositionBottomRight
                 setter: setMapPositionBottomRight
-            type: Petrocki\IofXmlPhp\Model\MapPositionType
+            type: IofXmlPhp\Model\MapPositionType
         extensions:
             expose: true
             access_type: public_method
@@ -59,4 +59,4 @@ Petrocki\IofXmlPhp\Model\MapType:
             accessor:
                 getter: getExtensions
                 setter: setExtensions
-            type: Petrocki\IofXmlPhp\Model\ExtensionsType
+            type: IofXmlPhp\Model\ExtensionsType

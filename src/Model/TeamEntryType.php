@@ -1,6 +1,6 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model;
+namespace IofXmlPhp\Model;
 
 /**
  * Class representing TeamEntryType
@@ -16,7 +16,7 @@ class TeamEntryType
     private $modifyTime = null;
 
     /**
-     * @var \Petrocki\IofXmlPhp\Model\IdType $id
+     * @var \IofXmlPhp\Model\IdType $id
      */
     private $id = null;
 
@@ -30,7 +30,7 @@ class TeamEntryType
     /**
      * The organisation(s) that the team represents.
      *
-     * @var \Petrocki\IofXmlPhp\Model\OrganisationType[] $organisation
+     * @var \IofXmlPhp\Model\OrganisationType[] $organisation
      */
     private $organisation = [
         
@@ -39,7 +39,7 @@ class TeamEntryType
     /**
      * The persons that make up the team.
      *
-     * @var \Petrocki\IofXmlPhp\Model\TeamEntryPersonType[] $teamEntryPerson
+     * @var \IofXmlPhp\Model\TeamEntryPersonType[] $teamEntryPerson
      */
     private $teamEntryPerson = [
         
@@ -48,7 +48,7 @@ class TeamEntryType
     /**
      * The class(es) the team wants to take part in. Multiple classes may be provided in order of preference in scenarios where the number of competitors are limited in some classes.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ClassType[] $class
+     * @var \IofXmlPhp\Model\ClassType[] $class
      */
     private $class = [
         
@@ -66,7 +66,7 @@ class TeamEntryType
     /**
      * The fees that the team as a whole has to pay when entering the event. In a multi-race event, there is usually one element for each race. If there are differentated fees for the team members, specify them in the TeamEntryPerson elements.
      *
-     * @var \Petrocki\IofXmlPhp\Model\AssignedFeeType[] $assignedFee
+     * @var \IofXmlPhp\Model\AssignedFeeType[] $assignedFee
      */
     private $assignedFee = [
         
@@ -75,7 +75,7 @@ class TeamEntryType
     /**
      * Defines the services requested by the team.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ServiceRequestType[] $serviceRequest
+     * @var \IofXmlPhp\Model\ServiceRequestType[] $serviceRequest
      */
     private $serviceRequest = [
         
@@ -84,7 +84,7 @@ class TeamEntryType
     /**
      * Any special preferences regarding start time that has to be taken into consideration when making the start list draw.
      *
-     * @var \Petrocki\IofXmlPhp\Model\StartTimeAllocationRequestType $startTimeAllocationRequest
+     * @var \IofXmlPhp\Model\StartTimeAllocationRequestType $startTimeAllocationRequest
      */
     private $startTimeAllocationRequest = null;
 
@@ -105,7 +105,7 @@ class TeamEntryType
     /**
      * Container element for custom elements from other schemas.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @var \IofXmlPhp\Model\ExtensionsType $extensions
      */
     private $extensions = null;
 
@@ -134,7 +134,7 @@ class TeamEntryType
     /**
      * Gets as id
      *
-     * @return \Petrocki\IofXmlPhp\Model\IdType
+     * @return \IofXmlPhp\Model\IdType
      */
     public function getId()
     {
@@ -144,10 +144,10 @@ class TeamEntryType
     /**
      * Sets a new id
      *
-     * @param \Petrocki\IofXmlPhp\Model\IdType $id
+     * @param \IofXmlPhp\Model\IdType $id
      * @return self
      */
-    public function setId(?\Petrocki\IofXmlPhp\Model\IdType $id = null)
+    public function setId(?\IofXmlPhp\Model\IdType $id = null)
     {
         $this->id = $id;
         return $this;
@@ -185,9 +185,9 @@ class TeamEntryType
      * The organisation(s) that the team represents.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\OrganisationType $organisation
+     * @param \IofXmlPhp\Model\OrganisationType $organisation
      */
-    public function addToOrganisation(\Petrocki\IofXmlPhp\Model\OrganisationType $organisation)
+    public function addToOrganisation(\IofXmlPhp\Model\OrganisationType $organisation)
     {
         $this->organisation[] = $organisation;
         return $this;
@@ -224,7 +224,7 @@ class TeamEntryType
      *
      * The organisation(s) that the team represents.
      *
-     * @return \Petrocki\IofXmlPhp\Model\OrganisationType[]
+     * @return \IofXmlPhp\Model\OrganisationType[]
      */
     public function getOrganisation()
     {
@@ -236,7 +236,7 @@ class TeamEntryType
      *
      * The organisation(s) that the team represents.
      *
-     * @param \Petrocki\IofXmlPhp\Model\OrganisationType[] $organisation
+     * @param \IofXmlPhp\Model\OrganisationType[] $organisation
      * @return self
      */
     public function setOrganisation(?array $organisation = null)
@@ -251,9 +251,9 @@ class TeamEntryType
      * The persons that make up the team.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\TeamEntryPersonType $teamEntryPerson
+     * @param \IofXmlPhp\Model\TeamEntryPersonType $teamEntryPerson
      */
-    public function addToTeamEntryPerson(\Petrocki\IofXmlPhp\Model\TeamEntryPersonType $teamEntryPerson)
+    public function addToTeamEntryPerson(\IofXmlPhp\Model\TeamEntryPersonType $teamEntryPerson)
     {
         $this->teamEntryPerson[] = $teamEntryPerson;
         return $this;
@@ -290,7 +290,7 @@ class TeamEntryType
      *
      * The persons that make up the team.
      *
-     * @return \Petrocki\IofXmlPhp\Model\TeamEntryPersonType[]
+     * @return \IofXmlPhp\Model\TeamEntryPersonType[]
      */
     public function getTeamEntryPerson()
     {
@@ -302,7 +302,7 @@ class TeamEntryType
      *
      * The persons that make up the team.
      *
-     * @param \Petrocki\IofXmlPhp\Model\TeamEntryPersonType[] $teamEntryPerson
+     * @param \IofXmlPhp\Model\TeamEntryPersonType[] $teamEntryPerson
      * @return self
      */
     public function setTeamEntryPerson(?array $teamEntryPerson = null)
@@ -317,9 +317,9 @@ class TeamEntryType
      * The class(es) the team wants to take part in. Multiple classes may be provided in order of preference in scenarios where the number of competitors are limited in some classes.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\ClassType $class
+     * @param \IofXmlPhp\Model\ClassType $class
      */
-    public function addToClass(\Petrocki\IofXmlPhp\Model\ClassType $class)
+    public function addToClass(\IofXmlPhp\Model\ClassType $class)
     {
         $this->class[] = $class;
         return $this;
@@ -356,7 +356,7 @@ class TeamEntryType
      *
      * The class(es) the team wants to take part in. Multiple classes may be provided in order of preference in scenarios where the number of competitors are limited in some classes.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ClassType[]
+     * @return \IofXmlPhp\Model\ClassType[]
      */
     public function getClass()
     {
@@ -368,7 +368,7 @@ class TeamEntryType
      *
      * The class(es) the team wants to take part in. Multiple classes may be provided in order of preference in scenarios where the number of competitors are limited in some classes.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ClassType[] $class
+     * @param \IofXmlPhp\Model\ClassType[] $class
      * @return self
      */
     public function setClass(?array $class = null)
@@ -449,9 +449,9 @@ class TeamEntryType
      * The fees that the team as a whole has to pay when entering the event. In a multi-race event, there is usually one element for each race. If there are differentated fees for the team members, specify them in the TeamEntryPerson elements.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\AssignedFeeType $assignedFee
+     * @param \IofXmlPhp\Model\AssignedFeeType $assignedFee
      */
-    public function addToAssignedFee(\Petrocki\IofXmlPhp\Model\AssignedFeeType $assignedFee)
+    public function addToAssignedFee(\IofXmlPhp\Model\AssignedFeeType $assignedFee)
     {
         $this->assignedFee[] = $assignedFee;
         return $this;
@@ -488,7 +488,7 @@ class TeamEntryType
      *
      * The fees that the team as a whole has to pay when entering the event. In a multi-race event, there is usually one element for each race. If there are differentated fees for the team members, specify them in the TeamEntryPerson elements.
      *
-     * @return \Petrocki\IofXmlPhp\Model\AssignedFeeType[]
+     * @return \IofXmlPhp\Model\AssignedFeeType[]
      */
     public function getAssignedFee()
     {
@@ -500,7 +500,7 @@ class TeamEntryType
      *
      * The fees that the team as a whole has to pay when entering the event. In a multi-race event, there is usually one element for each race. If there are differentated fees for the team members, specify them in the TeamEntryPerson elements.
      *
-     * @param \Petrocki\IofXmlPhp\Model\AssignedFeeType[] $assignedFee
+     * @param \IofXmlPhp\Model\AssignedFeeType[] $assignedFee
      * @return self
      */
     public function setAssignedFee(?array $assignedFee = null)
@@ -515,9 +515,9 @@ class TeamEntryType
      * Defines the services requested by the team.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\ServiceRequestType $serviceRequest
+     * @param \IofXmlPhp\Model\ServiceRequestType $serviceRequest
      */
-    public function addToServiceRequest(\Petrocki\IofXmlPhp\Model\ServiceRequestType $serviceRequest)
+    public function addToServiceRequest(\IofXmlPhp\Model\ServiceRequestType $serviceRequest)
     {
         $this->serviceRequest[] = $serviceRequest;
         return $this;
@@ -554,7 +554,7 @@ class TeamEntryType
      *
      * Defines the services requested by the team.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ServiceRequestType[]
+     * @return \IofXmlPhp\Model\ServiceRequestType[]
      */
     public function getServiceRequest()
     {
@@ -566,7 +566,7 @@ class TeamEntryType
      *
      * Defines the services requested by the team.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ServiceRequestType[] $serviceRequest
+     * @param \IofXmlPhp\Model\ServiceRequestType[] $serviceRequest
      * @return self
      */
     public function setServiceRequest(?array $serviceRequest = null)
@@ -580,7 +580,7 @@ class TeamEntryType
      *
      * Any special preferences regarding start time that has to be taken into consideration when making the start list draw.
      *
-     * @return \Petrocki\IofXmlPhp\Model\StartTimeAllocationRequestType
+     * @return \IofXmlPhp\Model\StartTimeAllocationRequestType
      */
     public function getStartTimeAllocationRequest()
     {
@@ -592,10 +592,10 @@ class TeamEntryType
      *
      * Any special preferences regarding start time that has to be taken into consideration when making the start list draw.
      *
-     * @param \Petrocki\IofXmlPhp\Model\StartTimeAllocationRequestType $startTimeAllocationRequest
+     * @param \IofXmlPhp\Model\StartTimeAllocationRequestType $startTimeAllocationRequest
      * @return self
      */
-    public function setStartTimeAllocationRequest(?\Petrocki\IofXmlPhp\Model\StartTimeAllocationRequestType $startTimeAllocationRequest = null)
+    public function setStartTimeAllocationRequest(?\IofXmlPhp\Model\StartTimeAllocationRequestType $startTimeAllocationRequest = null)
     {
         $this->startTimeAllocationRequest = $startTimeAllocationRequest;
         return $this;
@@ -658,7 +658,7 @@ class TeamEntryType
      *
      * Container element for custom elements from other schemas.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ExtensionsType
+     * @return \IofXmlPhp\Model\ExtensionsType
      */
     public function getExtensions()
     {
@@ -670,10 +670,10 @@ class TeamEntryType
      *
      * Container element for custom elements from other schemas.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @param \IofXmlPhp\Model\ExtensionsType $extensions
      * @return self
      */
-    public function setExtensions(?\Petrocki\IofXmlPhp\Model\ExtensionsType $extensions = null)
+    public function setExtensions(?\IofXmlPhp\Model\ExtensionsType $extensions = null)
     {
         $this->extensions = $extensions;
         return $this;

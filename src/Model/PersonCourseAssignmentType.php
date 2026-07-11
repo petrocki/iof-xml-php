@@ -1,6 +1,6 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model;
+namespace IofXmlPhp\Model;
 
 /**
  * Class representing PersonCourseAssignmentType
@@ -13,7 +13,7 @@ class PersonCourseAssignmentType
     /**
      * The id corresponding to this person's entry in an EntryList.
      *
-     * @var \Petrocki\IofXmlPhp\Model\IdType $entryId
+     * @var \IofXmlPhp\Model\IdType $entryId
      */
     private $entryId = null;
 
@@ -55,7 +55,7 @@ class PersonCourseAssignmentType
     /**
      * Container element for custom elements from other schemas.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @var \IofXmlPhp\Model\ExtensionsType $extensions
      */
     private $extensions = null;
 
@@ -64,7 +64,7 @@ class PersonCourseAssignmentType
      *
      * The id corresponding to this person's entry in an EntryList.
      *
-     * @return \Petrocki\IofXmlPhp\Model\IdType
+     * @return \IofXmlPhp\Model\IdType
      */
     public function getEntryId()
     {
@@ -76,10 +76,10 @@ class PersonCourseAssignmentType
      *
      * The id corresponding to this person's entry in an EntryList.
      *
-     * @param \Petrocki\IofXmlPhp\Model\IdType $entryId
+     * @param \IofXmlPhp\Model\IdType $entryId
      * @return self
      */
-    public function setEntryId(?\Petrocki\IofXmlPhp\Model\IdType $entryId = null)
+    public function setEntryId(?\IofXmlPhp\Model\IdType $entryId = null)
     {
         $this->entryId = $entryId;
         return $this;
@@ -220,7 +220,7 @@ class PersonCourseAssignmentType
      *
      * Container element for custom elements from other schemas.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ExtensionsType
+     * @return \IofXmlPhp\Model\ExtensionsType
      */
     public function getExtensions()
     {
@@ -232,10 +232,10 @@ class PersonCourseAssignmentType
      *
      * Container element for custom elements from other schemas.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @param \IofXmlPhp\Model\ExtensionsType $extensions
      * @return self
      */
-    public function setExtensions(?\Petrocki\IofXmlPhp\Model\ExtensionsType $extensions = null)
+    public function setExtensions(?\IofXmlPhp\Model\ExtensionsType $extensions = null)
     {
         $this->extensions = $extensions;
         return $this;

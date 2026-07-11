@@ -1,6 +1,6 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model;
+namespace IofXmlPhp\Model;
 
 /**
  * Class representing OrganisationType
@@ -23,7 +23,7 @@ class OrganisationType
     private $modifyTime = null;
 
     /**
-     * @var \Petrocki\IofXmlPhp\Model\IdType $id
+     * @var \IofXmlPhp\Model\IdType $id
      */
     private $id = null;
 
@@ -56,19 +56,19 @@ class OrganisationType
     private $parentOrganisationId = null;
 
     /**
-     * @var \Petrocki\IofXmlPhp\Model\CountryType $country
+     * @var \IofXmlPhp\Model\CountryType $country
      */
     private $country = null;
 
     /**
-     * @var \Petrocki\IofXmlPhp\Model\AddressType[] $address
+     * @var \IofXmlPhp\Model\AddressType[] $address
      */
     private $address = [
         
     ];
 
     /**
-     * @var \Petrocki\IofXmlPhp\Model\ContactType[] $contact
+     * @var \IofXmlPhp\Model\ContactType[] $contact
      */
     private $contact = [
         
@@ -77,12 +77,12 @@ class OrganisationType
     /**
      * The geographical location of the organisation, e.g. a city center, an office or a club house.
      *
-     * @var \Petrocki\IofXmlPhp\Model\GeoPositionType $position
+     * @var \IofXmlPhp\Model\GeoPositionType $position
      */
     private $position = null;
 
     /**
-     * @var \Petrocki\IofXmlPhp\Model\AccountType[] $account
+     * @var \IofXmlPhp\Model\AccountType[] $account
      */
     private $account = [
         
@@ -91,7 +91,7 @@ class OrganisationType
     /**
      * Persons having certain roles within the organisation, e.g. chairman, secretary, and treasurer.
      *
-     * @var \Petrocki\IofXmlPhp\Model\RoleType[] $role
+     * @var \IofXmlPhp\Model\RoleType[] $role
      */
     private $role = [
         
@@ -100,7 +100,7 @@ class OrganisationType
     /**
      * The logotype for the organisation. Multiple logotypes may be included; in this case, make sure to include width and height attributes.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ImageType[] $logotype
+     * @var \IofXmlPhp\Model\ImageType[] $logotype
      */
     private $logotype = [
         
@@ -109,7 +109,7 @@ class OrganisationType
     /**
      * Container element for custom elements from other schemas.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @var \IofXmlPhp\Model\ExtensionsType $extensions
      */
     private $extensions = null;
 
@@ -164,7 +164,7 @@ class OrganisationType
     /**
      * Gets as id
      *
-     * @return \Petrocki\IofXmlPhp\Model\IdType
+     * @return \IofXmlPhp\Model\IdType
      */
     public function getId()
     {
@@ -174,10 +174,10 @@ class OrganisationType
     /**
      * Sets a new id
      *
-     * @param \Petrocki\IofXmlPhp\Model\IdType $id
+     * @param \IofXmlPhp\Model\IdType $id
      * @return self
      */
-    public function setId(?\Petrocki\IofXmlPhp\Model\IdType $id = null)
+    public function setId(?\IofXmlPhp\Model\IdType $id = null)
     {
         $this->id = $id;
         return $this;
@@ -290,7 +290,7 @@ class OrganisationType
     /**
      * Gets as country
      *
-     * @return \Petrocki\IofXmlPhp\Model\CountryType
+     * @return \IofXmlPhp\Model\CountryType
      */
     public function getCountry()
     {
@@ -300,10 +300,10 @@ class OrganisationType
     /**
      * Sets a new country
      *
-     * @param \Petrocki\IofXmlPhp\Model\CountryType $country
+     * @param \IofXmlPhp\Model\CountryType $country
      * @return self
      */
-    public function setCountry(?\Petrocki\IofXmlPhp\Model\CountryType $country = null)
+    public function setCountry(?\IofXmlPhp\Model\CountryType $country = null)
     {
         $this->country = $country;
         return $this;
@@ -313,9 +313,9 @@ class OrganisationType
      * Adds as address
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\AddressType $address
+     * @param \IofXmlPhp\Model\AddressType $address
      */
-    public function addToAddress(\Petrocki\IofXmlPhp\Model\AddressType $address)
+    public function addToAddress(\IofXmlPhp\Model\AddressType $address)
     {
         $this->address[] = $address;
         return $this;
@@ -346,7 +346,7 @@ class OrganisationType
     /**
      * Gets as address
      *
-     * @return \Petrocki\IofXmlPhp\Model\AddressType[]
+     * @return \IofXmlPhp\Model\AddressType[]
      */
     public function getAddress()
     {
@@ -356,7 +356,7 @@ class OrganisationType
     /**
      * Sets a new address
      *
-     * @param \Petrocki\IofXmlPhp\Model\AddressType[] $address
+     * @param \IofXmlPhp\Model\AddressType[] $address
      * @return self
      */
     public function setAddress(?array $address = null)
@@ -369,9 +369,9 @@ class OrganisationType
      * Adds as contact
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\ContactType $contact
+     * @param \IofXmlPhp\Model\ContactType $contact
      */
-    public function addToContact(\Petrocki\IofXmlPhp\Model\ContactType $contact)
+    public function addToContact(\IofXmlPhp\Model\ContactType $contact)
     {
         $this->contact[] = $contact;
         return $this;
@@ -402,7 +402,7 @@ class OrganisationType
     /**
      * Gets as contact
      *
-     * @return \Petrocki\IofXmlPhp\Model\ContactType[]
+     * @return \IofXmlPhp\Model\ContactType[]
      */
     public function getContact()
     {
@@ -412,7 +412,7 @@ class OrganisationType
     /**
      * Sets a new contact
      *
-     * @param \Petrocki\IofXmlPhp\Model\ContactType[] $contact
+     * @param \IofXmlPhp\Model\ContactType[] $contact
      * @return self
      */
     public function setContact(?array $contact = null)
@@ -426,7 +426,7 @@ class OrganisationType
      *
      * The geographical location of the organisation, e.g. a city center, an office or a club house.
      *
-     * @return \Petrocki\IofXmlPhp\Model\GeoPositionType
+     * @return \IofXmlPhp\Model\GeoPositionType
      */
     public function getPosition()
     {
@@ -438,10 +438,10 @@ class OrganisationType
      *
      * The geographical location of the organisation, e.g. a city center, an office or a club house.
      *
-     * @param \Petrocki\IofXmlPhp\Model\GeoPositionType $position
+     * @param \IofXmlPhp\Model\GeoPositionType $position
      * @return self
      */
-    public function setPosition(?\Petrocki\IofXmlPhp\Model\GeoPositionType $position = null)
+    public function setPosition(?\IofXmlPhp\Model\GeoPositionType $position = null)
     {
         $this->position = $position;
         return $this;
@@ -451,9 +451,9 @@ class OrganisationType
      * Adds as account
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\AccountType $account
+     * @param \IofXmlPhp\Model\AccountType $account
      */
-    public function addToAccount(\Petrocki\IofXmlPhp\Model\AccountType $account)
+    public function addToAccount(\IofXmlPhp\Model\AccountType $account)
     {
         $this->account[] = $account;
         return $this;
@@ -484,7 +484,7 @@ class OrganisationType
     /**
      * Gets as account
      *
-     * @return \Petrocki\IofXmlPhp\Model\AccountType[]
+     * @return \IofXmlPhp\Model\AccountType[]
      */
     public function getAccount()
     {
@@ -494,7 +494,7 @@ class OrganisationType
     /**
      * Sets a new account
      *
-     * @param \Petrocki\IofXmlPhp\Model\AccountType[] $account
+     * @param \IofXmlPhp\Model\AccountType[] $account
      * @return self
      */
     public function setAccount(?array $account = null)
@@ -509,9 +509,9 @@ class OrganisationType
      * Persons having certain roles within the organisation, e.g. chairman, secretary, and treasurer.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\RoleType $role
+     * @param \IofXmlPhp\Model\RoleType $role
      */
-    public function addToRole(\Petrocki\IofXmlPhp\Model\RoleType $role)
+    public function addToRole(\IofXmlPhp\Model\RoleType $role)
     {
         $this->role[] = $role;
         return $this;
@@ -548,7 +548,7 @@ class OrganisationType
      *
      * Persons having certain roles within the organisation, e.g. chairman, secretary, and treasurer.
      *
-     * @return \Petrocki\IofXmlPhp\Model\RoleType[]
+     * @return \IofXmlPhp\Model\RoleType[]
      */
     public function getRole()
     {
@@ -560,7 +560,7 @@ class OrganisationType
      *
      * Persons having certain roles within the organisation, e.g. chairman, secretary, and treasurer.
      *
-     * @param \Petrocki\IofXmlPhp\Model\RoleType[] $role
+     * @param \IofXmlPhp\Model\RoleType[] $role
      * @return self
      */
     public function setRole(?array $role = null)
@@ -575,9 +575,9 @@ class OrganisationType
      * The logotype for the organisation. Multiple logotypes may be included; in this case, make sure to include width and height attributes.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\ImageType $logotype
+     * @param \IofXmlPhp\Model\ImageType $logotype
      */
-    public function addToLogotype(\Petrocki\IofXmlPhp\Model\ImageType $logotype)
+    public function addToLogotype(\IofXmlPhp\Model\ImageType $logotype)
     {
         $this->logotype[] = $logotype;
         return $this;
@@ -614,7 +614,7 @@ class OrganisationType
      *
      * The logotype for the organisation. Multiple logotypes may be included; in this case, make sure to include width and height attributes.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ImageType[]
+     * @return \IofXmlPhp\Model\ImageType[]
      */
     public function getLogotype()
     {
@@ -626,7 +626,7 @@ class OrganisationType
      *
      * The logotype for the organisation. Multiple logotypes may be included; in this case, make sure to include width and height attributes.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ImageType[] $logotype
+     * @param \IofXmlPhp\Model\ImageType[] $logotype
      * @return self
      */
     public function setLogotype(?array $logotype = null)
@@ -640,7 +640,7 @@ class OrganisationType
      *
      * Container element for custom elements from other schemas.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ExtensionsType
+     * @return \IofXmlPhp\Model\ExtensionsType
      */
     public function getExtensions()
     {
@@ -652,10 +652,10 @@ class OrganisationType
      *
      * Container element for custom elements from other schemas.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @param \IofXmlPhp\Model\ExtensionsType $extensions
      * @return self
      */
-    public function setExtensions(?\Petrocki\IofXmlPhp\Model\ExtensionsType $extensions = null)
+    public function setExtensions(?\IofXmlPhp\Model\ExtensionsType $extensions = null)
     {
         $this->extensions = $extensions;
         return $this;

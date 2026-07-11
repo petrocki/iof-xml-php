@@ -1,6 +1,6 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model;
+namespace IofXmlPhp\Model;
 
 /**
  * Class representing PersonServiceRequestType
@@ -13,14 +13,14 @@ class PersonServiceRequestType
     /**
      * The person that made the requests.
      *
-     * @var \Petrocki\IofXmlPhp\Model\PersonType $person
+     * @var \IofXmlPhp\Model\PersonType $person
      */
     private $person = null;
 
     /**
      * The service requests.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ServiceRequestType[] $serviceRequest
+     * @var \IofXmlPhp\Model\ServiceRequestType[] $serviceRequest
      */
     private $serviceRequest = [
         
@@ -31,7 +31,7 @@ class PersonServiceRequestType
      *
      * The person that made the requests.
      *
-     * @return \Petrocki\IofXmlPhp\Model\PersonType
+     * @return \IofXmlPhp\Model\PersonType
      */
     public function getPerson()
     {
@@ -43,10 +43,10 @@ class PersonServiceRequestType
      *
      * The person that made the requests.
      *
-     * @param \Petrocki\IofXmlPhp\Model\PersonType $person
+     * @param \IofXmlPhp\Model\PersonType $person
      * @return self
      */
-    public function setPerson(\Petrocki\IofXmlPhp\Model\PersonType $person)
+    public function setPerson(\IofXmlPhp\Model\PersonType $person)
     {
         $this->person = $person;
         return $this;
@@ -58,9 +58,9 @@ class PersonServiceRequestType
      * The service requests.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\ServiceRequestType $serviceRequest
+     * @param \IofXmlPhp\Model\ServiceRequestType $serviceRequest
      */
-    public function addToServiceRequest(\Petrocki\IofXmlPhp\Model\ServiceRequestType $serviceRequest)
+    public function addToServiceRequest(\IofXmlPhp\Model\ServiceRequestType $serviceRequest)
     {
         $this->serviceRequest[] = $serviceRequest;
         return $this;
@@ -97,7 +97,7 @@ class PersonServiceRequestType
      *
      * The service requests.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ServiceRequestType[]
+     * @return \IofXmlPhp\Model\ServiceRequestType[]
      */
     public function getServiceRequest()
     {
@@ -109,7 +109,7 @@ class PersonServiceRequestType
      *
      * The service requests.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ServiceRequestType[] $serviceRequest
+     * @param \IofXmlPhp\Model\ServiceRequestType[] $serviceRequest
      * @return self
      */
     public function setServiceRequest(array $serviceRequest)

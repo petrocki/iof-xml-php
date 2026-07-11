@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\Model\SplitTimeType:
+IofXmlPhp\Model\SplitTimeType:
     properties:
         status:
             expose: true
@@ -38,4 +38,4 @@ Petrocki\IofXmlPhp\Model\SplitTimeType:
             accessor:
                 getter: getExtensions
                 setter: setExtensions
-            type: Petrocki\IofXmlPhp\Model\ExtensionsType
+            type: IofXmlPhp\Model\ExtensionsType

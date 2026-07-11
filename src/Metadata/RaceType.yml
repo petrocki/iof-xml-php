@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\Model\RaceType:
+IofXmlPhp\Model\RaceType:
     properties:
         modifyTime:
             expose: true
@@ -38,7 +38,7 @@ Petrocki\IofXmlPhp\Model\RaceType:
             accessor:
                 getter: getStartTime
                 setter: setStartTime
-            type: Petrocki\IofXmlPhp\Model\DateAndOptionalTimeType
+            type: IofXmlPhp\Model\DateAndOptionalTimeType
         endTime:
             expose: true
             access_type: public_method
@@ -48,7 +48,7 @@ Petrocki\IofXmlPhp\Model\RaceType:
             accessor:
                 getter: getEndTime
                 setter: setEndTime
-            type: Petrocki\IofXmlPhp\Model\DateAndOptionalTimeType
+            type: IofXmlPhp\Model\DateAndOptionalTimeType
         status:
             expose: true
             access_type: public_method
@@ -78,7 +78,7 @@ Petrocki\IofXmlPhp\Model\RaceType:
             accessor:
                 getter: getPosition
                 setter: setPosition
-            type: Petrocki\IofXmlPhp\Model\GeoPositionType
+            type: IofXmlPhp\Model\GeoPositionType
         discipline:
             expose: true
             access_type: public_method
@@ -106,7 +106,7 @@ Petrocki\IofXmlPhp\Model\RaceType:
                 inline: true
                 entry_name: Organiser
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\Model\OrganisationType>
+            type: array<IofXmlPhp\Model\OrganisationType>
         official:
             expose: true
             access_type: public_method
@@ -120,7 +120,7 @@ Petrocki\IofXmlPhp\Model\RaceType:
                 inline: true
                 entry_name: Official
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\Model\RoleType>
+            type: array<IofXmlPhp\Model\RoleType>
         service:
             expose: true
             access_type: public_method
@@ -134,7 +134,7 @@ Petrocki\IofXmlPhp\Model\RaceType:
                 inline: true
                 entry_name: Service
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\Model\ServiceType>
+            type: array<IofXmlPhp\Model\ServiceType>
         uRL:
             expose: true
             access_type: public_method
@@ -148,7 +148,7 @@ Petrocki\IofXmlPhp\Model\RaceType:
                 inline: true
                 entry_name: URL
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\Model\EventURLType>
+            type: array<IofXmlPhp\Model\EventURLType>
         extensions:
             expose: true
             access_type: public_method
@@ -158,4 +158,4 @@ Petrocki\IofXmlPhp\Model\RaceType:
             accessor:
                 getter: getExtensions
                 setter: setExtensions
-            type: Petrocki\IofXmlPhp\Model\ExtensionsType
+            type: IofXmlPhp\Model\ExtensionsType

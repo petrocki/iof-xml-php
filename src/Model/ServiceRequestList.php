@@ -1,8 +1,8 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model;
+namespace IofXmlPhp\Model;
 
-use Petrocki\IofXmlPhp\Model\ServiceRequestList\ServiceRequestListAType;
+use IofXmlPhp\Model\ServiceRequestList\ServiceRequestListAType;
 
 /**
  * Class representing ServiceRequestList

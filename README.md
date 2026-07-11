@@ -19,7 +19,7 @@ composer require petrocki/iof-xml-php
 ### Parsing (XML → PHP objects)
 
 ```php
-use Petrocki\IofXmlPhp\Parser\IofXmlParser;
+use IofXmlPhp\Parser\IofXmlParser;
 
 $parser = new IofXmlParser();
 $entryList = $parser->parseEntryList(file_get_contents('entry-list.xml'));
@@ -30,7 +30,7 @@ echo $entryList->getEvent()->getName();
 ### Serializing (PHP objects → XML)
 
 ```php
-use Petrocki\IofXmlPhp\Serializer\IofXmlSerializer;
+use IofXmlPhp\Serializer\IofXmlSerializer;
 
 $serializer = new IofXmlSerializer();
 $xml = $serializer->serializeEntryList($entryList);

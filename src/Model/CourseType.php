@@ -1,6 +1,6 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model;
+namespace IofXmlPhp\Model;
 
 /**
  * Class representing CourseType
@@ -23,7 +23,7 @@ class CourseType
     private $modifyTime = null;
 
     /**
-     * @var \Petrocki\IofXmlPhp\Model\IdType $id
+     * @var \IofXmlPhp\Model\IdType $id
      */
     private $id = null;
 
@@ -58,7 +58,7 @@ class CourseType
     /**
      * The controls, including start and finish, that the course is made up of.
      *
-     * @var \Petrocki\IofXmlPhp\Model\CourseControlType[] $courseControl
+     * @var \IofXmlPhp\Model\CourseControlType[] $courseControl
      */
     private $courseControl = [
         
@@ -74,7 +74,7 @@ class CourseType
     /**
      * Container element for custom elements from other schemas.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @var \IofXmlPhp\Model\ExtensionsType $extensions
      */
     private $extensions = null;
 
@@ -129,7 +129,7 @@ class CourseType
     /**
      * Gets as id
      *
-     * @return \Petrocki\IofXmlPhp\Model\IdType
+     * @return \IofXmlPhp\Model\IdType
      */
     public function getId()
     {
@@ -139,10 +139,10 @@ class CourseType
     /**
      * Sets a new id
      *
-     * @param \Petrocki\IofXmlPhp\Model\IdType $id
+     * @param \IofXmlPhp\Model\IdType $id
      * @return self
      */
-    public function setId(?\Petrocki\IofXmlPhp\Model\IdType $id = null)
+    public function setId(?\IofXmlPhp\Model\IdType $id = null)
     {
         $this->id = $id;
         return $this;
@@ -258,9 +258,9 @@ class CourseType
      * The controls, including start and finish, that the course is made up of.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\CourseControlType $courseControl
+     * @param \IofXmlPhp\Model\CourseControlType $courseControl
      */
-    public function addToCourseControl(\Petrocki\IofXmlPhp\Model\CourseControlType $courseControl)
+    public function addToCourseControl(\IofXmlPhp\Model\CourseControlType $courseControl)
     {
         $this->courseControl[] = $courseControl;
         return $this;
@@ -297,7 +297,7 @@ class CourseType
      *
      * The controls, including start and finish, that the course is made up of.
      *
-     * @return \Petrocki\IofXmlPhp\Model\CourseControlType[]
+     * @return \IofXmlPhp\Model\CourseControlType[]
      */
     public function getCourseControl()
     {
@@ -309,7 +309,7 @@ class CourseType
      *
      * The controls, including start and finish, that the course is made up of.
      *
-     * @param \Petrocki\IofXmlPhp\Model\CourseControlType[] $courseControl
+     * @param \IofXmlPhp\Model\CourseControlType[] $courseControl
      * @return self
      */
     public function setCourseControl(array $courseControl)
@@ -349,7 +349,7 @@ class CourseType
      *
      * Container element for custom elements from other schemas.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ExtensionsType
+     * @return \IofXmlPhp\Model\ExtensionsType
      */
     public function getExtensions()
     {
@@ -361,10 +361,10 @@ class CourseType
      *
      * Container element for custom elements from other schemas.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @param \IofXmlPhp\Model\ExtensionsType $extensions
      * @return self
      */
-    public function setExtensions(?\Petrocki\IofXmlPhp\Model\ExtensionsType $extensions = null)
+    public function setExtensions(?\IofXmlPhp\Model\ExtensionsType $extensions = null)
     {
         $this->extensions = $extensions;
         return $this;

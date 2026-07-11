@@ -1,6 +1,6 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model;
+namespace IofXmlPhp\Model;
 
 /**
  * Class representing OverallResultType
@@ -41,7 +41,7 @@ class OverallResultType
     /**
      * Any scores that are attached to the result, e.g. World Ranking points.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ScoreType[] $score
+     * @var \IofXmlPhp\Model\ScoreType[] $score
      */
     private $score = [
         
@@ -50,7 +50,7 @@ class OverallResultType
     /**
      * Container element for custom elements from other schemas.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @var \IofXmlPhp\Model\ExtensionsType $extensions
      */
     private $extensions = null;
 
@@ -164,9 +164,9 @@ class OverallResultType
      * Any scores that are attached to the result, e.g. World Ranking points.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\ScoreType $score
+     * @param \IofXmlPhp\Model\ScoreType $score
      */
-    public function addToScore(\Petrocki\IofXmlPhp\Model\ScoreType $score)
+    public function addToScore(\IofXmlPhp\Model\ScoreType $score)
     {
         $this->score[] = $score;
         return $this;
@@ -203,7 +203,7 @@ class OverallResultType
      *
      * Any scores that are attached to the result, e.g. World Ranking points.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ScoreType[]
+     * @return \IofXmlPhp\Model\ScoreType[]
      */
     public function getScore()
     {
@@ -215,7 +215,7 @@ class OverallResultType
      *
      * Any scores that are attached to the result, e.g. World Ranking points.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ScoreType[] $score
+     * @param \IofXmlPhp\Model\ScoreType[] $score
      * @return self
      */
     public function setScore(?array $score = null)
@@ -229,7 +229,7 @@ class OverallResultType
      *
      * Container element for custom elements from other schemas.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ExtensionsType
+     * @return \IofXmlPhp\Model\ExtensionsType
      */
     public function getExtensions()
     {
@@ -241,10 +241,10 @@ class OverallResultType
      *
      * Container element for custom elements from other schemas.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @param \IofXmlPhp\Model\ExtensionsType $extensions
      * @return self
      */
-    public function setExtensions(?\Petrocki\IofXmlPhp\Model\ExtensionsType $extensions = null)
+    public function setExtensions(?\IofXmlPhp\Model\ExtensionsType $extensions = null)
     {
         $this->extensions = $extensions;
         return $this;

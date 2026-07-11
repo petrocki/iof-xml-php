@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\Model\DateAndOptionalTimeType:
+IofXmlPhp\Model\DateAndOptionalTimeType:
     properties:
         date:
             expose: true

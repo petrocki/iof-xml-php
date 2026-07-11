@@ -1,6 +1,6 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model\TeamMemberRaceResultType;
+namespace IofXmlPhp\Model\TeamMemberRaceResultType;
 
 /**
  * Class representing PositionAType

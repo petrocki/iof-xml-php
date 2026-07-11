@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\Model\EntryReceiverType:
+IofXmlPhp\Model\EntryReceiverType:
     properties:
         address:
             expose: true
@@ -13,7 +13,7 @@ Petrocki\IofXmlPhp\Model\EntryReceiverType:
                 inline: true
                 entry_name: Address
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\Model\AddressType>
+            type: array<IofXmlPhp\Model\AddressType>
         contact:
             expose: true
             access_type: public_method
@@ -27,4 +27,4 @@ Petrocki\IofXmlPhp\Model\EntryReceiverType:
                 inline: true
                 entry_name: Contact
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
-            type: array<Petrocki\IofXmlPhp\Model\ContactType>
+            type: array<IofXmlPhp\Model\ContactType>

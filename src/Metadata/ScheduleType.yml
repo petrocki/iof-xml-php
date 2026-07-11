@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\Model\ScheduleType:
+IofXmlPhp\Model\ScheduleType:
     properties:
         modifyTime:
             expose: true
@@ -58,7 +58,7 @@ Petrocki\IofXmlPhp\Model\ScheduleType:
             accessor:
                 getter: getPosition
                 setter: setPosition
-            type: Petrocki\IofXmlPhp\Model\GeoPositionType
+            type: IofXmlPhp\Model\GeoPositionType
         details:
             expose: true
             access_type: public_method

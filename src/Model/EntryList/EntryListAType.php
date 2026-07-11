@@ -1,8 +1,8 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model\EntryList;
+namespace IofXmlPhp\Model\EntryList;
 
-use Petrocki\IofXmlPhp\Model\BaseMessageElementType;
+use IofXmlPhp\Model\BaseMessageElementType;
 
 /**
  * Class representing EntryListAType
@@ -12,14 +12,14 @@ class EntryListAType extends BaseMessageElementType
     /**
      * The event that the entry list belongs to.
      *
-     * @var \Petrocki\IofXmlPhp\Model\EventType $event
+     * @var \IofXmlPhp\Model\EventType $event
      */
     private $event = null;
 
     /**
      * The teams registered for the event.
      *
-     * @var \Petrocki\IofXmlPhp\Model\TeamEntryType[] $teamEntry
+     * @var \IofXmlPhp\Model\TeamEntryType[] $teamEntry
      */
     private $teamEntry = [
         
@@ -28,7 +28,7 @@ class EntryListAType extends BaseMessageElementType
     /**
      * The individual competitors registered for the event.
      *
-     * @var \Petrocki\IofXmlPhp\Model\PersonEntryType[] $personEntry
+     * @var \IofXmlPhp\Model\PersonEntryType[] $personEntry
      */
     private $personEntry = [
         
@@ -37,7 +37,7 @@ class EntryListAType extends BaseMessageElementType
     /**
      * Container element for custom elements from other schemas.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @var \IofXmlPhp\Model\ExtensionsType $extensions
      */
     private $extensions = null;
 
@@ -46,7 +46,7 @@ class EntryListAType extends BaseMessageElementType
      *
      * The event that the entry list belongs to.
      *
-     * @return \Petrocki\IofXmlPhp\Model\EventType
+     * @return \IofXmlPhp\Model\EventType
      */
     public function getEvent()
     {
@@ -58,10 +58,10 @@ class EntryListAType extends BaseMessageElementType
      *
      * The event that the entry list belongs to.
      *
-     * @param \Petrocki\IofXmlPhp\Model\EventType $event
+     * @param \IofXmlPhp\Model\EventType $event
      * @return self
      */
-    public function setEvent(\Petrocki\IofXmlPhp\Model\EventType $event)
+    public function setEvent(\IofXmlPhp\Model\EventType $event)
     {
         $this->event = $event;
         return $this;
@@ -73,9 +73,9 @@ class EntryListAType extends BaseMessageElementType
      * The teams registered for the event.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\TeamEntryType $teamEntry
+     * @param \IofXmlPhp\Model\TeamEntryType $teamEntry
      */
-    public function addToTeamEntry(\Petrocki\IofXmlPhp\Model\TeamEntryType $teamEntry)
+    public function addToTeamEntry(\IofXmlPhp\Model\TeamEntryType $teamEntry)
     {
         $this->teamEntry[] = $teamEntry;
         return $this;
@@ -112,7 +112,7 @@ class EntryListAType extends BaseMessageElementType
      *
      * The teams registered for the event.
      *
-     * @return \Petrocki\IofXmlPhp\Model\TeamEntryType[]
+     * @return \IofXmlPhp\Model\TeamEntryType[]
      */
     public function getTeamEntry()
     {
@@ -124,7 +124,7 @@ class EntryListAType extends BaseMessageElementType
      *
      * The teams registered for the event.
      *
-     * @param \Petrocki\IofXmlPhp\Model\TeamEntryType[] $teamEntry
+     * @param \IofXmlPhp\Model\TeamEntryType[] $teamEntry
      * @return self
      */
     public function setTeamEntry(?array $teamEntry = null)
@@ -139,9 +139,9 @@ class EntryListAType extends BaseMessageElementType
      * The individual competitors registered for the event.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\PersonEntryType $personEntry
+     * @param \IofXmlPhp\Model\PersonEntryType $personEntry
      */
-    public function addToPersonEntry(\Petrocki\IofXmlPhp\Model\PersonEntryType $personEntry)
+    public function addToPersonEntry(\IofXmlPhp\Model\PersonEntryType $personEntry)
     {
         $this->personEntry[] = $personEntry;
         return $this;
@@ -178,7 +178,7 @@ class EntryListAType extends BaseMessageElementType
      *
      * The individual competitors registered for the event.
      *
-     * @return \Petrocki\IofXmlPhp\Model\PersonEntryType[]
+     * @return \IofXmlPhp\Model\PersonEntryType[]
      */
     public function getPersonEntry()
     {
@@ -190,7 +190,7 @@ class EntryListAType extends BaseMessageElementType
      *
      * The individual competitors registered for the event.
      *
-     * @param \Petrocki\IofXmlPhp\Model\PersonEntryType[] $personEntry
+     * @param \IofXmlPhp\Model\PersonEntryType[] $personEntry
      * @return self
      */
     public function setPersonEntry(?array $personEntry = null)
@@ -204,7 +204,7 @@ class EntryListAType extends BaseMessageElementType
      *
      * Container element for custom elements from other schemas.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ExtensionsType
+     * @return \IofXmlPhp\Model\ExtensionsType
      */
     public function getExtensions()
     {
@@ -216,10 +216,10 @@ class EntryListAType extends BaseMessageElementType
      *
      * Container element for custom elements from other schemas.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @param \IofXmlPhp\Model\ExtensionsType $extensions
      * @return self
      */
-    public function setExtensions(?\Petrocki\IofXmlPhp\Model\ExtensionsType $extensions = null)
+    public function setExtensions(?\IofXmlPhp\Model\ExtensionsType $extensions = null)
     {
         $this->extensions = $extensions;
         return $this;

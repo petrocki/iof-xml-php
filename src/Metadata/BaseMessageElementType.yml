@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\Model\BaseMessageElementType:
+IofXmlPhp\Model\BaseMessageElementType:
     properties:
         iofVersion:
             expose: true

@@ -1,6 +1,6 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model;
+namespace IofXmlPhp\Model;
 
 /**
  * Class representing RaceCourseDataType
@@ -20,7 +20,7 @@ class RaceCourseDataType
     /**
      * The map(s) used in this race. Usually just one map, but different courses may use different scales and/or areas.
      *
-     * @var \Petrocki\IofXmlPhp\Model\MapType[] $map
+     * @var \IofXmlPhp\Model\MapType[] $map
      */
     private $map = [
         
@@ -29,7 +29,7 @@ class RaceCourseDataType
     /**
      * All controls of the race.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ControlType[] $control
+     * @var \IofXmlPhp\Model\ControlType[] $control
      */
     private $control = [
         
@@ -38,7 +38,7 @@ class RaceCourseDataType
     /**
      * All courses of the race.
      *
-     * @var \Petrocki\IofXmlPhp\Model\CourseType[] $course
+     * @var \IofXmlPhp\Model\CourseType[] $course
      */
     private $course = [
         
@@ -47,7 +47,7 @@ class RaceCourseDataType
     /**
      * The assignment of courses to classes.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ClassCourseAssignmentType[] $classCourseAssignment
+     * @var \IofXmlPhp\Model\ClassCourseAssignmentType[] $classCourseAssignment
      */
     private $classCourseAssignment = [
         
@@ -56,7 +56,7 @@ class RaceCourseDataType
     /**
      * The assignment of courses to individual competitors.
      *
-     * @var \Petrocki\IofXmlPhp\Model\PersonCourseAssignmentType[] $personCourseAssignment
+     * @var \IofXmlPhp\Model\PersonCourseAssignmentType[] $personCourseAssignment
      */
     private $personCourseAssignment = [
         
@@ -65,7 +65,7 @@ class RaceCourseDataType
     /**
      * The assignment of courses to relay team members teams.
      *
-     * @var \Petrocki\IofXmlPhp\Model\TeamCourseAssignmentType[] $teamCourseAssignment
+     * @var \IofXmlPhp\Model\TeamCourseAssignmentType[] $teamCourseAssignment
      */
     private $teamCourseAssignment = [
         
@@ -74,7 +74,7 @@ class RaceCourseDataType
     /**
      * Container element for custom elements from other schemas.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @var \IofXmlPhp\Model\ExtensionsType $extensions
      */
     private $extensions = null;
 
@@ -110,9 +110,9 @@ class RaceCourseDataType
      * The map(s) used in this race. Usually just one map, but different courses may use different scales and/or areas.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\MapType $map
+     * @param \IofXmlPhp\Model\MapType $map
      */
-    public function addToMap(\Petrocki\IofXmlPhp\Model\MapType $map)
+    public function addToMap(\IofXmlPhp\Model\MapType $map)
     {
         $this->map[] = $map;
         return $this;
@@ -149,7 +149,7 @@ class RaceCourseDataType
      *
      * The map(s) used in this race. Usually just one map, but different courses may use different scales and/or areas.
      *
-     * @return \Petrocki\IofXmlPhp\Model\MapType[]
+     * @return \IofXmlPhp\Model\MapType[]
      */
     public function getMap()
     {
@@ -161,7 +161,7 @@ class RaceCourseDataType
      *
      * The map(s) used in this race. Usually just one map, but different courses may use different scales and/or areas.
      *
-     * @param \Petrocki\IofXmlPhp\Model\MapType[] $map
+     * @param \IofXmlPhp\Model\MapType[] $map
      * @return self
      */
     public function setMap(?array $map = null)
@@ -176,9 +176,9 @@ class RaceCourseDataType
      * All controls of the race.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\ControlType $control
+     * @param \IofXmlPhp\Model\ControlType $control
      */
-    public function addToControl(\Petrocki\IofXmlPhp\Model\ControlType $control)
+    public function addToControl(\IofXmlPhp\Model\ControlType $control)
     {
         $this->control[] = $control;
         return $this;
@@ -215,7 +215,7 @@ class RaceCourseDataType
      *
      * All controls of the race.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ControlType[]
+     * @return \IofXmlPhp\Model\ControlType[]
      */
     public function getControl()
     {
@@ -227,7 +227,7 @@ class RaceCourseDataType
      *
      * All controls of the race.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ControlType[] $control
+     * @param \IofXmlPhp\Model\ControlType[] $control
      * @return self
      */
     public function setControl(?array $control = null)
@@ -242,9 +242,9 @@ class RaceCourseDataType
      * All courses of the race.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\CourseType $course
+     * @param \IofXmlPhp\Model\CourseType $course
      */
-    public function addToCourse(\Petrocki\IofXmlPhp\Model\CourseType $course)
+    public function addToCourse(\IofXmlPhp\Model\CourseType $course)
     {
         $this->course[] = $course;
         return $this;
@@ -281,7 +281,7 @@ class RaceCourseDataType
      *
      * All courses of the race.
      *
-     * @return \Petrocki\IofXmlPhp\Model\CourseType[]
+     * @return \IofXmlPhp\Model\CourseType[]
      */
     public function getCourse()
     {
@@ -293,7 +293,7 @@ class RaceCourseDataType
      *
      * All courses of the race.
      *
-     * @param \Petrocki\IofXmlPhp\Model\CourseType[] $course
+     * @param \IofXmlPhp\Model\CourseType[] $course
      * @return self
      */
     public function setCourse(?array $course = null)
@@ -308,9 +308,9 @@ class RaceCourseDataType
      * The assignment of courses to classes.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\ClassCourseAssignmentType $classCourseAssignment
+     * @param \IofXmlPhp\Model\ClassCourseAssignmentType $classCourseAssignment
      */
-    public function addToClassCourseAssignment(\Petrocki\IofXmlPhp\Model\ClassCourseAssignmentType $classCourseAssignment)
+    public function addToClassCourseAssignment(\IofXmlPhp\Model\ClassCourseAssignmentType $classCourseAssignment)
     {
         $this->classCourseAssignment[] = $classCourseAssignment;
         return $this;
@@ -347,7 +347,7 @@ class RaceCourseDataType
      *
      * The assignment of courses to classes.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ClassCourseAssignmentType[]
+     * @return \IofXmlPhp\Model\ClassCourseAssignmentType[]
      */
     public function getClassCourseAssignment()
     {
@@ -359,7 +359,7 @@ class RaceCourseDataType
      *
      * The assignment of courses to classes.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ClassCourseAssignmentType[] $classCourseAssignment
+     * @param \IofXmlPhp\Model\ClassCourseAssignmentType[] $classCourseAssignment
      * @return self
      */
     public function setClassCourseAssignment(?array $classCourseAssignment = null)
@@ -374,9 +374,9 @@ class RaceCourseDataType
      * The assignment of courses to individual competitors.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\PersonCourseAssignmentType $personCourseAssignment
+     * @param \IofXmlPhp\Model\PersonCourseAssignmentType $personCourseAssignment
      */
-    public function addToPersonCourseAssignment(\Petrocki\IofXmlPhp\Model\PersonCourseAssignmentType $personCourseAssignment)
+    public function addToPersonCourseAssignment(\IofXmlPhp\Model\PersonCourseAssignmentType $personCourseAssignment)
     {
         $this->personCourseAssignment[] = $personCourseAssignment;
         return $this;
@@ -413,7 +413,7 @@ class RaceCourseDataType
      *
      * The assignment of courses to individual competitors.
      *
-     * @return \Petrocki\IofXmlPhp\Model\PersonCourseAssignmentType[]
+     * @return \IofXmlPhp\Model\PersonCourseAssignmentType[]
      */
     public function getPersonCourseAssignment()
     {
@@ -425,7 +425,7 @@ class RaceCourseDataType
      *
      * The assignment of courses to individual competitors.
      *
-     * @param \Petrocki\IofXmlPhp\Model\PersonCourseAssignmentType[] $personCourseAssignment
+     * @param \IofXmlPhp\Model\PersonCourseAssignmentType[] $personCourseAssignment
      * @return self
      */
     public function setPersonCourseAssignment(?array $personCourseAssignment = null)
@@ -440,9 +440,9 @@ class RaceCourseDataType
      * The assignment of courses to relay team members teams.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\TeamCourseAssignmentType $teamCourseAssignment
+     * @param \IofXmlPhp\Model\TeamCourseAssignmentType $teamCourseAssignment
      */
-    public function addToTeamCourseAssignment(\Petrocki\IofXmlPhp\Model\TeamCourseAssignmentType $teamCourseAssignment)
+    public function addToTeamCourseAssignment(\IofXmlPhp\Model\TeamCourseAssignmentType $teamCourseAssignment)
     {
         $this->teamCourseAssignment[] = $teamCourseAssignment;
         return $this;
@@ -479,7 +479,7 @@ class RaceCourseDataType
      *
      * The assignment of courses to relay team members teams.
      *
-     * @return \Petrocki\IofXmlPhp\Model\TeamCourseAssignmentType[]
+     * @return \IofXmlPhp\Model\TeamCourseAssignmentType[]
      */
     public function getTeamCourseAssignment()
     {
@@ -491,7 +491,7 @@ class RaceCourseDataType
      *
      * The assignment of courses to relay team members teams.
      *
-     * @param \Petrocki\IofXmlPhp\Model\TeamCourseAssignmentType[] $teamCourseAssignment
+     * @param \IofXmlPhp\Model\TeamCourseAssignmentType[] $teamCourseAssignment
      * @return self
      */
     public function setTeamCourseAssignment(?array $teamCourseAssignment = null)
@@ -505,7 +505,7 @@ class RaceCourseDataType
      *
      * Container element for custom elements from other schemas.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ExtensionsType
+     * @return \IofXmlPhp\Model\ExtensionsType
      */
     public function getExtensions()
     {
@@ -517,10 +517,10 @@ class RaceCourseDataType
      *
      * Container element for custom elements from other schemas.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @param \IofXmlPhp\Model\ExtensionsType $extensions
      * @return self
      */
-    public function setExtensions(?\Petrocki\IofXmlPhp\Model\ExtensionsType $extensions = null)
+    public function setExtensions(?\IofXmlPhp\Model\ExtensionsType $extensions = null)
     {
         $this->extensions = $extensions;
         return $this;

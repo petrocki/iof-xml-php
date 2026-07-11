@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\Model\TeamMemberRaceResultType\TimeBehindAType:
+IofXmlPhp\Model\TeamMemberRaceResultType\TimeBehindAType:
     properties:
         __value:
             expose: true

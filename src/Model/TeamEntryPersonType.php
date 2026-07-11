@@ -1,6 +1,6 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model;
+namespace IofXmlPhp\Model;
 
 /**
  * Class representing TeamEntryPersonType
@@ -13,14 +13,14 @@ class TeamEntryPersonType
     /**
      * The person. Omit if the person is not known at the moment, but for example the control card is known.
      *
-     * @var \Petrocki\IofXmlPhp\Model\PersonType $person
+     * @var \IofXmlPhp\Model\PersonType $person
      */
     private $person = null;
 
     /**
      * The organisation that the person represent. Omit if this is the same as the organsiation given in the TeamEntry element.
      *
-     * @var \Petrocki\IofXmlPhp\Model\OrganisationType $organisation
+     * @var \IofXmlPhp\Model\OrganisationType $organisation
      */
     private $organisation = null;
 
@@ -41,7 +41,7 @@ class TeamEntryPersonType
     /**
      * Information about the control cards (punching cards) that the person uses at the event. Multiple control cards can be specified, e.g. one for punch checking and another for timing.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ControlCardType[] $controlCard
+     * @var \IofXmlPhp\Model\ControlCardType[] $controlCard
      */
     private $controlCard = [
         
@@ -50,7 +50,7 @@ class TeamEntryPersonType
     /**
      * Any score that is submitted together with the entry, e.g. World Ranking points.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ScoreType[] $score
+     * @var \IofXmlPhp\Model\ScoreType[] $score
      */
     private $score = [
         
@@ -59,7 +59,7 @@ class TeamEntryPersonType
     /**
      * The fees that this particular person has to pay when entering the event. In a multi-race event, there is usually one element for each race. Fees assigned to the team as a whole should be defined in the TeamEntry element.
      *
-     * @var \Petrocki\IofXmlPhp\Model\AssignedFeeType[] $assignedFee
+     * @var \IofXmlPhp\Model\AssignedFeeType[] $assignedFee
      */
     private $assignedFee = [
         
@@ -68,7 +68,7 @@ class TeamEntryPersonType
     /**
      * Container element for custom elements from other schemas.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @var \IofXmlPhp\Model\ExtensionsType $extensions
      */
     private $extensions = null;
 
@@ -77,7 +77,7 @@ class TeamEntryPersonType
      *
      * The person. Omit if the person is not known at the moment, but for example the control card is known.
      *
-     * @return \Petrocki\IofXmlPhp\Model\PersonType
+     * @return \IofXmlPhp\Model\PersonType
      */
     public function getPerson()
     {
@@ -89,10 +89,10 @@ class TeamEntryPersonType
      *
      * The person. Omit if the person is not known at the moment, but for example the control card is known.
      *
-     * @param \Petrocki\IofXmlPhp\Model\PersonType $person
+     * @param \IofXmlPhp\Model\PersonType $person
      * @return self
      */
-    public function setPerson(?\Petrocki\IofXmlPhp\Model\PersonType $person = null)
+    public function setPerson(?\IofXmlPhp\Model\PersonType $person = null)
     {
         $this->person = $person;
         return $this;
@@ -103,7 +103,7 @@ class TeamEntryPersonType
      *
      * The organisation that the person represent. Omit if this is the same as the organsiation given in the TeamEntry element.
      *
-     * @return \Petrocki\IofXmlPhp\Model\OrganisationType
+     * @return \IofXmlPhp\Model\OrganisationType
      */
     public function getOrganisation()
     {
@@ -115,10 +115,10 @@ class TeamEntryPersonType
      *
      * The organisation that the person represent. Omit if this is the same as the organsiation given in the TeamEntry element.
      *
-     * @param \Petrocki\IofXmlPhp\Model\OrganisationType $organisation
+     * @param \IofXmlPhp\Model\OrganisationType $organisation
      * @return self
      */
-    public function setOrganisation(?\Petrocki\IofXmlPhp\Model\OrganisationType $organisation = null)
+    public function setOrganisation(?\IofXmlPhp\Model\OrganisationType $organisation = null)
     {
         $this->organisation = $organisation;
         return $this;
@@ -182,9 +182,9 @@ class TeamEntryPersonType
      * Information about the control cards (punching cards) that the person uses at the event. Multiple control cards can be specified, e.g. one for punch checking and another for timing.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\ControlCardType $controlCard
+     * @param \IofXmlPhp\Model\ControlCardType $controlCard
      */
-    public function addToControlCard(\Petrocki\IofXmlPhp\Model\ControlCardType $controlCard)
+    public function addToControlCard(\IofXmlPhp\Model\ControlCardType $controlCard)
     {
         $this->controlCard[] = $controlCard;
         return $this;
@@ -221,7 +221,7 @@ class TeamEntryPersonType
      *
      * Information about the control cards (punching cards) that the person uses at the event. Multiple control cards can be specified, e.g. one for punch checking and another for timing.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ControlCardType[]
+     * @return \IofXmlPhp\Model\ControlCardType[]
      */
     public function getControlCard()
     {
@@ -233,7 +233,7 @@ class TeamEntryPersonType
      *
      * Information about the control cards (punching cards) that the person uses at the event. Multiple control cards can be specified, e.g. one for punch checking and another for timing.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ControlCardType[] $controlCard
+     * @param \IofXmlPhp\Model\ControlCardType[] $controlCard
      * @return self
      */
     public function setControlCard(?array $controlCard = null)
@@ -248,9 +248,9 @@ class TeamEntryPersonType
      * Any score that is submitted together with the entry, e.g. World Ranking points.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\ScoreType $score
+     * @param \IofXmlPhp\Model\ScoreType $score
      */
-    public function addToScore(\Petrocki\IofXmlPhp\Model\ScoreType $score)
+    public function addToScore(\IofXmlPhp\Model\ScoreType $score)
     {
         $this->score[] = $score;
         return $this;
@@ -287,7 +287,7 @@ class TeamEntryPersonType
      *
      * Any score that is submitted together with the entry, e.g. World Ranking points.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ScoreType[]
+     * @return \IofXmlPhp\Model\ScoreType[]
      */
     public function getScore()
     {
@@ -299,7 +299,7 @@ class TeamEntryPersonType
      *
      * Any score that is submitted together with the entry, e.g. World Ranking points.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ScoreType[] $score
+     * @param \IofXmlPhp\Model\ScoreType[] $score
      * @return self
      */
     public function setScore(?array $score = null)
@@ -314,9 +314,9 @@ class TeamEntryPersonType
      * The fees that this particular person has to pay when entering the event. In a multi-race event, there is usually one element for each race. Fees assigned to the team as a whole should be defined in the TeamEntry element.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\AssignedFeeType $assignedFee
+     * @param \IofXmlPhp\Model\AssignedFeeType $assignedFee
      */
-    public function addToAssignedFee(\Petrocki\IofXmlPhp\Model\AssignedFeeType $assignedFee)
+    public function addToAssignedFee(\IofXmlPhp\Model\AssignedFeeType $assignedFee)
     {
         $this->assignedFee[] = $assignedFee;
         return $this;
@@ -353,7 +353,7 @@ class TeamEntryPersonType
      *
      * The fees that this particular person has to pay when entering the event. In a multi-race event, there is usually one element for each race. Fees assigned to the team as a whole should be defined in the TeamEntry element.
      *
-     * @return \Petrocki\IofXmlPhp\Model\AssignedFeeType[]
+     * @return \IofXmlPhp\Model\AssignedFeeType[]
      */
     public function getAssignedFee()
     {
@@ -365,7 +365,7 @@ class TeamEntryPersonType
      *
      * The fees that this particular person has to pay when entering the event. In a multi-race event, there is usually one element for each race. Fees assigned to the team as a whole should be defined in the TeamEntry element.
      *
-     * @param \Petrocki\IofXmlPhp\Model\AssignedFeeType[] $assignedFee
+     * @param \IofXmlPhp\Model\AssignedFeeType[] $assignedFee
      * @return self
      */
     public function setAssignedFee(?array $assignedFee = null)
@@ -379,7 +379,7 @@ class TeamEntryPersonType
      *
      * Container element for custom elements from other schemas.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ExtensionsType
+     * @return \IofXmlPhp\Model\ExtensionsType
      */
     public function getExtensions()
     {
@@ -391,10 +391,10 @@ class TeamEntryPersonType
      *
      * Container element for custom elements from other schemas.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @param \IofXmlPhp\Model\ExtensionsType $extensions
      * @return self
      */
-    public function setExtensions(?\Petrocki\IofXmlPhp\Model\ExtensionsType $extensions = null)
+    public function setExtensions(?\IofXmlPhp\Model\ExtensionsType $extensions = null)
     {
         $this->extensions = $extensions;
         return $this;

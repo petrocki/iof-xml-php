@@ -1,6 +1,6 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model;
+namespace IofXmlPhp\Model;
 
 /**
  * Class representing AssignedFeeType
@@ -18,21 +18,21 @@ class AssignedFeeType
     /**
      * The fee that has been assigned to the competitor or the team.
      *
-     * @var \Petrocki\IofXmlPhp\Model\FeeType $fee
+     * @var \IofXmlPhp\Model\FeeType $fee
      */
     private $fee = null;
 
     /**
      * The amount that has been paid, optionally including currency code.
      *
-     * @var \Petrocki\IofXmlPhp\Model\AmountType $paidAmount
+     * @var \IofXmlPhp\Model\AmountType $paidAmount
      */
     private $paidAmount = null;
 
     /**
      * Container element for custom elements from other schemas.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @var \IofXmlPhp\Model\ExtensionsType $extensions
      */
     private $extensions = null;
 
@@ -63,7 +63,7 @@ class AssignedFeeType
      *
      * The fee that has been assigned to the competitor or the team.
      *
-     * @return \Petrocki\IofXmlPhp\Model\FeeType
+     * @return \IofXmlPhp\Model\FeeType
      */
     public function getFee()
     {
@@ -75,10 +75,10 @@ class AssignedFeeType
      *
      * The fee that has been assigned to the competitor or the team.
      *
-     * @param \Petrocki\IofXmlPhp\Model\FeeType $fee
+     * @param \IofXmlPhp\Model\FeeType $fee
      * @return self
      */
-    public function setFee(\Petrocki\IofXmlPhp\Model\FeeType $fee)
+    public function setFee(\IofXmlPhp\Model\FeeType $fee)
     {
         $this->fee = $fee;
         return $this;
@@ -89,7 +89,7 @@ class AssignedFeeType
      *
      * The amount that has been paid, optionally including currency code.
      *
-     * @return \Petrocki\IofXmlPhp\Model\AmountType
+     * @return \IofXmlPhp\Model\AmountType
      */
     public function getPaidAmount()
     {
@@ -101,10 +101,10 @@ class AssignedFeeType
      *
      * The amount that has been paid, optionally including currency code.
      *
-     * @param \Petrocki\IofXmlPhp\Model\AmountType $paidAmount
+     * @param \IofXmlPhp\Model\AmountType $paidAmount
      * @return self
      */
-    public function setPaidAmount(?\Petrocki\IofXmlPhp\Model\AmountType $paidAmount = null)
+    public function setPaidAmount(?\IofXmlPhp\Model\AmountType $paidAmount = null)
     {
         $this->paidAmount = $paidAmount;
         return $this;
@@ -115,7 +115,7 @@ class AssignedFeeType
      *
      * Container element for custom elements from other schemas.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ExtensionsType
+     * @return \IofXmlPhp\Model\ExtensionsType
      */
     public function getExtensions()
     {
@@ -127,10 +127,10 @@ class AssignedFeeType
      *
      * Container element for custom elements from other schemas.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @param \IofXmlPhp\Model\ExtensionsType $extensions
      * @return self
      */
-    public function setExtensions(?\Petrocki\IofXmlPhp\Model\ExtensionsType $extensions = null)
+    public function setExtensions(?\IofXmlPhp\Model\ExtensionsType $extensions = null)
     {
         $this->extensions = $extensions;
         return $this;

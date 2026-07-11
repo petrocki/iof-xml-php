@@ -1,6 +1,6 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model;
+namespace IofXmlPhp\Model;
 
 /**
  * Class representing ServiceRequestType
@@ -16,14 +16,14 @@ class ServiceRequestType
     private $modifyTime = null;
 
     /**
-     * @var \Petrocki\IofXmlPhp\Model\IdType $id
+     * @var \IofXmlPhp\Model\IdType $id
      */
     private $id = null;
 
     /**
      * The service that is requested.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ServiceType $service
+     * @var \IofXmlPhp\Model\ServiceType $service
      */
     private $service = null;
 
@@ -51,7 +51,7 @@ class ServiceRequestType
     /**
      * The fees related to this service request.
      *
-     * @var \Petrocki\IofXmlPhp\Model\AssignedFeeType[] $assignedFee
+     * @var \IofXmlPhp\Model\AssignedFeeType[] $assignedFee
      */
     private $assignedFee = [
         
@@ -60,7 +60,7 @@ class ServiceRequestType
     /**
      * Container element for custom elements from other schemas.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @var \IofXmlPhp\Model\ExtensionsType $extensions
      */
     private $extensions = null;
 
@@ -89,7 +89,7 @@ class ServiceRequestType
     /**
      * Gets as id
      *
-     * @return \Petrocki\IofXmlPhp\Model\IdType
+     * @return \IofXmlPhp\Model\IdType
      */
     public function getId()
     {
@@ -99,10 +99,10 @@ class ServiceRequestType
     /**
      * Sets a new id
      *
-     * @param \Petrocki\IofXmlPhp\Model\IdType $id
+     * @param \IofXmlPhp\Model\IdType $id
      * @return self
      */
-    public function setId(?\Petrocki\IofXmlPhp\Model\IdType $id = null)
+    public function setId(?\IofXmlPhp\Model\IdType $id = null)
     {
         $this->id = $id;
         return $this;
@@ -113,7 +113,7 @@ class ServiceRequestType
      *
      * The service that is requested.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ServiceType
+     * @return \IofXmlPhp\Model\ServiceType
      */
     public function getService()
     {
@@ -125,10 +125,10 @@ class ServiceRequestType
      *
      * The service that is requested.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ServiceType $service
+     * @param \IofXmlPhp\Model\ServiceType $service
      * @return self
      */
-    public function setService(\Petrocki\IofXmlPhp\Model\ServiceType $service)
+    public function setService(\IofXmlPhp\Model\ServiceType $service)
     {
         $this->service = $service;
         return $this;
@@ -218,9 +218,9 @@ class ServiceRequestType
      * The fees related to this service request.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\AssignedFeeType $assignedFee
+     * @param \IofXmlPhp\Model\AssignedFeeType $assignedFee
      */
-    public function addToAssignedFee(\Petrocki\IofXmlPhp\Model\AssignedFeeType $assignedFee)
+    public function addToAssignedFee(\IofXmlPhp\Model\AssignedFeeType $assignedFee)
     {
         $this->assignedFee[] = $assignedFee;
         return $this;
@@ -257,7 +257,7 @@ class ServiceRequestType
      *
      * The fees related to this service request.
      *
-     * @return \Petrocki\IofXmlPhp\Model\AssignedFeeType[]
+     * @return \IofXmlPhp\Model\AssignedFeeType[]
      */
     public function getAssignedFee()
     {
@@ -269,7 +269,7 @@ class ServiceRequestType
      *
      * The fees related to this service request.
      *
-     * @param \Petrocki\IofXmlPhp\Model\AssignedFeeType[] $assignedFee
+     * @param \IofXmlPhp\Model\AssignedFeeType[] $assignedFee
      * @return self
      */
     public function setAssignedFee(?array $assignedFee = null)
@@ -283,7 +283,7 @@ class ServiceRequestType
      *
      * Container element for custom elements from other schemas.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ExtensionsType
+     * @return \IofXmlPhp\Model\ExtensionsType
      */
     public function getExtensions()
     {
@@ -295,10 +295,10 @@ class ServiceRequestType
      *
      * Container element for custom elements from other schemas.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @param \IofXmlPhp\Model\ExtensionsType $extensions
      * @return self
      */
-    public function setExtensions(?\Petrocki\IofXmlPhp\Model\ExtensionsType $extensions = null)
+    public function setExtensions(?\IofXmlPhp\Model\ExtensionsType $extensions = null)
     {
         $this->extensions = $extensions;
         return $this;

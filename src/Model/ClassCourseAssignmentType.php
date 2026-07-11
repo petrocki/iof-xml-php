@@ -1,6 +1,6 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model;
+namespace IofXmlPhp\Model;
 
 /**
  * Class representing ClassCourseAssignmentType
@@ -20,7 +20,7 @@ class ClassCourseAssignmentType
     /**
      * The id of the class.
      *
-     * @var \Petrocki\IofXmlPhp\Model\IdType $classId
+     * @var \IofXmlPhp\Model\IdType $classId
      */
     private $classId = null;
 
@@ -57,7 +57,7 @@ class ClassCourseAssignmentType
     /**
      * Container element for custom elements from other schemas.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @var \IofXmlPhp\Model\ExtensionsType $extensions
      */
     private $extensions = null;
 
@@ -92,7 +92,7 @@ class ClassCourseAssignmentType
      *
      * The id of the class.
      *
-     * @return \Petrocki\IofXmlPhp\Model\IdType
+     * @return \IofXmlPhp\Model\IdType
      */
     public function getClassId()
     {
@@ -104,10 +104,10 @@ class ClassCourseAssignmentType
      *
      * The id of the class.
      *
-     * @param \Petrocki\IofXmlPhp\Model\IdType $classId
+     * @param \IofXmlPhp\Model\IdType $classId
      * @return self
      */
-    public function setClassId(?\Petrocki\IofXmlPhp\Model\IdType $classId = null)
+    public function setClassId(?\IofXmlPhp\Model\IdType $classId = null)
     {
         $this->classId = $classId;
         return $this;
@@ -262,7 +262,7 @@ class ClassCourseAssignmentType
      *
      * Container element for custom elements from other schemas.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ExtensionsType
+     * @return \IofXmlPhp\Model\ExtensionsType
      */
     public function getExtensions()
     {
@@ -274,10 +274,10 @@ class ClassCourseAssignmentType
      *
      * Container element for custom elements from other schemas.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @param \IofXmlPhp\Model\ExtensionsType $extensions
      * @return self
      */
-    public function setExtensions(?\Petrocki\IofXmlPhp\Model\ExtensionsType $extensions = null)
+    public function setExtensions(?\IofXmlPhp\Model\ExtensionsType $extensions = null)
     {
         $this->extensions = $extensions;
         return $this;

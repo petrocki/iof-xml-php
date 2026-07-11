@@ -1,8 +1,8 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model;
+namespace IofXmlPhp\Model;
 
-use Petrocki\IofXmlPhp\Model\EventList\EventListAType;
+use IofXmlPhp\Model\EventList\EventListAType;
 
 /**
  * Class representing EventList

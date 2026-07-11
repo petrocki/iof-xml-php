@@ -1,8 +1,8 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model;
+namespace IofXmlPhp\Model;
 
-use Petrocki\IofXmlPhp\Model\ResultList\ResultListAType;
+use IofXmlPhp\Model\ResultList\ResultListAType;
 
 /**
  * Class representing ResultList

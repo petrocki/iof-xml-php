@@ -1,6 +1,6 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model;
+namespace IofXmlPhp\Model;
 
 /**
  * Class representing AddressType
@@ -48,7 +48,7 @@ class AddressType
     private $state = null;
 
     /**
-     * @var \Petrocki\IofXmlPhp\Model\CountryType $country
+     * @var \IofXmlPhp\Model\CountryType $country
      */
     private $country = null;
 
@@ -213,7 +213,7 @@ class AddressType
     /**
      * Gets as country
      *
-     * @return \Petrocki\IofXmlPhp\Model\CountryType
+     * @return \IofXmlPhp\Model\CountryType
      */
     public function getCountry()
     {
@@ -223,10 +223,10 @@ class AddressType
     /**
      * Sets a new country
      *
-     * @param \Petrocki\IofXmlPhp\Model\CountryType $country
+     * @param \IofXmlPhp\Model\CountryType $country
      * @return self
      */
-    public function setCountry(?\Petrocki\IofXmlPhp\Model\CountryType $country = null)
+    public function setCountry(?\IofXmlPhp\Model\CountryType $country = null)
     {
         $this->country = $country;
         return $this;

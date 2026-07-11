@@ -1,8 +1,8 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model;
+namespace IofXmlPhp\Model;
 
-use Petrocki\IofXmlPhp\Model\CompetitorList\CompetitorListAType;
+use IofXmlPhp\Model\CompetitorList\CompetitorListAType;
 
 /**
  * Class representing CompetitorList

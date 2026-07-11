@@ -1,6 +1,6 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model;
+namespace IofXmlPhp\Model;
 
 /**
  * Class representing PersonRaceResultType
@@ -69,7 +69,7 @@ class PersonRaceResultType
     /**
      * Any scores that are attached to the result, e.g. World Ranking points.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ScoreType[] $score
+     * @var \IofXmlPhp\Model\ScoreType[] $score
      */
     private $score = [
         
@@ -78,21 +78,21 @@ class PersonRaceResultType
     /**
      * Holds the overall result for the person after the current race for a multi-race event.
      *
-     * @var \Petrocki\IofXmlPhp\Model\OverallResultType $overallResult
+     * @var \IofXmlPhp\Model\OverallResultType $overallResult
      */
     private $overallResult = null;
 
     /**
      * Defines the course assigned to the person.
      *
-     * @var \Petrocki\IofXmlPhp\Model\SimpleCourseType $course
+     * @var \IofXmlPhp\Model\SimpleCourseType $course
      */
     private $course = null;
 
     /**
      * Contains the times at each control of the course. Each control of the competitor's course (if known) has to be defined in a SplitTime element, even if the control has not been punched or if the competitor has not started. Start and finish times must not be present as SplitTime elements.
      *
-     * @var \Petrocki\IofXmlPhp\Model\SplitTimeType[] $splitTime
+     * @var \IofXmlPhp\Model\SplitTimeType[] $splitTime
      */
     private $splitTime = [
         
@@ -101,7 +101,7 @@ class PersonRaceResultType
     /**
      * Defines the answer for a trail-O control.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ControlAnswerType[] $controlAnswer
+     * @var \IofXmlPhp\Model\ControlAnswerType[] $controlAnswer
      */
     private $controlAnswer = [
         
@@ -117,7 +117,7 @@ class PersonRaceResultType
     /**
      * Defines the control card assigned to the person. Multiple control cards can be specified, e.g. one for punch checking and another for timing.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ControlCardType[] $controlCard
+     * @var \IofXmlPhp\Model\ControlCardType[] $controlCard
      */
     private $controlCard = [
         
@@ -126,7 +126,7 @@ class PersonRaceResultType
     /**
      * Defines the fees that the person has been assigned.
      *
-     * @var \Petrocki\IofXmlPhp\Model\AssignedFeeType[] $assignedFee
+     * @var \IofXmlPhp\Model\AssignedFeeType[] $assignedFee
      */
     private $assignedFee = [
         
@@ -135,7 +135,7 @@ class PersonRaceResultType
     /**
      * Defines the services requested by the person.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ServiceRequestType[] $serviceRequest
+     * @var \IofXmlPhp\Model\ServiceRequestType[] $serviceRequest
      */
     private $serviceRequest = [
         
@@ -144,7 +144,7 @@ class PersonRaceResultType
     /**
      * Container element for custom elements from other schemas.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @var \IofXmlPhp\Model\ExtensionsType $extensions
      */
     private $extensions = null;
 
@@ -362,9 +362,9 @@ class PersonRaceResultType
      * Any scores that are attached to the result, e.g. World Ranking points.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\ScoreType $score
+     * @param \IofXmlPhp\Model\ScoreType $score
      */
-    public function addToScore(\Petrocki\IofXmlPhp\Model\ScoreType $score)
+    public function addToScore(\IofXmlPhp\Model\ScoreType $score)
     {
         $this->score[] = $score;
         return $this;
@@ -401,7 +401,7 @@ class PersonRaceResultType
      *
      * Any scores that are attached to the result, e.g. World Ranking points.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ScoreType[]
+     * @return \IofXmlPhp\Model\ScoreType[]
      */
     public function getScore()
     {
@@ -413,7 +413,7 @@ class PersonRaceResultType
      *
      * Any scores that are attached to the result, e.g. World Ranking points.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ScoreType[] $score
+     * @param \IofXmlPhp\Model\ScoreType[] $score
      * @return self
      */
     public function setScore(?array $score = null)
@@ -427,7 +427,7 @@ class PersonRaceResultType
      *
      * Holds the overall result for the person after the current race for a multi-race event.
      *
-     * @return \Petrocki\IofXmlPhp\Model\OverallResultType
+     * @return \IofXmlPhp\Model\OverallResultType
      */
     public function getOverallResult()
     {
@@ -439,10 +439,10 @@ class PersonRaceResultType
      *
      * Holds the overall result for the person after the current race for a multi-race event.
      *
-     * @param \Petrocki\IofXmlPhp\Model\OverallResultType $overallResult
+     * @param \IofXmlPhp\Model\OverallResultType $overallResult
      * @return self
      */
-    public function setOverallResult(?\Petrocki\IofXmlPhp\Model\OverallResultType $overallResult = null)
+    public function setOverallResult(?\IofXmlPhp\Model\OverallResultType $overallResult = null)
     {
         $this->overallResult = $overallResult;
         return $this;
@@ -453,7 +453,7 @@ class PersonRaceResultType
      *
      * Defines the course assigned to the person.
      *
-     * @return \Petrocki\IofXmlPhp\Model\SimpleCourseType
+     * @return \IofXmlPhp\Model\SimpleCourseType
      */
     public function getCourse()
     {
@@ -465,10 +465,10 @@ class PersonRaceResultType
      *
      * Defines the course assigned to the person.
      *
-     * @param \Petrocki\IofXmlPhp\Model\SimpleCourseType $course
+     * @param \IofXmlPhp\Model\SimpleCourseType $course
      * @return self
      */
-    public function setCourse(?\Petrocki\IofXmlPhp\Model\SimpleCourseType $course = null)
+    public function setCourse(?\IofXmlPhp\Model\SimpleCourseType $course = null)
     {
         $this->course = $course;
         return $this;
@@ -480,9 +480,9 @@ class PersonRaceResultType
      * Contains the times at each control of the course. Each control of the competitor's course (if known) has to be defined in a SplitTime element, even if the control has not been punched or if the competitor has not started. Start and finish times must not be present as SplitTime elements.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\SplitTimeType $splitTime
+     * @param \IofXmlPhp\Model\SplitTimeType $splitTime
      */
-    public function addToSplitTime(\Petrocki\IofXmlPhp\Model\SplitTimeType $splitTime)
+    public function addToSplitTime(\IofXmlPhp\Model\SplitTimeType $splitTime)
     {
         $this->splitTime[] = $splitTime;
         return $this;
@@ -519,7 +519,7 @@ class PersonRaceResultType
      *
      * Contains the times at each control of the course. Each control of the competitor's course (if known) has to be defined in a SplitTime element, even if the control has not been punched or if the competitor has not started. Start and finish times must not be present as SplitTime elements.
      *
-     * @return \Petrocki\IofXmlPhp\Model\SplitTimeType[]
+     * @return \IofXmlPhp\Model\SplitTimeType[]
      */
     public function getSplitTime()
     {
@@ -531,7 +531,7 @@ class PersonRaceResultType
      *
      * Contains the times at each control of the course. Each control of the competitor's course (if known) has to be defined in a SplitTime element, even if the control has not been punched or if the competitor has not started. Start and finish times must not be present as SplitTime elements.
      *
-     * @param \Petrocki\IofXmlPhp\Model\SplitTimeType[] $splitTime
+     * @param \IofXmlPhp\Model\SplitTimeType[] $splitTime
      * @return self
      */
     public function setSplitTime(?array $splitTime = null)
@@ -546,9 +546,9 @@ class PersonRaceResultType
      * Defines the answer for a trail-O control.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\ControlAnswerType $controlAnswer
+     * @param \IofXmlPhp\Model\ControlAnswerType $controlAnswer
      */
-    public function addToControlAnswer(\Petrocki\IofXmlPhp\Model\ControlAnswerType $controlAnswer)
+    public function addToControlAnswer(\IofXmlPhp\Model\ControlAnswerType $controlAnswer)
     {
         $this->controlAnswer[] = $controlAnswer;
         return $this;
@@ -585,7 +585,7 @@ class PersonRaceResultType
      *
      * Defines the answer for a trail-O control.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ControlAnswerType[]
+     * @return \IofXmlPhp\Model\ControlAnswerType[]
      */
     public function getControlAnswer()
     {
@@ -597,7 +597,7 @@ class PersonRaceResultType
      *
      * Defines the answer for a trail-O control.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ControlAnswerType[] $controlAnswer
+     * @param \IofXmlPhp\Model\ControlAnswerType[] $controlAnswer
      * @return self
      */
     public function setControlAnswer(?array $controlAnswer = null)
@@ -638,9 +638,9 @@ class PersonRaceResultType
      * Defines the control card assigned to the person. Multiple control cards can be specified, e.g. one for punch checking and another for timing.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\ControlCardType $controlCard
+     * @param \IofXmlPhp\Model\ControlCardType $controlCard
      */
-    public function addToControlCard(\Petrocki\IofXmlPhp\Model\ControlCardType $controlCard)
+    public function addToControlCard(\IofXmlPhp\Model\ControlCardType $controlCard)
     {
         $this->controlCard[] = $controlCard;
         return $this;
@@ -677,7 +677,7 @@ class PersonRaceResultType
      *
      * Defines the control card assigned to the person. Multiple control cards can be specified, e.g. one for punch checking and another for timing.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ControlCardType[]
+     * @return \IofXmlPhp\Model\ControlCardType[]
      */
     public function getControlCard()
     {
@@ -689,7 +689,7 @@ class PersonRaceResultType
      *
      * Defines the control card assigned to the person. Multiple control cards can be specified, e.g. one for punch checking and another for timing.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ControlCardType[] $controlCard
+     * @param \IofXmlPhp\Model\ControlCardType[] $controlCard
      * @return self
      */
     public function setControlCard(?array $controlCard = null)
@@ -704,9 +704,9 @@ class PersonRaceResultType
      * Defines the fees that the person has been assigned.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\AssignedFeeType $assignedFee
+     * @param \IofXmlPhp\Model\AssignedFeeType $assignedFee
      */
-    public function addToAssignedFee(\Petrocki\IofXmlPhp\Model\AssignedFeeType $assignedFee)
+    public function addToAssignedFee(\IofXmlPhp\Model\AssignedFeeType $assignedFee)
     {
         $this->assignedFee[] = $assignedFee;
         return $this;
@@ -743,7 +743,7 @@ class PersonRaceResultType
      *
      * Defines the fees that the person has been assigned.
      *
-     * @return \Petrocki\IofXmlPhp\Model\AssignedFeeType[]
+     * @return \IofXmlPhp\Model\AssignedFeeType[]
      */
     public function getAssignedFee()
     {
@@ -755,7 +755,7 @@ class PersonRaceResultType
      *
      * Defines the fees that the person has been assigned.
      *
-     * @param \Petrocki\IofXmlPhp\Model\AssignedFeeType[] $assignedFee
+     * @param \IofXmlPhp\Model\AssignedFeeType[] $assignedFee
      * @return self
      */
     public function setAssignedFee(?array $assignedFee = null)
@@ -770,9 +770,9 @@ class PersonRaceResultType
      * Defines the services requested by the person.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\ServiceRequestType $serviceRequest
+     * @param \IofXmlPhp\Model\ServiceRequestType $serviceRequest
      */
-    public function addToServiceRequest(\Petrocki\IofXmlPhp\Model\ServiceRequestType $serviceRequest)
+    public function addToServiceRequest(\IofXmlPhp\Model\ServiceRequestType $serviceRequest)
     {
         $this->serviceRequest[] = $serviceRequest;
         return $this;
@@ -809,7 +809,7 @@ class PersonRaceResultType
      *
      * Defines the services requested by the person.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ServiceRequestType[]
+     * @return \IofXmlPhp\Model\ServiceRequestType[]
      */
     public function getServiceRequest()
     {
@@ -821,7 +821,7 @@ class PersonRaceResultType
      *
      * Defines the services requested by the person.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ServiceRequestType[] $serviceRequest
+     * @param \IofXmlPhp\Model\ServiceRequestType[] $serviceRequest
      * @return self
      */
     public function setServiceRequest(?array $serviceRequest = null)
@@ -835,7 +835,7 @@ class PersonRaceResultType
      *
      * Container element for custom elements from other schemas.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ExtensionsType
+     * @return \IofXmlPhp\Model\ExtensionsType
      */
     public function getExtensions()
     {
@@ -847,10 +847,10 @@ class PersonRaceResultType
      *
      * Container element for custom elements from other schemas.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @param \IofXmlPhp\Model\ExtensionsType $extensions
      * @return self
      */
-    public function setExtensions(?\Petrocki\IofXmlPhp\Model\ExtensionsType $extensions = null)
+    public function setExtensions(?\IofXmlPhp\Model\ExtensionsType $extensions = null)
     {
         $this->extensions = $extensions;
         return $this;

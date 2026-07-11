@@ -1,8 +1,8 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model\ResultList;
+namespace IofXmlPhp\Model\ResultList;
 
-use Petrocki\IofXmlPhp\Model\BaseMessageElementType;
+use IofXmlPhp\Model\BaseMessageElementType;
 
 /**
  * Class representing ResultListAType
@@ -19,14 +19,14 @@ class ResultListAType extends BaseMessageElementType
     /**
      * The event that the result lists belong to.
      *
-     * @var \Petrocki\IofXmlPhp\Model\EventType $event
+     * @var \IofXmlPhp\Model\EventType $event
      */
     private $event = null;
 
     /**
      * Result lists for the classes in the event.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ClassResultType[] $classResult
+     * @var \IofXmlPhp\Model\ClassResultType[] $classResult
      */
     private $classResult = [
         
@@ -35,7 +35,7 @@ class ResultListAType extends BaseMessageElementType
     /**
      * Container element for custom elements from other schemas.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @var \IofXmlPhp\Model\ExtensionsType $extensions
      */
     private $extensions = null;
 
@@ -70,7 +70,7 @@ class ResultListAType extends BaseMessageElementType
      *
      * The event that the result lists belong to.
      *
-     * @return \Petrocki\IofXmlPhp\Model\EventType
+     * @return \IofXmlPhp\Model\EventType
      */
     public function getEvent()
     {
@@ -82,10 +82,10 @@ class ResultListAType extends BaseMessageElementType
      *
      * The event that the result lists belong to.
      *
-     * @param \Petrocki\IofXmlPhp\Model\EventType $event
+     * @param \IofXmlPhp\Model\EventType $event
      * @return self
      */
-    public function setEvent(\Petrocki\IofXmlPhp\Model\EventType $event)
+    public function setEvent(\IofXmlPhp\Model\EventType $event)
     {
         $this->event = $event;
         return $this;
@@ -97,9 +97,9 @@ class ResultListAType extends BaseMessageElementType
      * Result lists for the classes in the event.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\ClassResultType $classResult
+     * @param \IofXmlPhp\Model\ClassResultType $classResult
      */
-    public function addToClassResult(\Petrocki\IofXmlPhp\Model\ClassResultType $classResult)
+    public function addToClassResult(\IofXmlPhp\Model\ClassResultType $classResult)
     {
         $this->classResult[] = $classResult;
         return $this;
@@ -136,7 +136,7 @@ class ResultListAType extends BaseMessageElementType
      *
      * Result lists for the classes in the event.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ClassResultType[]
+     * @return \IofXmlPhp\Model\ClassResultType[]
      */
     public function getClassResult()
     {
@@ -148,7 +148,7 @@ class ResultListAType extends BaseMessageElementType
      *
      * Result lists for the classes in the event.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ClassResultType[] $classResult
+     * @param \IofXmlPhp\Model\ClassResultType[] $classResult
      * @return self
      */
     public function setClassResult(?array $classResult = null)
@@ -162,7 +162,7 @@ class ResultListAType extends BaseMessageElementType
      *
      * Container element for custom elements from other schemas.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ExtensionsType
+     * @return \IofXmlPhp\Model\ExtensionsType
      */
     public function getExtensions()
     {
@@ -174,10 +174,10 @@ class ResultListAType extends BaseMessageElementType
      *
      * Container element for custom elements from other schemas.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @param \IofXmlPhp\Model\ExtensionsType $extensions
      * @return self
      */
-    public function setExtensions(?\Petrocki\IofXmlPhp\Model\ExtensionsType $extensions = null)
+    public function setExtensions(?\IofXmlPhp\Model\ExtensionsType $extensions = null)
     {
         $this->extensions = $extensions;
         return $this;

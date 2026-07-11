@@ -1,6 +1,6 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model;
+namespace IofXmlPhp\Model;
 
 /**
  * Class representing ClassStartType
@@ -25,14 +25,14 @@ class ClassStartType
     /**
      * The class that the start list belongs to.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ClassType $class
+     * @var \IofXmlPhp\Model\ClassType $class
      */
     private $class = null;
 
     /**
      * Defines the course assigned to the class. If courses are unique per competitor, use PersonStart/Course or TeamStart/TeamMemberStart/Course instead. One element per race.
      *
-     * @var \Petrocki\IofXmlPhp\Model\SimpleRaceCourseType[] $course
+     * @var \IofXmlPhp\Model\SimpleRaceCourseType[] $course
      */
     private $course = [
         
@@ -41,7 +41,7 @@ class ClassStartType
     /**
      * Defines the name of the start place (e.g. Start 1), if the race has multiple start places. One element per race.
      *
-     * @var \Petrocki\IofXmlPhp\Model\StartNameType[] $startName
+     * @var \IofXmlPhp\Model\StartNameType[] $startName
      */
     private $startName = [
         
@@ -50,7 +50,7 @@ class ClassStartType
     /**
      * Start times for individual competitors in the class.
      *
-     * @var \Petrocki\IofXmlPhp\Model\PersonStartType[] $personStart
+     * @var \IofXmlPhp\Model\PersonStartType[] $personStart
      */
     private $personStart = [
         
@@ -59,7 +59,7 @@ class ClassStartType
     /**
      * Start times for teams in the class.
      *
-     * @var \Petrocki\IofXmlPhp\Model\TeamStartType[] $teamStart
+     * @var \IofXmlPhp\Model\TeamStartType[] $teamStart
      */
     private $teamStart = [
         
@@ -68,7 +68,7 @@ class ClassStartType
     /**
      * Container element for custom elements from other schemas.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @var \IofXmlPhp\Model\ExtensionsType $extensions
      */
     private $extensions = null;
 
@@ -125,7 +125,7 @@ class ClassStartType
      *
      * The class that the start list belongs to.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ClassType
+     * @return \IofXmlPhp\Model\ClassType
      */
     public function getClass()
     {
@@ -137,10 +137,10 @@ class ClassStartType
      *
      * The class that the start list belongs to.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ClassType $class
+     * @param \IofXmlPhp\Model\ClassType $class
      * @return self
      */
-    public function setClass(\Petrocki\IofXmlPhp\Model\ClassType $class)
+    public function setClass(\IofXmlPhp\Model\ClassType $class)
     {
         $this->class = $class;
         return $this;
@@ -152,9 +152,9 @@ class ClassStartType
      * Defines the course assigned to the class. If courses are unique per competitor, use PersonStart/Course or TeamStart/TeamMemberStart/Course instead. One element per race.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\SimpleRaceCourseType $course
+     * @param \IofXmlPhp\Model\SimpleRaceCourseType $course
      */
-    public function addToCourse(\Petrocki\IofXmlPhp\Model\SimpleRaceCourseType $course)
+    public function addToCourse(\IofXmlPhp\Model\SimpleRaceCourseType $course)
     {
         $this->course[] = $course;
         return $this;
@@ -191,7 +191,7 @@ class ClassStartType
      *
      * Defines the course assigned to the class. If courses are unique per competitor, use PersonStart/Course or TeamStart/TeamMemberStart/Course instead. One element per race.
      *
-     * @return \Petrocki\IofXmlPhp\Model\SimpleRaceCourseType[]
+     * @return \IofXmlPhp\Model\SimpleRaceCourseType[]
      */
     public function getCourse()
     {
@@ -203,7 +203,7 @@ class ClassStartType
      *
      * Defines the course assigned to the class. If courses are unique per competitor, use PersonStart/Course or TeamStart/TeamMemberStart/Course instead. One element per race.
      *
-     * @param \Petrocki\IofXmlPhp\Model\SimpleRaceCourseType[] $course
+     * @param \IofXmlPhp\Model\SimpleRaceCourseType[] $course
      * @return self
      */
     public function setCourse(?array $course = null)
@@ -218,9 +218,9 @@ class ClassStartType
      * Defines the name of the start place (e.g. Start 1), if the race has multiple start places. One element per race.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\StartNameType $startName
+     * @param \IofXmlPhp\Model\StartNameType $startName
      */
-    public function addToStartName(\Petrocki\IofXmlPhp\Model\StartNameType $startName)
+    public function addToStartName(\IofXmlPhp\Model\StartNameType $startName)
     {
         $this->startName[] = $startName;
         return $this;
@@ -257,7 +257,7 @@ class ClassStartType
      *
      * Defines the name of the start place (e.g. Start 1), if the race has multiple start places. One element per race.
      *
-     * @return \Petrocki\IofXmlPhp\Model\StartNameType[]
+     * @return \IofXmlPhp\Model\StartNameType[]
      */
     public function getStartName()
     {
@@ -269,7 +269,7 @@ class ClassStartType
      *
      * Defines the name of the start place (e.g. Start 1), if the race has multiple start places. One element per race.
      *
-     * @param \Petrocki\IofXmlPhp\Model\StartNameType[] $startName
+     * @param \IofXmlPhp\Model\StartNameType[] $startName
      * @return self
      */
     public function setStartName(?array $startName = null)
@@ -284,9 +284,9 @@ class ClassStartType
      * Start times for individual competitors in the class.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\PersonStartType $personStart
+     * @param \IofXmlPhp\Model\PersonStartType $personStart
      */
-    public function addToPersonStart(\Petrocki\IofXmlPhp\Model\PersonStartType $personStart)
+    public function addToPersonStart(\IofXmlPhp\Model\PersonStartType $personStart)
     {
         $this->personStart[] = $personStart;
         return $this;
@@ -323,7 +323,7 @@ class ClassStartType
      *
      * Start times for individual competitors in the class.
      *
-     * @return \Petrocki\IofXmlPhp\Model\PersonStartType[]
+     * @return \IofXmlPhp\Model\PersonStartType[]
      */
     public function getPersonStart()
     {
@@ -335,7 +335,7 @@ class ClassStartType
      *
      * Start times for individual competitors in the class.
      *
-     * @param \Petrocki\IofXmlPhp\Model\PersonStartType[] $personStart
+     * @param \IofXmlPhp\Model\PersonStartType[] $personStart
      * @return self
      */
     public function setPersonStart(?array $personStart = null)
@@ -350,9 +350,9 @@ class ClassStartType
      * Start times for teams in the class.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\TeamStartType $teamStart
+     * @param \IofXmlPhp\Model\TeamStartType $teamStart
      */
-    public function addToTeamStart(\Petrocki\IofXmlPhp\Model\TeamStartType $teamStart)
+    public function addToTeamStart(\IofXmlPhp\Model\TeamStartType $teamStart)
     {
         $this->teamStart[] = $teamStart;
         return $this;
@@ -389,7 +389,7 @@ class ClassStartType
      *
      * Start times for teams in the class.
      *
-     * @return \Petrocki\IofXmlPhp\Model\TeamStartType[]
+     * @return \IofXmlPhp\Model\TeamStartType[]
      */
     public function getTeamStart()
     {
@@ -401,7 +401,7 @@ class ClassStartType
      *
      * Start times for teams in the class.
      *
-     * @param \Petrocki\IofXmlPhp\Model\TeamStartType[] $teamStart
+     * @param \IofXmlPhp\Model\TeamStartType[] $teamStart
      * @return self
      */
     public function setTeamStart(?array $teamStart = null)
@@ -415,7 +415,7 @@ class ClassStartType
      *
      * Container element for custom elements from other schemas.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ExtensionsType
+     * @return \IofXmlPhp\Model\ExtensionsType
      */
     public function getExtensions()
     {
@@ -427,10 +427,10 @@ class ClassStartType
      *
      * Container element for custom elements from other schemas.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @param \IofXmlPhp\Model\ExtensionsType $extensions
      * @return self
      */
-    public function setExtensions(?\Petrocki\IofXmlPhp\Model\ExtensionsType $extensions = null)
+    public function setExtensions(?\IofXmlPhp\Model\ExtensionsType $extensions = null)
     {
         $this->extensions = $extensions;
         return $this;

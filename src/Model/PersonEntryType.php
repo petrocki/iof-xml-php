@@ -1,6 +1,6 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model;
+namespace IofXmlPhp\Model;
 
 /**
  * Class representing PersonEntryType
@@ -16,28 +16,28 @@ class PersonEntryType
     private $modifyTime = null;
 
     /**
-     * @var \Petrocki\IofXmlPhp\Model\IdType $id
+     * @var \IofXmlPhp\Model\IdType $id
      */
     private $id = null;
 
     /**
      * The person that is entered.
      *
-     * @var \Petrocki\IofXmlPhp\Model\PersonType $person
+     * @var \IofXmlPhp\Model\PersonType $person
      */
     private $person = null;
 
     /**
      * The organisation that the person represents at the event.
      *
-     * @var \Petrocki\IofXmlPhp\Model\OrganisationType $organisation
+     * @var \IofXmlPhp\Model\OrganisationType $organisation
      */
     private $organisation = null;
 
     /**
      * Information about the control cards (punching cards) that the person uses at the event. Multiple control cards can be specified, e.g. one for punch checking and another for timing.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ControlCardType[] $controlCard
+     * @var \IofXmlPhp\Model\ControlCardType[] $controlCard
      */
     private $controlCard = [
         
@@ -46,7 +46,7 @@ class PersonEntryType
     /**
      * Any score that is submitted together with the entry, e.g. World Ranking points.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ScoreType[] $score
+     * @var \IofXmlPhp\Model\ScoreType[] $score
      */
     private $score = [
         
@@ -55,7 +55,7 @@ class PersonEntryType
     /**
      * The class(es) the person wants to take part in. Multiple classes may be provided in order of preference in scenarios where the number of competitors are limited in some classes.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ClassType[] $class
+     * @var \IofXmlPhp\Model\ClassType[] $class
      */
     private $class = [
         
@@ -73,7 +73,7 @@ class PersonEntryType
     /**
      * The fees that the person has to pay when entering the event. In a multi-race event, there is usually one element for each race.
      *
-     * @var \Petrocki\IofXmlPhp\Model\AssignedFeeType[] $assignedFee
+     * @var \IofXmlPhp\Model\AssignedFeeType[] $assignedFee
      */
     private $assignedFee = [
         
@@ -82,7 +82,7 @@ class PersonEntryType
     /**
      * Defines the services requested by the person.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ServiceRequestType[] $serviceRequest
+     * @var \IofXmlPhp\Model\ServiceRequestType[] $serviceRequest
      */
     private $serviceRequest = [
         
@@ -91,7 +91,7 @@ class PersonEntryType
     /**
      * Any special preferences regarding start time that has to be taken into consideration when making the start list draw.
      *
-     * @var \Petrocki\IofXmlPhp\Model\StartTimeAllocationRequestType $startTimeAllocationRequest
+     * @var \IofXmlPhp\Model\StartTimeAllocationRequestType $startTimeAllocationRequest
      */
     private $startTimeAllocationRequest = null;
 
@@ -105,7 +105,7 @@ class PersonEntryType
     /**
      * Container element for custom elements from other schemas.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @var \IofXmlPhp\Model\ExtensionsType $extensions
      */
     private $extensions = null;
 
@@ -134,7 +134,7 @@ class PersonEntryType
     /**
      * Gets as id
      *
-     * @return \Petrocki\IofXmlPhp\Model\IdType
+     * @return \IofXmlPhp\Model\IdType
      */
     public function getId()
     {
@@ -144,10 +144,10 @@ class PersonEntryType
     /**
      * Sets a new id
      *
-     * @param \Petrocki\IofXmlPhp\Model\IdType $id
+     * @param \IofXmlPhp\Model\IdType $id
      * @return self
      */
-    public function setId(?\Petrocki\IofXmlPhp\Model\IdType $id = null)
+    public function setId(?\IofXmlPhp\Model\IdType $id = null)
     {
         $this->id = $id;
         return $this;
@@ -158,7 +158,7 @@ class PersonEntryType
      *
      * The person that is entered.
      *
-     * @return \Petrocki\IofXmlPhp\Model\PersonType
+     * @return \IofXmlPhp\Model\PersonType
      */
     public function getPerson()
     {
@@ -170,10 +170,10 @@ class PersonEntryType
      *
      * The person that is entered.
      *
-     * @param \Petrocki\IofXmlPhp\Model\PersonType $person
+     * @param \IofXmlPhp\Model\PersonType $person
      * @return self
      */
-    public function setPerson(\Petrocki\IofXmlPhp\Model\PersonType $person)
+    public function setPerson(\IofXmlPhp\Model\PersonType $person)
     {
         $this->person = $person;
         return $this;
@@ -184,7 +184,7 @@ class PersonEntryType
      *
      * The organisation that the person represents at the event.
      *
-     * @return \Petrocki\IofXmlPhp\Model\OrganisationType
+     * @return \IofXmlPhp\Model\OrganisationType
      */
     public function getOrganisation()
     {
@@ -196,10 +196,10 @@ class PersonEntryType
      *
      * The organisation that the person represents at the event.
      *
-     * @param \Petrocki\IofXmlPhp\Model\OrganisationType $organisation
+     * @param \IofXmlPhp\Model\OrganisationType $organisation
      * @return self
      */
-    public function setOrganisation(?\Petrocki\IofXmlPhp\Model\OrganisationType $organisation = null)
+    public function setOrganisation(?\IofXmlPhp\Model\OrganisationType $organisation = null)
     {
         $this->organisation = $organisation;
         return $this;
@@ -211,9 +211,9 @@ class PersonEntryType
      * Information about the control cards (punching cards) that the person uses at the event. Multiple control cards can be specified, e.g. one for punch checking and another for timing.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\ControlCardType $controlCard
+     * @param \IofXmlPhp\Model\ControlCardType $controlCard
      */
-    public function addToControlCard(\Petrocki\IofXmlPhp\Model\ControlCardType $controlCard)
+    public function addToControlCard(\IofXmlPhp\Model\ControlCardType $controlCard)
     {
         $this->controlCard[] = $controlCard;
         return $this;
@@ -250,7 +250,7 @@ class PersonEntryType
      *
      * Information about the control cards (punching cards) that the person uses at the event. Multiple control cards can be specified, e.g. one for punch checking and another for timing.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ControlCardType[]
+     * @return \IofXmlPhp\Model\ControlCardType[]
      */
     public function getControlCard()
     {
@@ -262,7 +262,7 @@ class PersonEntryType
      *
      * Information about the control cards (punching cards) that the person uses at the event. Multiple control cards can be specified, e.g. one for punch checking and another for timing.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ControlCardType[] $controlCard
+     * @param \IofXmlPhp\Model\ControlCardType[] $controlCard
      * @return self
      */
     public function setControlCard(?array $controlCard = null)
@@ -277,9 +277,9 @@ class PersonEntryType
      * Any score that is submitted together with the entry, e.g. World Ranking points.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\ScoreType $score
+     * @param \IofXmlPhp\Model\ScoreType $score
      */
-    public function addToScore(\Petrocki\IofXmlPhp\Model\ScoreType $score)
+    public function addToScore(\IofXmlPhp\Model\ScoreType $score)
     {
         $this->score[] = $score;
         return $this;
@@ -316,7 +316,7 @@ class PersonEntryType
      *
      * Any score that is submitted together with the entry, e.g. World Ranking points.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ScoreType[]
+     * @return \IofXmlPhp\Model\ScoreType[]
      */
     public function getScore()
     {
@@ -328,7 +328,7 @@ class PersonEntryType
      *
      * Any score that is submitted together with the entry, e.g. World Ranking points.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ScoreType[] $score
+     * @param \IofXmlPhp\Model\ScoreType[] $score
      * @return self
      */
     public function setScore(?array $score = null)
@@ -343,9 +343,9 @@ class PersonEntryType
      * The class(es) the person wants to take part in. Multiple classes may be provided in order of preference in scenarios where the number of competitors are limited in some classes.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\ClassType $class
+     * @param \IofXmlPhp\Model\ClassType $class
      */
-    public function addToClass(\Petrocki\IofXmlPhp\Model\ClassType $class)
+    public function addToClass(\IofXmlPhp\Model\ClassType $class)
     {
         $this->class[] = $class;
         return $this;
@@ -382,7 +382,7 @@ class PersonEntryType
      *
      * The class(es) the person wants to take part in. Multiple classes may be provided in order of preference in scenarios where the number of competitors are limited in some classes.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ClassType[]
+     * @return \IofXmlPhp\Model\ClassType[]
      */
     public function getClass()
     {
@@ -394,7 +394,7 @@ class PersonEntryType
      *
      * The class(es) the person wants to take part in. Multiple classes may be provided in order of preference in scenarios where the number of competitors are limited in some classes.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ClassType[] $class
+     * @param \IofXmlPhp\Model\ClassType[] $class
      * @return self
      */
     public function setClass(?array $class = null)
@@ -475,9 +475,9 @@ class PersonEntryType
      * The fees that the person has to pay when entering the event. In a multi-race event, there is usually one element for each race.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\AssignedFeeType $assignedFee
+     * @param \IofXmlPhp\Model\AssignedFeeType $assignedFee
      */
-    public function addToAssignedFee(\Petrocki\IofXmlPhp\Model\AssignedFeeType $assignedFee)
+    public function addToAssignedFee(\IofXmlPhp\Model\AssignedFeeType $assignedFee)
     {
         $this->assignedFee[] = $assignedFee;
         return $this;
@@ -514,7 +514,7 @@ class PersonEntryType
      *
      * The fees that the person has to pay when entering the event. In a multi-race event, there is usually one element for each race.
      *
-     * @return \Petrocki\IofXmlPhp\Model\AssignedFeeType[]
+     * @return \IofXmlPhp\Model\AssignedFeeType[]
      */
     public function getAssignedFee()
     {
@@ -526,7 +526,7 @@ class PersonEntryType
      *
      * The fees that the person has to pay when entering the event. In a multi-race event, there is usually one element for each race.
      *
-     * @param \Petrocki\IofXmlPhp\Model\AssignedFeeType[] $assignedFee
+     * @param \IofXmlPhp\Model\AssignedFeeType[] $assignedFee
      * @return self
      */
     public function setAssignedFee(?array $assignedFee = null)
@@ -541,9 +541,9 @@ class PersonEntryType
      * Defines the services requested by the person.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\ServiceRequestType $serviceRequest
+     * @param \IofXmlPhp\Model\ServiceRequestType $serviceRequest
      */
-    public function addToServiceRequest(\Petrocki\IofXmlPhp\Model\ServiceRequestType $serviceRequest)
+    public function addToServiceRequest(\IofXmlPhp\Model\ServiceRequestType $serviceRequest)
     {
         $this->serviceRequest[] = $serviceRequest;
         return $this;
@@ -580,7 +580,7 @@ class PersonEntryType
      *
      * Defines the services requested by the person.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ServiceRequestType[]
+     * @return \IofXmlPhp\Model\ServiceRequestType[]
      */
     public function getServiceRequest()
     {
@@ -592,7 +592,7 @@ class PersonEntryType
      *
      * Defines the services requested by the person.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ServiceRequestType[] $serviceRequest
+     * @param \IofXmlPhp\Model\ServiceRequestType[] $serviceRequest
      * @return self
      */
     public function setServiceRequest(?array $serviceRequest = null)
@@ -606,7 +606,7 @@ class PersonEntryType
      *
      * Any special preferences regarding start time that has to be taken into consideration when making the start list draw.
      *
-     * @return \Petrocki\IofXmlPhp\Model\StartTimeAllocationRequestType
+     * @return \IofXmlPhp\Model\StartTimeAllocationRequestType
      */
     public function getStartTimeAllocationRequest()
     {
@@ -618,10 +618,10 @@ class PersonEntryType
      *
      * Any special preferences regarding start time that has to be taken into consideration when making the start list draw.
      *
-     * @param \Petrocki\IofXmlPhp\Model\StartTimeAllocationRequestType $startTimeAllocationRequest
+     * @param \IofXmlPhp\Model\StartTimeAllocationRequestType $startTimeAllocationRequest
      * @return self
      */
-    public function setStartTimeAllocationRequest(?\Petrocki\IofXmlPhp\Model\StartTimeAllocationRequestType $startTimeAllocationRequest = null)
+    public function setStartTimeAllocationRequest(?\IofXmlPhp\Model\StartTimeAllocationRequestType $startTimeAllocationRequest = null)
     {
         $this->startTimeAllocationRequest = $startTimeAllocationRequest;
         return $this;
@@ -658,7 +658,7 @@ class PersonEntryType
      *
      * Container element for custom elements from other schemas.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ExtensionsType
+     * @return \IofXmlPhp\Model\ExtensionsType
      */
     public function getExtensions()
     {
@@ -670,10 +670,10 @@ class PersonEntryType
      *
      * Container element for custom elements from other schemas.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @param \IofXmlPhp\Model\ExtensionsType $extensions
      * @return self
      */
-    public function setExtensions(?\Petrocki\IofXmlPhp\Model\ExtensionsType $extensions = null)
+    public function setExtensions(?\IofXmlPhp\Model\ExtensionsType $extensions = null)
     {
         $this->extensions = $extensions;
         return $this;

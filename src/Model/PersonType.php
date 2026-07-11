@@ -1,6 +1,6 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model;
+namespace IofXmlPhp\Model;
 
 /**
  * Class representing PersonType
@@ -23,14 +23,14 @@ class PersonType
     /**
      * The identifier of the person. Multiple identifiers can be included, e.g. when there is both a World Ranking Event identifier and a national database identifier for the person.
      *
-     * @var \Petrocki\IofXmlPhp\Model\IdType[] $id
+     * @var \IofXmlPhp\Model\IdType[] $id
      */
     private $id = [
         
     ];
 
     /**
-     * @var \Petrocki\IofXmlPhp\Model\PersonNameType $name
+     * @var \IofXmlPhp\Model\PersonNameType $name
      */
     private $name = null;
 
@@ -42,19 +42,19 @@ class PersonType
     private $birthDate = null;
 
     /**
-     * @var \Petrocki\IofXmlPhp\Model\CountryType $nationality
+     * @var \IofXmlPhp\Model\CountryType $nationality
      */
     private $nationality = null;
 
     /**
-     * @var \Petrocki\IofXmlPhp\Model\AddressType[] $address
+     * @var \IofXmlPhp\Model\AddressType[] $address
      */
     private $address = [
         
     ];
 
     /**
-     * @var \Petrocki\IofXmlPhp\Model\ContactType[] $contact
+     * @var \IofXmlPhp\Model\ContactType[] $contact
      */
     private $contact = [
         
@@ -63,7 +63,7 @@ class PersonType
     /**
      * Container element for custom elements from other schemas.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @var \IofXmlPhp\Model\ExtensionsType $extensions
      */
     private $extensions = null;
 
@@ -117,9 +117,9 @@ class PersonType
      * The identifier of the person. Multiple identifiers can be included, e.g. when there is both a World Ranking Event identifier and a national database identifier for the person.
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\IdType $id
+     * @param \IofXmlPhp\Model\IdType $id
      */
-    public function addToId(\Petrocki\IofXmlPhp\Model\IdType $id)
+    public function addToId(\IofXmlPhp\Model\IdType $id)
     {
         $this->id[] = $id;
         return $this;
@@ -156,7 +156,7 @@ class PersonType
      *
      * The identifier of the person. Multiple identifiers can be included, e.g. when there is both a World Ranking Event identifier and a national database identifier for the person.
      *
-     * @return \Petrocki\IofXmlPhp\Model\IdType[]
+     * @return \IofXmlPhp\Model\IdType[]
      */
     public function getId()
     {
@@ -168,7 +168,7 @@ class PersonType
      *
      * The identifier of the person. Multiple identifiers can be included, e.g. when there is both a World Ranking Event identifier and a national database identifier for the person.
      *
-     * @param \Petrocki\IofXmlPhp\Model\IdType[] $id
+     * @param \IofXmlPhp\Model\IdType[] $id
      * @return self
      */
     public function setId(?array $id = null)
@@ -180,7 +180,7 @@ class PersonType
     /**
      * Gets as name
      *
-     * @return \Petrocki\IofXmlPhp\Model\PersonNameType
+     * @return \IofXmlPhp\Model\PersonNameType
      */
     public function getName()
     {
@@ -190,10 +190,10 @@ class PersonType
     /**
      * Sets a new name
      *
-     * @param \Petrocki\IofXmlPhp\Model\PersonNameType $name
+     * @param \IofXmlPhp\Model\PersonNameType $name
      * @return self
      */
-    public function setName(\Petrocki\IofXmlPhp\Model\PersonNameType $name)
+    public function setName(\IofXmlPhp\Model\PersonNameType $name)
     {
         $this->name = $name;
         return $this;
@@ -228,7 +228,7 @@ class PersonType
     /**
      * Gets as nationality
      *
-     * @return \Petrocki\IofXmlPhp\Model\CountryType
+     * @return \IofXmlPhp\Model\CountryType
      */
     public function getNationality()
     {
@@ -238,10 +238,10 @@ class PersonType
     /**
      * Sets a new nationality
      *
-     * @param \Petrocki\IofXmlPhp\Model\CountryType $nationality
+     * @param \IofXmlPhp\Model\CountryType $nationality
      * @return self
      */
-    public function setNationality(?\Petrocki\IofXmlPhp\Model\CountryType $nationality = null)
+    public function setNationality(?\IofXmlPhp\Model\CountryType $nationality = null)
     {
         $this->nationality = $nationality;
         return $this;
@@ -251,9 +251,9 @@ class PersonType
      * Adds as address
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\AddressType $address
+     * @param \IofXmlPhp\Model\AddressType $address
      */
-    public function addToAddress(\Petrocki\IofXmlPhp\Model\AddressType $address)
+    public function addToAddress(\IofXmlPhp\Model\AddressType $address)
     {
         $this->address[] = $address;
         return $this;
@@ -284,7 +284,7 @@ class PersonType
     /**
      * Gets as address
      *
-     * @return \Petrocki\IofXmlPhp\Model\AddressType[]
+     * @return \IofXmlPhp\Model\AddressType[]
      */
     public function getAddress()
     {
@@ -294,7 +294,7 @@ class PersonType
     /**
      * Sets a new address
      *
-     * @param \Petrocki\IofXmlPhp\Model\AddressType[] $address
+     * @param \IofXmlPhp\Model\AddressType[] $address
      * @return self
      */
     public function setAddress(?array $address = null)
@@ -307,9 +307,9 @@ class PersonType
      * Adds as contact
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\ContactType $contact
+     * @param \IofXmlPhp\Model\ContactType $contact
      */
-    public function addToContact(\Petrocki\IofXmlPhp\Model\ContactType $contact)
+    public function addToContact(\IofXmlPhp\Model\ContactType $contact)
     {
         $this->contact[] = $contact;
         return $this;
@@ -340,7 +340,7 @@ class PersonType
     /**
      * Gets as contact
      *
-     * @return \Petrocki\IofXmlPhp\Model\ContactType[]
+     * @return \IofXmlPhp\Model\ContactType[]
      */
     public function getContact()
     {
@@ -350,7 +350,7 @@ class PersonType
     /**
      * Sets a new contact
      *
-     * @param \Petrocki\IofXmlPhp\Model\ContactType[] $contact
+     * @param \IofXmlPhp\Model\ContactType[] $contact
      * @return self
      */
     public function setContact(?array $contact = null)
@@ -364,7 +364,7 @@ class PersonType
      *
      * Container element for custom elements from other schemas.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ExtensionsType
+     * @return \IofXmlPhp\Model\ExtensionsType
      */
     public function getExtensions()
     {
@@ -376,10 +376,10 @@ class PersonType
      *
      * Container element for custom elements from other schemas.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @param \IofXmlPhp\Model\ExtensionsType $extensions
      * @return self
      */
-    public function setExtensions(?\Petrocki\IofXmlPhp\Model\ExtensionsType $extensions = null)
+    public function setExtensions(?\IofXmlPhp\Model\ExtensionsType $extensions = null)
     {
         $this->extensions = $extensions;
         return $this;

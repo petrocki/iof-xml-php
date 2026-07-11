@@ -1,4 +1,4 @@
-Petrocki\IofXmlPhp\Model\ControlCardType:
+IofXmlPhp\Model\ControlCardType:
     properties:
         __value:
             expose: true

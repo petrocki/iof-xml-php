@@ -1,8 +1,8 @@
 <?php
 
-namespace Petrocki\IofXmlPhp\Model\EventList;
+namespace IofXmlPhp\Model\EventList;
 
-use Petrocki\IofXmlPhp\Model\BaseMessageElementType;
+use IofXmlPhp\Model\BaseMessageElementType;
 
 /**
  * Class representing EventListAType
@@ -10,7 +10,7 @@ use Petrocki\IofXmlPhp\Model\BaseMessageElementType;
 class EventListAType extends BaseMessageElementType
 {
     /**
-     * @var \Petrocki\IofXmlPhp\Model\EventType[] $event
+     * @var \IofXmlPhp\Model\EventType[] $event
      */
     private $event = [
         
@@ -19,7 +19,7 @@ class EventListAType extends BaseMessageElementType
     /**
      * Container element for custom elements from other schemas.
      *
-     * @var \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @var \IofXmlPhp\Model\ExtensionsType $extensions
      */
     private $extensions = null;
 
@@ -27,9 +27,9 @@ class EventListAType extends BaseMessageElementType
      * Adds as event
      *
      * @return self
-     * @param \Petrocki\IofXmlPhp\Model\EventType $event
+     * @param \IofXmlPhp\Model\EventType $event
      */
-    public function addToEvent(\Petrocki\IofXmlPhp\Model\EventType $event)
+    public function addToEvent(\IofXmlPhp\Model\EventType $event)
     {
         $this->event[] = $event;
         return $this;
@@ -60,7 +60,7 @@ class EventListAType extends BaseMessageElementType
     /**
      * Gets as event
      *
-     * @return \Petrocki\IofXmlPhp\Model\EventType[]
+     * @return \IofXmlPhp\Model\EventType[]
      */
     public function getEvent()
     {
@@ -70,7 +70,7 @@ class EventListAType extends BaseMessageElementType
     /**
      * Sets a new event
      *
-     * @param \Petrocki\IofXmlPhp\Model\EventType[] $event
+     * @param \IofXmlPhp\Model\EventType[] $event
      * @return self
      */
     public function setEvent(?array $event = null)
@@ -84,7 +84,7 @@ class EventListAType extends BaseMessageElementType
      *
      * Container element for custom elements from other schemas.
      *
-     * @return \Petrocki\IofXmlPhp\Model\ExtensionsType
+     * @return \IofXmlPhp\Model\ExtensionsType
      */
     public function getExtensions()
     {
@@ -96,10 +96,10 @@ class EventListAType extends BaseMessageElementType
      *
      * Container element for custom elements from other schemas.
      *
-     * @param \Petrocki\IofXmlPhp\Model\ExtensionsType $extensions
+     * @param \IofXmlPhp\Model\ExtensionsType $extensions
      * @return self
      */
-    public function setExtensions(?\Petrocki\IofXmlPhp\Model\ExtensionsType $extensions = null)
+    public function setExtensions(?\IofXmlPhp\Model\ExtensionsType $extensions = null)
     {
         $this->extensions = $extensions;
         return $this;
