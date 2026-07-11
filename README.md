@@ -72,3 +72,10 @@ composer phpunit
 composer cs-check
 composer cs-fix
 ```
+
+## Related
+
+- [IOF XML 3.0 Data Standard](https://github.com/international-orienteering-federation/datastandard-v3) — official IOF repository with the XSD schema and documentation
+- [IOF XML 3.0 for .NET / C#](https://github.com/international-orienteering-federation/Dotnet-Client-IOF.XML.V3) — official IOF client library with model classes and utilities
+- [IOF XML 3.0 for Java / Kotlin](https://github.com/orienteering-oss/iof-xml) — community library with model classes and utilities
+- [IOF XML 3.0 classes and helpers for GO](https://github.com/mikaello/go-iof-xml) — community library with model classes and utilities
