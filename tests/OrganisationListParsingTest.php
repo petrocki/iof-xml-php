@@ -13,7 +13,7 @@ class OrganisationListParsingTest extends AbstractIofXmlTestCase
     {
         $xml = file_get_contents(__DIR__.'/fixtures/OrganisationList.xml');
 
-        $organisationList = $this->parser->parseOrganisationList($xml);
+        $organisationList = $this->deserializer->deserializeOrganisationList($xml);
 
         $this->assertCount(4, $organisationList->getOrganisation());
         $this->assertSame('Super Fast Orienteers', $organisationList->getOrganisation()[0]->getName());

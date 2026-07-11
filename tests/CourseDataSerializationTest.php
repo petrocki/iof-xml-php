@@ -11,12 +11,12 @@ class CourseDataSerializationTest extends AbstractIofXmlTestCase
 {
     public function testSerializesCourseDataIndividual(): void
     {
-        $original = $this->parser->parseCourseData(file_get_contents(__DIR__.'/fixtures/CourseData_Individual_Step2.xml'));
+        $original = $this->deserializer->deserializeCourseData(file_get_contents(__DIR__.'/fixtures/CourseData_Individual_Step2.xml'));
         $xml = $this->serializer->serializeCourseData($original);
 
         $this->assertValidIofXml($xml);
 
-        $reparsed = $this->parser->parseCourseData($xml);
+        $reparsed = $this->deserializer->deserializeCourseData($xml);
         $this->assertSame('Example event', $reparsed->getEvent()->getName());
         $raceCourseData = $reparsed->getRaceCourseData()[0];
         $this->assertCount(2, $raceCourseData->getCourse());
@@ -26,12 +26,12 @@ class CourseDataSerializationTest extends AbstractIofXmlTestCase
 
     public function testSerializesCourseDataRelay(): void
     {
-        $original = $this->parser->parseCourseData(file_get_contents(__DIR__.'/fixtures/CourseData_Relay_Step2.xml'));
+        $original = $this->deserializer->deserializeCourseData(file_get_contents(__DIR__.'/fixtures/CourseData_Relay_Step2.xml'));
         $xml = $this->serializer->serializeCourseData($original);
 
         $this->assertValidIofXml($xml);
 
-        $reparsed = $this->parser->parseCourseData($xml);
+        $reparsed = $this->deserializer->deserializeCourseData($xml);
         $this->assertSame('Example event', $reparsed->getEvent()->getName());
         $raceCourseData = $reparsed->getRaceCourseData()[0];
         $this->assertCount(3, $raceCourseData->getCourse());

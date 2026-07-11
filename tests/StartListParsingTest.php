@@ -13,7 +13,7 @@ class StartListParsingTest extends AbstractIofXmlTestCase
     {
         $xml = file_get_contents(__DIR__.'/fixtures/StartList1.xml');
 
-        $startList = $this->parser->parseStartList($xml);
+        $startList = $this->deserializer->deserializeStartList($xml);
 
         $this->assertSame('Example event', $startList->getEvent()->getName());
         $this->assertCount(2, $startList->getClassStart());
@@ -25,7 +25,7 @@ class StartListParsingTest extends AbstractIofXmlTestCase
     {
         $xml = file_get_contents(__DIR__.'/fixtures/StartList2.xml');
 
-        $startList = $this->parser->parseStartList($xml);
+        $startList = $this->deserializer->deserializeStartList($xml);
 
         $this->assertSame('Example event', $startList->getEvent()->getName());
         $this->assertCount(1, $startList->getClassStart());
@@ -37,7 +37,7 @@ class StartListParsingTest extends AbstractIofXmlTestCase
     {
         $xml = file_get_contents(__DIR__.'/fixtures/StartList_Individual_Step3.xml');
 
-        $startList = $this->parser->parseStartList($xml);
+        $startList = $this->deserializer->deserializeStartList($xml);
 
         $this->assertSame('Example event', $startList->getEvent()->getName());
         $this->assertCount(1, $startList->getClassStart());
@@ -49,7 +49,7 @@ class StartListParsingTest extends AbstractIofXmlTestCase
     {
         $xml = file_get_contents(__DIR__.'/fixtures/StartList_Relay_Step3.xml');
 
-        $startList = $this->parser->parseStartList($xml);
+        $startList = $this->deserializer->deserializeStartList($xml);
 
         $this->assertSame('Example event', $startList->getEvent()->getName());
         $this->assertCount(1, $startList->getClassStart());

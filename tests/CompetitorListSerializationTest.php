@@ -11,12 +11,12 @@ class CompetitorListSerializationTest extends AbstractIofXmlTestCase
 {
     public function testSerializesCompetitorList(): void
     {
-        $original = $this->parser->parseCompetitorList(file_get_contents(__DIR__.'/fixtures/CompetitorList.xml'));
+        $original = $this->deserializer->deserializeCompetitorList(file_get_contents(__DIR__.'/fixtures/CompetitorList.xml'));
         $xml = $this->serializer->serializeCompetitorList($original);
 
         $this->assertValidIofXml($xml);
 
-        $reparsed = $this->parser->parseCompetitorList($xml);
+        $reparsed = $this->deserializer->deserializeCompetitorList($xml);
         $this->assertCount(4, $reparsed->getCompetitor());
         $this->assertSame('West', $reparsed->getCompetitor()[0]->getPerson()->getName()->getFamily());
         $this->assertSame('Unintentional Navigators', $reparsed->getCompetitor()[0]->getOrganisation()[0]->getName());

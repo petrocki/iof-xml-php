@@ -13,7 +13,7 @@ class ResultListParsingTest extends AbstractIofXmlTestCase
     {
         $xml = file_get_contents(__DIR__.'/fixtures/ResultList1.xml');
 
-        $resultList = $this->parser->parseResultList($xml);
+        $resultList = $this->deserializer->deserializeresultList($xml);
 
         $this->assertSame('Example event', $resultList->getEvent()->getName());
         $this->assertSame('Complete', $resultList->getStatus());
@@ -26,7 +26,7 @@ class ResultListParsingTest extends AbstractIofXmlTestCase
     {
         $xml = file_get_contents(__DIR__.'/fixtures/ResultList2.xml');
 
-        $resultList = $this->parser->parseResultList($xml);
+        $resultList = $this->deserializer->deserializeresultList($xml);
 
         $this->assertSame('Example event', $resultList->getEvent()->getName());
         $this->assertSame('Complete', $resultList->getStatus());
@@ -40,7 +40,7 @@ class ResultListParsingTest extends AbstractIofXmlTestCase
     {
         $xml = file_get_contents(__DIR__.'/fixtures/ResultList3.xml');
 
-        $resultList = $this->parser->parseResultList($xml);
+        $resultList = $this->deserializer->deserializeresultList($xml);
 
         $this->assertSame('Example event', $resultList->getEvent()->getName());
         $this->assertSame('Complete', $resultList->getStatus());
@@ -53,7 +53,7 @@ class ResultListParsingTest extends AbstractIofXmlTestCase
     {
         $xml = file_get_contents(__DIR__.'/fixtures/ResultList4.xml');
 
-        $resultList = $this->parser->parseResultList($xml);
+        $resultList = $this->deserializer->deserializeresultList($xml);
 
         $this->assertSame('Example event', $resultList->getEvent()->getName());
         $this->assertSame('Complete', $resultList->getStatus());

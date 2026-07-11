@@ -2,18 +2,18 @@
 
 namespace IofXmlPhp\Tests;
 
-use IofXmlPhp\Parser\IofXmlParser;
+use IofXmlPhp\Deserializer\IofXmlDeserializer;
 use IofXmlPhp\Serializer\IofXmlSerializer;
 use PHPUnit\Framework\TestCase;
 
 abstract class AbstractIofXmlTestCase extends TestCase
 {
-    protected IofXmlParser $parser;
+    protected IofXmlDeserializer $deserializer;
     protected IofXmlSerializer $serializer;
 
     protected function setUp(): void
     {
-        $this->parser = new IofXmlParser();
+        $this->deserializer = new IofXmlDeserializer();
         $this->serializer = new IofXmlSerializer();
     }
 

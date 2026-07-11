@@ -1,6 +1,6 @@
 <?php
 
-namespace IofXmlPhp\Parser;
+namespace IofXmlPhp\Deserializer;
 
 use JMS\Serializer\SerializerInterface;
 use IofXmlPhp\Internal\SerializerFactory;
@@ -15,7 +15,7 @@ use IofXmlPhp\Model\ResultList;
 use IofXmlPhp\Model\ServiceRequestList;
 use IofXmlPhp\Model\StartList;
 
-class IofXmlParser
+class IofXmlDeserializer
 {
     private SerializerInterface $serializer;
 
@@ -24,52 +24,52 @@ class IofXmlParser
         $this->serializer = $serializer ?? SerializerFactory::create();
     }
 
-    public function parseEntryList(string $xml): EntryList
+    public function deserializeEntryList(string $xml): EntryList
     {
         return $this->serializer->deserialize($xml, EntryList::class, 'xml');
     }
 
-    public function parseStartList(string $xml): StartList
+    public function deserializeStartList(string $xml): StartList
     {
         return $this->serializer->deserialize($xml, StartList::class, 'xml');
     }
 
-    public function parseResultList(string $xml): ResultList
+    public function deserializeResultList(string $xml): ResultList
     {
         return $this->serializer->deserialize($xml, ResultList::class, 'xml');
     }
 
-    public function parseCourseData(string $xml): CourseData
+    public function deserializeCourseData(string $xml): CourseData
     {
         return $this->serializer->deserialize($xml, CourseData::class, 'xml');
     }
 
-    public function parseClassList(string $xml): ClassList
+    public function deserializeClassList(string $xml): ClassList
     {
         return $this->serializer->deserialize($xml, ClassList::class, 'xml');
     }
 
-    public function parseCompetitorList(string $xml): CompetitorList
+    public function deserializeCompetitorList(string $xml): CompetitorList
     {
         return $this->serializer->deserialize($xml, CompetitorList::class, 'xml');
     }
 
-    public function parseOrganisationList(string $xml): OrganisationList
+    public function deserializeOrganisationList(string $xml): OrganisationList
     {
         return $this->serializer->deserialize($xml, OrganisationList::class, 'xml');
     }
 
-    public function parseEventList(string $xml): EventList
+    public function deserializeEventList(string $xml): EventList
     {
         return $this->serializer->deserialize($xml, EventList::class, 'xml');
     }
 
-    public function parseServiceRequestList(string $xml): ServiceRequestList
+    public function deserializeServiceRequestList(string $xml): ServiceRequestList
     {
         return $this->serializer->deserialize($xml, ServiceRequestList::class, 'xml');
     }
 
-    public function parseControlCardList(string $xml): ControlCardList
+    public function deserializeControlCardList(string $xml): ControlCardList
     {
         return $this->serializer->deserialize($xml, ControlCardList::class, 'xml');
     }

@@ -13,7 +13,7 @@ class ClassListParsingTest extends AbstractIofXmlTestCase
     {
         $xml = file_get_contents(__DIR__.'/fixtures/ClassList.xml');
 
-        $classList = $this->parser->parseClassList($xml);
+        $classList = $this->deserializer->deserializeClassList($xml);
 
         $this->assertCount(2, $classList->getClass());
         $this->assertSame('Men Open', $classList->getClass()[0]->getName());
@@ -24,7 +24,7 @@ class ClassListParsingTest extends AbstractIofXmlTestCase
     {
         $xml = file_get_contents(__DIR__.'/fixtures/ClassList_Individual_Step1.xml');
 
-        $classList = $this->parser->parseClassList($xml);
+        $classList = $this->deserializer->deserializeClassList($xml);
 
         $this->assertCount(2, $classList->getClass());
         $this->assertSame('Men Open', $classList->getClass()[0]->getName());
@@ -35,7 +35,7 @@ class ClassListParsingTest extends AbstractIofXmlTestCase
     {
         $xml = file_get_contents(__DIR__.'/fixtures/ClassList_Relay_Step1.xml');
 
-        $classList = $this->parser->parseClassList($xml);
+        $classList = $this->deserializer->deserializeClassList($xml);
 
         $this->assertCount(2, $classList->getClass());
         $this->assertSame('Men Open', $classList->getClass()[0]->getName());

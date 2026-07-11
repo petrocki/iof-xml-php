@@ -13,7 +13,7 @@ class CourseDataParsingTest extends AbstractIofXmlTestCase
     {
         $xml = file_get_contents(__DIR__.'/fixtures/CourseData_Individual_Step2.xml');
 
-        $courseData = $this->parser->parseCourseData($xml);
+        $courseData = $this->deserializer->deserializeCourseData($xml);
 
         $this->assertSame('Example event', $courseData->getEvent()->getName());
         $this->assertCount(1, $courseData->getRaceCourseData());
@@ -27,7 +27,7 @@ class CourseDataParsingTest extends AbstractIofXmlTestCase
     {
         $xml = file_get_contents(__DIR__.'/fixtures/CourseData_Relay_Step2.xml');
 
-        $courseData = $this->parser->parseCourseData($xml);
+        $courseData = $this->deserializer->deserializeCourseData($xml);
 
         $this->assertSame('Example event', $courseData->getEvent()->getName());
         $this->assertCount(1, $courseData->getRaceCourseData());

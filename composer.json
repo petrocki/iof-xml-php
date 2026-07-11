@@ -1,8 +1,8 @@
 {
     "name": "petrocki/iof-xml-php",
-    "description": "PHP parser and serializer for the IOF XML 3.0 data standard",
+    "description": "PHP serializer and deserializer for the IOF XML 3.0 data standard",
     "type": "library",
-    "keywords": ["iof", "orienteering", "xml", "parser", "serializer", "iof-xml"],
+    "keywords": ["iof", "orienteering", "xml", "serializer", "deserializer", "iof-xml"],
     "license": "MIT",
     "autoload": {
         "psr-4": {

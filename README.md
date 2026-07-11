@@ -2,7 +2,7 @@
 
 [![Latest Version](https://img.shields.io/packagist/v/petrocki/iof-xml-php)](https://packagist.org/packages/petrocki/iof-xml-php)
 
-PHP parser and serializer for the [IOF XML 3.0](https://orienteering.sport/iof/it/data-standard-3-0/) data standard.
+PHP serializer and deserializer for the [IOF XML 3.0](https://orienteering.sport/iof/it/data-standard-3-0/) data standard.
 
 > ⚠️ **Development status:** This repository is currently under active development and is **not ready for production use**.
 
@@ -18,13 +18,13 @@ composer require petrocki/iof-xml-php
 
 ## Usage
 
-### Parsing (XML → PHP objects)
+### Deserializing (XML → PHP objects)
 
 ```php
-use IofXmlPhp\Parser\IofXmlParser;
+use IofXmlPhp\Deserializer\IofXmlDeserializer;
 
-$parser = new IofXmlParser();
-$entryList = $parser->parseEntryList(file_get_contents('entry-list.xml'));
+$deserializer = new IofXmlDeserializer();
+$entryList = $deserializer->deserializeEntryList(file_get_contents('entry-list.xml'));
 
 echo $entryList->getEvent()->getName();
 ```

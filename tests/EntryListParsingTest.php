@@ -13,7 +13,7 @@ class EntryListParsingTest extends AbstractIofXmlTestCase
     {
         $xml = file_get_contents(__DIR__.'/fixtures/EntryList1.xml');
 
-        $entryList = $this->parser->parseEntryList($xml);
+        $entryList = $this->deserializer->deserializeEntryList($xml);
 
         $this->assertSame('Example event', $entryList->getEvent()->getName());
         $this->assertCount(3, $entryList->getPersonEntry());
@@ -25,7 +25,7 @@ class EntryListParsingTest extends AbstractIofXmlTestCase
     {
         $xml = file_get_contents(__DIR__.'/fixtures/EntryList2.xml');
 
-        $entryList = $this->parser->parseEntryList($xml);
+        $entryList = $this->deserializer->deserializeEntryList($xml);
 
         $this->assertSame('Example event', $entryList->getEvent()->getName());
         $this->assertCount(2, $entryList->getTeamEntry());
