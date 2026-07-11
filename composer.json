@@ -7,6 +7,11 @@
             "Petrocki\\IofXmlPhp\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Petrocki\\IofXmlPhp\\Tests\\": "tests/"
+        }
+    },
     "authors": [
         {
             "name": "Adam Petrocki"
@@ -17,6 +22,7 @@
         "jms/serializer": "^3.32"
     },
     "require-dev": {
+        "ext-dom": "*",
         "goetas-webservices/xsd2php": "^0.4.14",
         "friendsofphp/php-cs-fixer": "^3.95",
         "symfony/var-dumper": "^7.4",
@@ -24,6 +30,7 @@
     },
     "scripts": {
         "cs-check": "vendor/friendsofphp/php-cs-fixer/php-cs-fixer check -vvv",
-        "cs-fix": "vendor/friendsofphp/php-cs-fixer/php-cs-fixer fix"
+        "cs-fix": "vendor/friendsofphp/php-cs-fixer/php-cs-fixer fix",
+        "phpunit": "vendor/bin/phpunit tests/"
     }
 }
