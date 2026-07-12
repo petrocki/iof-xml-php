@@ -2,9 +2,7 @@
 
 [![Latest Version](https://img.shields.io/packagist/v/petrocki/iof-xml-php)](https://packagist.org/packages/petrocki/iof-xml-php)
 
-PHP serializer and deserializer for the [IOF XML 3.0](https://orienteering.sport/iof/it/data-standard-3-0/) data standard.
-
-> ⚠️ **Development status:** This repository is currently under active development and is **not ready for production use**.
+PHP model classes and XML serialization/deserialization tools for the [IOF XML 3.0](https://orienteering.sport/iof/it/data-standard-3-0/) data standard.
 
 ## Requirements
 

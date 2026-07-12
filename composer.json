@@ -1,6 +1,6 @@
 {
     "name": "petrocki/iof-xml-php",
-    "description": "PHP serializer and deserializer for the IOF XML 3.0 data standard",
+    "description": "PHP model classes and XML serialization/deserialization tools for the IOF XML 3.0 data standard",
     "type": "library",
     "keywords": ["iof", "orienteering", "xml", "serializer", "deserializer", "iof-xml"],
     "license": "MIT",
