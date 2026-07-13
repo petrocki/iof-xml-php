@@ -14,6 +14,7 @@ IofXmlPhp\Model\TeamMemberRaceResultType:
             access_type: public_method
             serialized_name: Leg
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getLeg
@@ -24,6 +25,7 @@ IofXmlPhp\Model\TeamMemberRaceResultType:
             access_type: public_method
             serialized_name: LegOrder
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getLegOrder
@@ -34,6 +36,7 @@ IofXmlPhp\Model\TeamMemberRaceResultType:
             access_type: public_method
             serialized_name: BibNumber
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getBibNumber
@@ -44,6 +47,7 @@ IofXmlPhp\Model\TeamMemberRaceResultType:
             access_type: public_method
             serialized_name: StartTime
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getStartTime
@@ -54,6 +58,7 @@ IofXmlPhp\Model\TeamMemberRaceResultType:
             access_type: public_method
             serialized_name: FinishTime
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getFinishTime
@@ -64,6 +69,7 @@ IofXmlPhp\Model\TeamMemberRaceResultType:
             access_type: public_method
             serialized_name: Time
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getTime
@@ -74,6 +80,7 @@ IofXmlPhp\Model\TeamMemberRaceResultType:
             access_type: public_method
             serialized_name: TimeBehind
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getTimeBehind
@@ -88,6 +95,7 @@ IofXmlPhp\Model\TeamMemberRaceResultType:
             access_type: public_method
             serialized_name: Position
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getPosition
@@ -102,6 +110,7 @@ IofXmlPhp\Model\TeamMemberRaceResultType:
             access_type: public_method
             serialized_name: Status
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getStatus
@@ -112,6 +121,7 @@ IofXmlPhp\Model\TeamMemberRaceResultType:
             access_type: public_method
             serialized_name: Score
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getScore
@@ -126,6 +136,7 @@ IofXmlPhp\Model\TeamMemberRaceResultType:
             access_type: public_method
             serialized_name: OverallResult
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getOverallResult
@@ -136,6 +147,7 @@ IofXmlPhp\Model\TeamMemberRaceResultType:
             access_type: public_method
             serialized_name: Course
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getCourse
@@ -146,6 +158,7 @@ IofXmlPhp\Model\TeamMemberRaceResultType:
             access_type: public_method
             serialized_name: SplitTime
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getSplitTime
@@ -160,6 +173,7 @@ IofXmlPhp\Model\TeamMemberRaceResultType:
             access_type: public_method
             serialized_name: ControlAnswer
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getControlAnswer
@@ -174,6 +188,7 @@ IofXmlPhp\Model\TeamMemberRaceResultType:
             access_type: public_method
             serialized_name: Route
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getRoute
@@ -184,6 +199,7 @@ IofXmlPhp\Model\TeamMemberRaceResultType:
             access_type: public_method
             serialized_name: ControlCard
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getControlCard
@@ -198,6 +214,7 @@ IofXmlPhp\Model\TeamMemberRaceResultType:
             access_type: public_method
             serialized_name: AssignedFee
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getAssignedFee
@@ -212,6 +229,7 @@ IofXmlPhp\Model\TeamMemberRaceResultType:
             access_type: public_method
             serialized_name: ServiceRequest
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getServiceRequest
@@ -226,6 +244,7 @@ IofXmlPhp\Model\TeamMemberRaceResultType:
             access_type: public_method
             serialized_name: Extensions
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getExtensions

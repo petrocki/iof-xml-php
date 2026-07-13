@@ -5,6 +5,7 @@ IofXmlPhp\Model\TeamCourseAssignmentType:
             access_type: public_method
             serialized_name: BibNumber
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getBibNumber
@@ -15,6 +16,7 @@ IofXmlPhp\Model\TeamCourseAssignmentType:
             access_type: public_method
             serialized_name: TeamName
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getTeamName
@@ -25,6 +27,7 @@ IofXmlPhp\Model\TeamCourseAssignmentType:
             access_type: public_method
             serialized_name: ClassName
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getClassName
@@ -35,6 +38,7 @@ IofXmlPhp\Model\TeamCourseAssignmentType:
             access_type: public_method
             serialized_name: TeamMemberCourseAssignment
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getTeamMemberCourseAssignment
@@ -49,6 +53,7 @@ IofXmlPhp\Model\TeamCourseAssignmentType:
             access_type: public_method
             serialized_name: Extensions
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getExtensions

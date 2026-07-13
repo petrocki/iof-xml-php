@@ -23,6 +23,7 @@ IofXmlPhp\Model\ClassResultType:
             access_type: public_method
             serialized_name: Class
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getClass
@@ -33,6 +34,7 @@ IofXmlPhp\Model\ClassResultType:
             access_type: public_method
             serialized_name: Course
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getCourse
@@ -47,6 +49,7 @@ IofXmlPhp\Model\ClassResultType:
             access_type: public_method
             serialized_name: PersonResult
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getPersonResult
@@ -61,6 +64,7 @@ IofXmlPhp\Model\ClassResultType:
             access_type: public_method
             serialized_name: TeamResult
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getTeamResult
@@ -75,6 +79,7 @@ IofXmlPhp\Model\ClassResultType:
             access_type: public_method
             serialized_name: Extensions
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getExtensions

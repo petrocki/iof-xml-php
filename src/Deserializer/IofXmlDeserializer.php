@@ -2,7 +2,6 @@
 
 namespace IofXmlPhp\Deserializer;
 
-use JMS\Serializer\SerializerInterface;
 use IofXmlPhp\Internal\SerializerFactory;
 use IofXmlPhp\Model\ClassList;
 use IofXmlPhp\Model\CompetitorList;
@@ -14,6 +13,7 @@ use IofXmlPhp\Model\OrganisationList;
 use IofXmlPhp\Model\ResultList;
 use IofXmlPhp\Model\ServiceRequestList;
 use IofXmlPhp\Model\StartList;
+use JMS\Serializer\SerializerInterface;
 
 class IofXmlDeserializer
 {

@@ -5,6 +5,7 @@ IofXmlPhp\Model\PersonCourseAssignmentType:
             access_type: public_method
             serialized_name: EntryId
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getEntryId
@@ -15,6 +16,7 @@ IofXmlPhp\Model\PersonCourseAssignmentType:
             access_type: public_method
             serialized_name: BibNumber
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getBibNumber
@@ -25,6 +27,7 @@ IofXmlPhp\Model\PersonCourseAssignmentType:
             access_type: public_method
             serialized_name: PersonName
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getPersonName
@@ -35,6 +38,7 @@ IofXmlPhp\Model\PersonCourseAssignmentType:
             access_type: public_method
             serialized_name: ClassName
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getClassName
@@ -45,6 +49,7 @@ IofXmlPhp\Model\PersonCourseAssignmentType:
             access_type: public_method
             serialized_name: CourseName
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getCourseName
@@ -55,6 +60,7 @@ IofXmlPhp\Model\PersonCourseAssignmentType:
             access_type: public_method
             serialized_name: CourseFamily
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getCourseFamily
@@ -65,6 +71,7 @@ IofXmlPhp\Model\PersonCourseAssignmentType:
             access_type: public_method
             serialized_name: Extensions
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getExtensions

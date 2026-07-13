@@ -5,6 +5,7 @@ IofXmlPhp\Model\EntryReceiverType:
             access_type: public_method
             serialized_name: Address
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getAddress
@@ -19,6 +20,7 @@ IofXmlPhp\Model\EntryReceiverType:
             access_type: public_method
             serialized_name: Contact
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getContact

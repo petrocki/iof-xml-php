@@ -8,6 +8,8 @@ IofXmlPhp\Model\CountryType:
                 getter: value
                 setter: value
             type: string
+            xml_element:
+                cdata: false
         code:
             expose: true
             access_type: public_method

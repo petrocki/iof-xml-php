@@ -8,6 +8,8 @@ IofXmlPhp\Model\AmountType:
                 getter: value
                 setter: value
             type: float
+            xml_element:
+                cdata: false
         currency:
             expose: true
             access_type: public_method

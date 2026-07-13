@@ -23,6 +23,7 @@ IofXmlPhp\Model\AddressType:
             access_type: public_method
             serialized_name: CareOf
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getCareOf
@@ -33,6 +34,7 @@ IofXmlPhp\Model\AddressType:
             access_type: public_method
             serialized_name: Street
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getStreet
@@ -43,6 +45,7 @@ IofXmlPhp\Model\AddressType:
             access_type: public_method
             serialized_name: ZipCode
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getZipCode
@@ -53,6 +56,7 @@ IofXmlPhp\Model\AddressType:
             access_type: public_method
             serialized_name: City
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getCity
@@ -63,6 +67,7 @@ IofXmlPhp\Model\AddressType:
             access_type: public_method
             serialized_name: State
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getState
@@ -73,6 +78,7 @@ IofXmlPhp\Model\AddressType:
             access_type: public_method
             serialized_name: Country
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getCountry

@@ -5,6 +5,7 @@ IofXmlPhp\Model\PersonServiceRequestType:
             access_type: public_method
             serialized_name: Person
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getPerson
@@ -15,6 +16,7 @@ IofXmlPhp\Model\PersonServiceRequestType:
             access_type: public_method
             serialized_name: ServiceRequest
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getServiceRequest

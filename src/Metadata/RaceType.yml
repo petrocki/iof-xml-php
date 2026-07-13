@@ -14,6 +14,7 @@ IofXmlPhp\Model\RaceType:
             access_type: public_method
             serialized_name: RaceNumber
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getRaceNumber
@@ -24,6 +25,7 @@ IofXmlPhp\Model\RaceType:
             access_type: public_method
             serialized_name: Name
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getName
@@ -34,6 +36,7 @@ IofXmlPhp\Model\RaceType:
             access_type: public_method
             serialized_name: StartTime
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getStartTime
@@ -44,6 +47,7 @@ IofXmlPhp\Model\RaceType:
             access_type: public_method
             serialized_name: EndTime
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getEndTime
@@ -54,6 +58,7 @@ IofXmlPhp\Model\RaceType:
             access_type: public_method
             serialized_name: Status
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getStatus
@@ -64,6 +69,7 @@ IofXmlPhp\Model\RaceType:
             access_type: public_method
             serialized_name: Classification
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getClassification
@@ -74,6 +80,7 @@ IofXmlPhp\Model\RaceType:
             access_type: public_method
             serialized_name: Position
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getPosition
@@ -84,6 +91,7 @@ IofXmlPhp\Model\RaceType:
             access_type: public_method
             serialized_name: Discipline
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getDiscipline
@@ -98,6 +106,7 @@ IofXmlPhp\Model\RaceType:
             access_type: public_method
             serialized_name: Organiser
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getOrganiser
@@ -112,6 +121,7 @@ IofXmlPhp\Model\RaceType:
             access_type: public_method
             serialized_name: Official
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getOfficial
@@ -126,6 +136,7 @@ IofXmlPhp\Model\RaceType:
             access_type: public_method
             serialized_name: Service
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getService
@@ -140,6 +151,7 @@ IofXmlPhp\Model\RaceType:
             access_type: public_method
             serialized_name: URL
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getURL
@@ -154,6 +166,7 @@ IofXmlPhp\Model\RaceType:
             access_type: public_method
             serialized_name: Extensions
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getExtensions

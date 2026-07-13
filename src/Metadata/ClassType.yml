@@ -14,6 +14,7 @@ IofXmlPhp\Model\ClassType:
             access_type: public_method
             serialized_name: Id
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getId
@@ -24,6 +25,7 @@ IofXmlPhp\Model\ClassType:
             access_type: public_method
             serialized_name: Name
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getName

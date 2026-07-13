@@ -5,6 +5,7 @@ IofXmlPhp\Model\MapType:
             access_type: public_method
             serialized_name: Id
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getId
@@ -15,6 +16,7 @@ IofXmlPhp\Model\MapType:
             access_type: public_method
             serialized_name: Image
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getImage
@@ -25,6 +27,7 @@ IofXmlPhp\Model\MapType:
             access_type: public_method
             serialized_name: Scale
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getScale
@@ -35,6 +38,7 @@ IofXmlPhp\Model\MapType:
             access_type: public_method
             serialized_name: MapPositionTopLeft
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getMapPositionTopLeft
@@ -45,6 +49,7 @@ IofXmlPhp\Model\MapType:
             access_type: public_method
             serialized_name: MapPositionBottomRight
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getMapPositionBottomRight
@@ -55,6 +60,7 @@ IofXmlPhp\Model\MapType:
             access_type: public_method
             serialized_name: Extensions
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getExtensions

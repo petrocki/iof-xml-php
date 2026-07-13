@@ -5,6 +5,7 @@ IofXmlPhp\Model\CompetitorList\CompetitorListAType:
             access_type: public_method
             serialized_name: Competitor
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getCompetitor
@@ -19,6 +20,7 @@ IofXmlPhp\Model\CompetitorList\CompetitorListAType:
             access_type: public_method
             serialized_name: Extensions
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getExtensions

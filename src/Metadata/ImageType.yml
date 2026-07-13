@@ -8,6 +8,8 @@ IofXmlPhp\Model\ImageType:
                 getter: value
                 setter: value
             type: GoetasWebservices\Xsd\XsdToPhp\Jms\Base64Encoded
+            xml_element:
+                cdata: false
         url:
             expose: true
             access_type: public_method

@@ -23,6 +23,7 @@ IofXmlPhp\Model\PersonType:
             access_type: public_method
             serialized_name: Id
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getId
@@ -37,6 +38,7 @@ IofXmlPhp\Model\PersonType:
             access_type: public_method
             serialized_name: Name
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getName
@@ -47,6 +49,7 @@ IofXmlPhp\Model\PersonType:
             access_type: public_method
             serialized_name: BirthDate
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getBirthDate
@@ -57,6 +60,7 @@ IofXmlPhp\Model\PersonType:
             access_type: public_method
             serialized_name: Nationality
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getNationality
@@ -67,6 +71,7 @@ IofXmlPhp\Model\PersonType:
             access_type: public_method
             serialized_name: Address
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getAddress
@@ -81,6 +86,7 @@ IofXmlPhp\Model\PersonType:
             access_type: public_method
             serialized_name: Contact
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getContact
@@ -95,6 +101,7 @@ IofXmlPhp\Model\PersonType:
             access_type: public_method
             serialized_name: Extensions
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getExtensions

@@ -23,6 +23,7 @@ IofXmlPhp\Model\FeeType:
             access_type: public_method
             serialized_name: Id
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getId
@@ -33,6 +34,7 @@ IofXmlPhp\Model\FeeType:
             access_type: public_method
             serialized_name: Name
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getName
@@ -47,6 +49,7 @@ IofXmlPhp\Model\FeeType:
             access_type: public_method
             serialized_name: Amount
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getAmount
@@ -57,6 +60,7 @@ IofXmlPhp\Model\FeeType:
             access_type: public_method
             serialized_name: TaxableAmount
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getTaxableAmount
@@ -67,6 +71,7 @@ IofXmlPhp\Model\FeeType:
             access_type: public_method
             serialized_name: Percentage
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getPercentage
@@ -77,6 +82,7 @@ IofXmlPhp\Model\FeeType:
             access_type: public_method
             serialized_name: TaxablePercentage
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getTaxablePercentage
@@ -87,6 +93,7 @@ IofXmlPhp\Model\FeeType:
             access_type: public_method
             serialized_name: ValidFromTime
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getValidFromTime
@@ -97,6 +104,7 @@ IofXmlPhp\Model\FeeType:
             access_type: public_method
             serialized_name: ValidToTime
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getValidToTime
@@ -107,6 +115,7 @@ IofXmlPhp\Model\FeeType:
             access_type: public_method
             serialized_name: FromDateOfBirth
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getFromDateOfBirth
@@ -117,6 +126,7 @@ IofXmlPhp\Model\FeeType:
             access_type: public_method
             serialized_name: ToDateOfBirth
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getToDateOfBirth
@@ -127,6 +137,7 @@ IofXmlPhp\Model\FeeType:
             access_type: public_method
             serialized_name: Extensions
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getExtensions

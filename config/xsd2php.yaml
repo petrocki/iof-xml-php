@@ -5,3 +5,5 @@ xsd2php:
         'IofXmlPhp\Model': './src/Model'
     destinations_jms:
         'IofXmlPhp\Model': './src/Metadata'
+    configs_jms:
+        xml_cdata: false

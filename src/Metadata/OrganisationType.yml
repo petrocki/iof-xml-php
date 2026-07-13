@@ -23,6 +23,7 @@ IofXmlPhp\Model\OrganisationType:
             access_type: public_method
             serialized_name: Id
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getId
@@ -33,6 +34,7 @@ IofXmlPhp\Model\OrganisationType:
             access_type: public_method
             serialized_name: Name
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getName
@@ -43,6 +45,7 @@ IofXmlPhp\Model\OrganisationType:
             access_type: public_method
             serialized_name: ShortName
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getShortName
@@ -53,6 +56,7 @@ IofXmlPhp\Model\OrganisationType:
             access_type: public_method
             serialized_name: MediaName
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getMediaName
@@ -63,6 +67,7 @@ IofXmlPhp\Model\OrganisationType:
             access_type: public_method
             serialized_name: ParentOrganisationId
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getParentOrganisationId
@@ -73,6 +78,7 @@ IofXmlPhp\Model\OrganisationType:
             access_type: public_method
             serialized_name: Country
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getCountry
@@ -83,6 +89,7 @@ IofXmlPhp\Model\OrganisationType:
             access_type: public_method
             serialized_name: Address
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getAddress
@@ -97,6 +104,7 @@ IofXmlPhp\Model\OrganisationType:
             access_type: public_method
             serialized_name: Contact
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getContact
@@ -111,6 +119,7 @@ IofXmlPhp\Model\OrganisationType:
             access_type: public_method
             serialized_name: Position
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getPosition
@@ -121,6 +130,7 @@ IofXmlPhp\Model\OrganisationType:
             access_type: public_method
             serialized_name: Account
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getAccount
@@ -135,6 +145,7 @@ IofXmlPhp\Model\OrganisationType:
             access_type: public_method
             serialized_name: Role
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getRole
@@ -149,6 +160,7 @@ IofXmlPhp\Model\OrganisationType:
             access_type: public_method
             serialized_name: Logotype
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getLogotype
@@ -163,6 +175,7 @@ IofXmlPhp\Model\OrganisationType:
             access_type: public_method
             serialized_name: Extensions
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getExtensions

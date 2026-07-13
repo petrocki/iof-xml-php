@@ -14,6 +14,7 @@ IofXmlPhp\Model\InformationItemType:
             access_type: public_method
             serialized_name: Title
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getTitle
@@ -24,6 +25,7 @@ IofXmlPhp\Model\InformationItemType:
             access_type: public_method
             serialized_name: Content
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getContent

@@ -5,6 +5,7 @@ IofXmlPhp\Model\ControlAnswerType:
             access_type: public_method
             serialized_name: Answer
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getAnswer
@@ -15,6 +16,7 @@ IofXmlPhp\Model\ControlAnswerType:
             access_type: public_method
             serialized_name: CorrectAnswer
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getCorrectAnswer
@@ -25,6 +27,7 @@ IofXmlPhp\Model\ControlAnswerType:
             access_type: public_method
             serialized_name: Time
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getTime
@@ -35,6 +38,7 @@ IofXmlPhp\Model\ControlAnswerType:
             access_type: public_method
             serialized_name: Extensions
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getExtensions

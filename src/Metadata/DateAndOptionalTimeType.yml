@@ -5,6 +5,7 @@ IofXmlPhp\Model\DateAndOptionalTimeType:
             access_type: public_method
             serialized_name: Date
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getDate
@@ -15,6 +16,7 @@ IofXmlPhp\Model\DateAndOptionalTimeType:
             access_type: public_method
             serialized_name: Time
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getTime

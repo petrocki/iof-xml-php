@@ -14,6 +14,7 @@ IofXmlPhp\Model\RaceCourseDataType:
             access_type: public_method
             serialized_name: Map
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getMap
@@ -28,6 +29,7 @@ IofXmlPhp\Model\RaceCourseDataType:
             access_type: public_method
             serialized_name: Control
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getControl
@@ -42,6 +44,7 @@ IofXmlPhp\Model\RaceCourseDataType:
             access_type: public_method
             serialized_name: Course
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getCourse
@@ -56,6 +59,7 @@ IofXmlPhp\Model\RaceCourseDataType:
             access_type: public_method
             serialized_name: ClassCourseAssignment
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getClassCourseAssignment
@@ -70,6 +74,7 @@ IofXmlPhp\Model\RaceCourseDataType:
             access_type: public_method
             serialized_name: PersonCourseAssignment
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getPersonCourseAssignment
@@ -84,6 +89,7 @@ IofXmlPhp\Model\RaceCourseDataType:
             access_type: public_method
             serialized_name: TeamCourseAssignment
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getTeamCourseAssignment
@@ -98,6 +104,7 @@ IofXmlPhp\Model\RaceCourseDataType:
             access_type: public_method
             serialized_name: Extensions
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getExtensions

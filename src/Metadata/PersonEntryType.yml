@@ -14,6 +14,7 @@ IofXmlPhp\Model\PersonEntryType:
             access_type: public_method
             serialized_name: Id
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getId
@@ -24,6 +25,7 @@ IofXmlPhp\Model\PersonEntryType:
             access_type: public_method
             serialized_name: Person
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getPerson
@@ -34,6 +36,7 @@ IofXmlPhp\Model\PersonEntryType:
             access_type: public_method
             serialized_name: Organisation
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getOrganisation
@@ -44,6 +47,7 @@ IofXmlPhp\Model\PersonEntryType:
             access_type: public_method
             serialized_name: ControlCard
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getControlCard
@@ -58,6 +62,7 @@ IofXmlPhp\Model\PersonEntryType:
             access_type: public_method
             serialized_name: Score
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getScore
@@ -72,6 +77,7 @@ IofXmlPhp\Model\PersonEntryType:
             access_type: public_method
             serialized_name: Class
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getClass
@@ -86,6 +92,7 @@ IofXmlPhp\Model\PersonEntryType:
             access_type: public_method
             serialized_name: RaceNumber
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getRaceNumber
@@ -100,6 +107,7 @@ IofXmlPhp\Model\PersonEntryType:
             access_type: public_method
             serialized_name: AssignedFee
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getAssignedFee
@@ -114,6 +122,7 @@ IofXmlPhp\Model\PersonEntryType:
             access_type: public_method
             serialized_name: ServiceRequest
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getServiceRequest
@@ -128,6 +137,7 @@ IofXmlPhp\Model\PersonEntryType:
             access_type: public_method
             serialized_name: StartTimeAllocationRequest
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getStartTimeAllocationRequest
@@ -138,6 +148,7 @@ IofXmlPhp\Model\PersonEntryType:
             access_type: public_method
             serialized_name: EntryTime
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getEntryTime
@@ -148,6 +159,7 @@ IofXmlPhp\Model\PersonEntryType:
             access_type: public_method
             serialized_name: Extensions
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getExtensions

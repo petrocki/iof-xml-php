@@ -14,6 +14,7 @@ IofXmlPhp\Model\ScheduleType:
             access_type: public_method
             serialized_name: StartTime
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getStartTime
@@ -24,6 +25,7 @@ IofXmlPhp\Model\ScheduleType:
             access_type: public_method
             serialized_name: EndTime
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getEndTime
@@ -34,6 +36,7 @@ IofXmlPhp\Model\ScheduleType:
             access_type: public_method
             serialized_name: Name
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getName
@@ -44,6 +47,7 @@ IofXmlPhp\Model\ScheduleType:
             access_type: public_method
             serialized_name: Venue
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getVenue
@@ -54,6 +58,7 @@ IofXmlPhp\Model\ScheduleType:
             access_type: public_method
             serialized_name: Position
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getPosition
@@ -64,6 +69,7 @@ IofXmlPhp\Model\ScheduleType:
             access_type: public_method
             serialized_name: Details
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getDetails

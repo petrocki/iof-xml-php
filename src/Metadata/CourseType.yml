@@ -23,6 +23,7 @@ IofXmlPhp\Model\CourseType:
             access_type: public_method
             serialized_name: Id
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getId
@@ -33,6 +34,7 @@ IofXmlPhp\Model\CourseType:
             access_type: public_method
             serialized_name: Name
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getName
@@ -43,6 +45,7 @@ IofXmlPhp\Model\CourseType:
             access_type: public_method
             serialized_name: CourseFamily
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getCourseFamily
@@ -53,6 +56,7 @@ IofXmlPhp\Model\CourseType:
             access_type: public_method
             serialized_name: Length
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getLength
@@ -63,6 +67,7 @@ IofXmlPhp\Model\CourseType:
             access_type: public_method
             serialized_name: Climb
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getClimb
@@ -73,6 +78,7 @@ IofXmlPhp\Model\CourseType:
             access_type: public_method
             serialized_name: CourseControl
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getCourseControl
@@ -87,6 +93,7 @@ IofXmlPhp\Model\CourseType:
             access_type: public_method
             serialized_name: MapId
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getMapId
@@ -97,6 +104,7 @@ IofXmlPhp\Model\CourseType:
             access_type: public_method
             serialized_name: Extensions
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getExtensions

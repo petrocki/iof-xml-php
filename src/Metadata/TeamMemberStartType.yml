@@ -14,6 +14,7 @@ IofXmlPhp\Model\TeamMemberStartType:
             access_type: public_method
             serialized_name: EntryId
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getEntryId
@@ -24,6 +25,7 @@ IofXmlPhp\Model\TeamMemberStartType:
             access_type: public_method
             serialized_name: Person
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getPerson
@@ -34,6 +36,7 @@ IofXmlPhp\Model\TeamMemberStartType:
             access_type: public_method
             serialized_name: Organisation
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getOrganisation
@@ -44,6 +47,7 @@ IofXmlPhp\Model\TeamMemberStartType:
             access_type: public_method
             serialized_name: Start
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getStart
@@ -58,6 +62,7 @@ IofXmlPhp\Model\TeamMemberStartType:
             access_type: public_method
             serialized_name: Extensions
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getExtensions

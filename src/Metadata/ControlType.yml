@@ -23,6 +23,7 @@ IofXmlPhp\Model\ControlType:
             access_type: public_method
             serialized_name: Id
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getId
@@ -33,6 +34,7 @@ IofXmlPhp\Model\ControlType:
             access_type: public_method
             serialized_name: PunchingUnitId
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getPunchingUnitId
@@ -47,6 +49,7 @@ IofXmlPhp\Model\ControlType:
             access_type: public_method
             serialized_name: Name
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getName
@@ -61,6 +64,7 @@ IofXmlPhp\Model\ControlType:
             access_type: public_method
             serialized_name: Position
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getPosition
@@ -71,6 +75,7 @@ IofXmlPhp\Model\ControlType:
             access_type: public_method
             serialized_name: MapPosition
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getMapPosition
@@ -81,6 +86,7 @@ IofXmlPhp\Model\ControlType:
             access_type: public_method
             serialized_name: Extensions
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getExtensions

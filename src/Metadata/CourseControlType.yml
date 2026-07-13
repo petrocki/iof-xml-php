@@ -50,6 +50,7 @@ IofXmlPhp\Model\CourseControlType:
             access_type: public_method
             serialized_name: Control
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getControl
@@ -64,6 +65,7 @@ IofXmlPhp\Model\CourseControlType:
             access_type: public_method
             serialized_name: MapText
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getMapText
@@ -74,6 +76,7 @@ IofXmlPhp\Model\CourseControlType:
             access_type: public_method
             serialized_name: MapTextPosition
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getMapTextPosition
@@ -84,6 +87,7 @@ IofXmlPhp\Model\CourseControlType:
             access_type: public_method
             serialized_name: LegLength
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getLegLength
@@ -94,6 +98,7 @@ IofXmlPhp\Model\CourseControlType:
             access_type: public_method
             serialized_name: Score
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getScore
@@ -104,6 +109,7 @@ IofXmlPhp\Model\CourseControlType:
             access_type: public_method
             serialized_name: Extensions
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getExtensions

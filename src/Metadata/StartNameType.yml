@@ -8,6 +8,8 @@ IofXmlPhp\Model\StartNameType:
                 getter: value
                 setter: value
             type: string
+            xml_element:
+                cdata: false
         raceNumber:
             expose: true
             access_type: public_method

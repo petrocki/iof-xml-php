@@ -5,6 +5,7 @@ IofXmlPhp\Model\SimpleCourseType:
             access_type: public_method
             serialized_name: Id
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getId
@@ -15,6 +16,7 @@ IofXmlPhp\Model\SimpleCourseType:
             access_type: public_method
             serialized_name: Name
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getName
@@ -25,6 +27,7 @@ IofXmlPhp\Model\SimpleCourseType:
             access_type: public_method
             serialized_name: CourseFamily
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getCourseFamily
@@ -35,6 +38,7 @@ IofXmlPhp\Model\SimpleCourseType:
             access_type: public_method
             serialized_name: Length
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getLength
@@ -45,6 +49,7 @@ IofXmlPhp\Model\SimpleCourseType:
             access_type: public_method
             serialized_name: Climb
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getClimb
@@ -55,6 +60,7 @@ IofXmlPhp\Model\SimpleCourseType:
             access_type: public_method
             serialized_name: NumberOfControls
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getNumberOfControls

@@ -14,6 +14,7 @@ IofXmlPhp\Model\EventType:
             access_type: public_method
             serialized_name: Id
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getId
@@ -24,6 +25,7 @@ IofXmlPhp\Model\EventType:
             access_type: public_method
             serialized_name: Name
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getName
@@ -34,6 +36,7 @@ IofXmlPhp\Model\EventType:
             access_type: public_method
             serialized_name: StartTime
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getStartTime
@@ -44,6 +47,7 @@ IofXmlPhp\Model\EventType:
             access_type: public_method
             serialized_name: EndTime
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getEndTime
@@ -54,6 +58,7 @@ IofXmlPhp\Model\EventType:
             access_type: public_method
             serialized_name: Status
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getStatus
@@ -64,6 +69,7 @@ IofXmlPhp\Model\EventType:
             access_type: public_method
             serialized_name: Classification
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getClassification
@@ -74,6 +80,7 @@ IofXmlPhp\Model\EventType:
             access_type: public_method
             serialized_name: Form
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getForm
@@ -88,6 +95,7 @@ IofXmlPhp\Model\EventType:
             access_type: public_method
             serialized_name: Organiser
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getOrganiser
@@ -102,6 +110,7 @@ IofXmlPhp\Model\EventType:
             access_type: public_method
             serialized_name: Official
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getOfficial
@@ -116,6 +125,7 @@ IofXmlPhp\Model\EventType:
             access_type: public_method
             serialized_name: Class
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getClass
@@ -130,6 +140,7 @@ IofXmlPhp\Model\EventType:
             access_type: public_method
             serialized_name: Race
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getRace
@@ -144,6 +155,7 @@ IofXmlPhp\Model\EventType:
             access_type: public_method
             serialized_name: EntryReceiver
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getEntryReceiver
@@ -154,6 +166,7 @@ IofXmlPhp\Model\EventType:
             access_type: public_method
             serialized_name: Service
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getService
@@ -168,6 +181,7 @@ IofXmlPhp\Model\EventType:
             access_type: public_method
             serialized_name: Account
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getAccount
@@ -182,6 +196,7 @@ IofXmlPhp\Model\EventType:
             access_type: public_method
             serialized_name: URL
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getURL
@@ -196,6 +211,7 @@ IofXmlPhp\Model\EventType:
             access_type: public_method
             serialized_name: Information
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getInformation
@@ -210,6 +226,7 @@ IofXmlPhp\Model\EventType:
             access_type: public_method
             serialized_name: Schedule
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getSchedule
@@ -224,6 +241,7 @@ IofXmlPhp\Model\EventType:
             access_type: public_method
             serialized_name: News
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getNews
@@ -238,6 +256,7 @@ IofXmlPhp\Model\EventType:
             access_type: public_method
             serialized_name: Extensions
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getExtensions

@@ -5,6 +5,7 @@ IofXmlPhp\Model\TeamResultType:
             access_type: public_method
             serialized_name: EntryId
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getEntryId
@@ -15,6 +16,7 @@ IofXmlPhp\Model\TeamResultType:
             access_type: public_method
             serialized_name: Name
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getName
@@ -25,6 +27,7 @@ IofXmlPhp\Model\TeamResultType:
             access_type: public_method
             serialized_name: Organisation
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getOrganisation
@@ -39,6 +42,7 @@ IofXmlPhp\Model\TeamResultType:
             access_type: public_method
             serialized_name: BibNumber
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getBibNumber
@@ -49,6 +53,7 @@ IofXmlPhp\Model\TeamResultType:
             access_type: public_method
             serialized_name: TeamMemberResult
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getTeamMemberResult
@@ -63,6 +68,7 @@ IofXmlPhp\Model\TeamResultType:
             access_type: public_method
             serialized_name: AssignedFee
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getAssignedFee
@@ -77,6 +83,7 @@ IofXmlPhp\Model\TeamResultType:
             access_type: public_method
             serialized_name: ServiceRequest
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getServiceRequest
@@ -91,6 +98,7 @@ IofXmlPhp\Model\TeamResultType:
             access_type: public_method
             serialized_name: Extensions
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getExtensions

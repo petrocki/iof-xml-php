@@ -8,6 +8,8 @@ IofXmlPhp\Model\TeamMemberRaceResultType\PositionAType:
                 getter: value
                 setter: value
             type: int
+            xml_element:
+                cdata: false
         type:
             expose: true
             access_type: public_method

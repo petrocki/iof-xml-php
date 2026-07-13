@@ -5,6 +5,7 @@ IofXmlPhp\Model\ServiceRequestList\ServiceRequestListAType:
             access_type: public_method
             serialized_name: Event
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getEvent
@@ -15,6 +16,7 @@ IofXmlPhp\Model\ServiceRequestList\ServiceRequestListAType:
             access_type: public_method
             serialized_name: OrganisationServiceRequest
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getOrganisationServiceRequest
@@ -29,6 +31,7 @@ IofXmlPhp\Model\ServiceRequestList\ServiceRequestListAType:
             access_type: public_method
             serialized_name: PersonServiceRequest
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getPersonServiceRequest
@@ -43,6 +46,7 @@ IofXmlPhp\Model\ServiceRequestList\ServiceRequestListAType:
             access_type: public_method
             serialized_name: Extensions
             xml_element:
+                cdata: false
                 namespace: 'http://www.orienteering.org/datastandard/3.0'
             accessor:
                 getter: getExtensions
