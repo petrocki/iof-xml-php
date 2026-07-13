@@ -36,6 +36,19 @@ $serializer = new IofXmlSerializer();
 $xml = $serializer->serializeEntryList($entryList);
 ```
 
+### Configuring message metadata
+
+- IOF XML root message elements (for example `OrganisationList`, `EntryList`, etc.) contain common metadata fields 
+such as the IOF version, creation time, and creator.
+- The library provides an `IofMessageFactory` that creates message objects with these metadata fields automatically initialized.
+
+```php
+use IofXmlPhp\Factory\IofMessageFactory;
+
+$factory = new IofMessageFactory(creator: 'My Application');
+$organisationList = $factory->create(OrganisationList::class);
+```
+
 ## Development
 
 ### Docker
